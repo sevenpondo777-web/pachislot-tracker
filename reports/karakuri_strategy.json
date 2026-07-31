@@ -1,0 +1,54 @@
+[
+  {
+    "machine": "スマスロ からくりサーカス",
+    "category": "天井",
+    "title": "天井の構成(CZ間/CZスルー/AT間)",
+    "summary": "CZ間天井は1200G(通常時のゲーム数加算により手前で到達することも多い)。CZを5回スルーすると5回目のCZからAT当選となるスルー天井あり。AT間天井は2500G消化でAT当選。",
+    "tenjyo_min": 1200,
+    "tenjyo_max": 2500,
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sankyo-slot/187795/"
+  },
+  {
+    "machine": "スマスロ からくりサーカス",
+    "category": "ゾーン",
+    "title": "モード別のゾーン(偶数/奇数)",
+    "summary": "通常A・通常Cは200G/400Gなど百の位が偶数のゾーンがチャンス。通常Bは奇数ゾーンがチャンスで平均約550Gと浅め。天国は100G以内当選が確定。通常C滞在中は規定ゾーンでのAT直撃が期待できる点が特徴。",
+    "source_name": "アルテマ(モード解説)",
+    "source_url": "https://altema.jp/pachimo/lkarakurimode"
+  },
+  {
+    "machine": "スマスロ からくりサーカス",
+    "category": "狙い目",
+    "title": "CZ間天井狙いの期待値ライン",
+    "summary": "CZ間天井狙いは等価交換で約300G、5.6枚交換で約350Gからプラス域。期待値1000円以上を求めるなら等価350G/5.6枚450Gが目安。出玉の波が荒い機種のため、なるべく試行回数を確保したい。",
+    "tenjyo_min": 300,
+    "tenjyo_max": 450,
+    "source_name": "ハイエナくん",
+    "source_url": "https://haienakun.com/karakuri/"
+  },
+  {
+    "machine": "スマスロ からくりサーカス",
+    "category": "狙い目",
+    "title": "偶数ゾーン・モードC狙いの目安",
+    "summary": "200G/400Gなど偶数ゾーン手前が狙い目。特に通常C滞在時は規定ゾーンでAT直撃が確定するため、終了画面や規定G数示唆で通常Cが示唆されていれば200G付近から積極的に狙える。",
+    "source_name": "note (たられば)",
+    "source_url": "https://note.com/g1slotapple/n/n4ff6f23842cc"
+  },
+  {
+    "machine": "スマスロ からくりサーカス",
+    "category": "狙い目",
+    "title": "やめどきの目安",
+    "summary": "天国否定かつ高設定/天国示唆が無ければ、レア役からの当選有無を確認して即やめでよい。AT後はCZの引き戻しを確認し、CZや運命の一劇の失敗時はPUSHボタンで終了画面(5回先までのモード示唆)を確認してからやめる。",
+    "source_name": "アミュタメ",
+    "source_url": "https://www.amuse-p.com/blog/karakuricircus-stopping/"
+  },
+  {
+    "machine": "スマスロ からくりサーカス",
+    "category": "設定示唆",
+    "title": "設定判別のポイント",
+    "summary": "CZ「機械仕掛けの神」「幕間チャンス」の合算・幕間チャンス当選率に設定差があり高設定ほど優遇。最重要は上位CZ「運命の一劇」のハズレ突破率で、設定6は約60%と高い。CZ/AT出現率も高設定が優遇されるが差は大きくないとされる。",
+    "source_name": "note (全ての人生に唾を吐け)",
+    "source_url": "https://note.com/pachiprotool/n/n8a52f76e546e"
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "machine": "スマスロ からくりサーカス",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "上位CZ「運命の一劇」のハズレ突破率が高設定ほど優遇され、設定6では約60%との解析・実践報告。高設定はCZ・AT出現率も優遇されるが差はそれほど大きくないとされ、運命の一劇の突破率が高設定判別の最重要要素とされる。",
+    "sample_size": "解析・有志実践報告",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "note (全ての人生に唾を吐け)",
+    "source_url": "https://note.com/pachiprotool/n/n8a52f76e546e"
+  },
+  {
+    "machine": "スマスロ からくりサーカス",
+    "category": "内部モード示唆",
+    "treatment": "不明",
+    "summary": "AT終了後は基本的に有利区間がリセットされず、モード移行抽選は設定変更やエンディング(完走)後などに5回先のモードまで先付けされる特徴。CZ・運命の一劇失敗時のPUSH終了画面が5回先までのモードを示唆するため、次周期以降の立ち回り根拠として使える。",
+    "sample_size": "解析ベース",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "なな徹 (有利区間リセット解説)",
+    "source_url": "https://nana-press.com/kaiseki/machine/571/20324/"
+  },
+  {
+    "machine": "スマスロ からくりサーカス",
+    "category": "内部モード示唆",
+    "treatment": "優遇",
+    "summary": "設定変更(リセット)後はモード移行抽選で通常Cの選択率が優遇されるとの解析。通常Cは偶数ゾーンでのAT直撃契機を持つため、リセット後朝一の偶数ゾーンが相対的に強くなりやすい。",
+    "sample_size": "解析ベース",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "なな徹 (朝一・設定変更時の挙動)",
+    "source_url": "https://nana-press.com/kaiseki/machine/571/15693/"
+  }
+]
