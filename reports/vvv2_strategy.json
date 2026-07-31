@@ -1,0 +1,28 @@
+[
+  {
+    "machine": "Lパチスロ 革命機ヴァルヴレイヴ2",
+    "category": "狙い目",
+    "title": "天井期待値のプラスライン",
+    "summary": "CZ間天井は等価交換で550Gから、5.6枚交換では600Gからプラス域に。設定1想定のボーナス/AT間天井は等価交換で750Gから、5.6枚交換で950Gからプラスラインとされる。",
+    "tenjyo_min": 550,
+    "tenjyo_max": 750,
+    "source_name": "なな徹",
+    "source_url": "https://nana-press.com/kaiseki/machine/1040/32805/"
+  },
+  {
+    "machine": "Lパチスロ 革命機ヴァルヴレイヴ2",
+    "category": "狙い目",
+    "title": "周期(ポイント)狙いの目安",
+    "summary": "1周期目の天井は200pt。130pt付近から積極的に狙うのが推奨され、150pt付近の残り台も見つかることがある。",
+    "source_name": "note (たられば)",
+    "source_url": "https://note.com/g1slotapple/n/na0ccce1ee768"
+  },
+  {
+    "machine": "Lパチスロ 革命機ヴァルヴレイヴ2",
+    "category": "狙い目",
+    "title": "やめどきの目安",
+    "summary": "ボーナス後はアイキャッチを確認してからやめ、AT後は66Gの引き戻しを確認してからやめる。",
+    "source_name": "haienakun (ハイエナ狙い目まとめ)",
+    "source_url": "https://haienakun.com/vvv2/"
+  }
+]

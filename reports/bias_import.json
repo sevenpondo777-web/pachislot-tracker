@@ -1,0 +1,65 @@
+[
+  {
+    "machine": "スマスロ北斗の拳",
+    "category": "AT当選率偏り",
+    "treatment": "冷遇",
+    "summary": "直近の差枚がプラスに振れすぎると「冷遇区間」に入り、AT当選率・継続率が抑制されるとの実践値報告。",
+    "sample_size": "329台分の実践検証",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "スロっかすカップルのパチスロ情報局",
+    "source_url": "https://slokkasucouple.com/hokutonokenreiguuyuuguu10/"
+  },
+  {
+    "machine": "スマスロ北斗の拳",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "summary": "差枚が大きくマイナス(-1300枚等)の状態が続くと「優遇区間」に入り、AT当選率が上がるとの実践値報告。",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "エスパーハウス",
+    "source_url": "https://esperhouse.work/seiha114/"
+  },
+  {
+    "machine": "Lパチスロ 革命機ヴァルヴレイヴ2",
+    "category": "演出頻度偏り",
+    "treatment": "優遇",
+    "target_setting": "4-6",
+    "summary": "ハラキリドライブ演出の発生頻度は高設定ほど優遇。設定1-2は15-20連に1回、設定4-6は6-8連に1回程度、との実践報告。",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "ぱっすろたいむ（10万G検証ポスト紹介）",
+    "source_url": "https://passlotime.com/2025/12/02/post-49912/"
+  },
+  {
+    "machine": "Lパチスロ 革命機ヴァルヴレイヴ2",
+    "category": "内部モード示唆",
+    "treatment": "不明",
+    "summary": "優遇状態は200pt以内での周期到達・3周期以内当選が多い傾向。冷遇区間は通常Aループが多くCZ中もハズレ寄り演出が続く傾向。サブモニターのヴァルヴレイヴ出現でモード示唆(演出選択で奇数/偶数設定寄りとの報告あり)。",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "1geki.jp ヴァルヴレイヴ2考察記事",
+    "source_url": "https://1geki.jp/slot/l_valvrave2/0/"
+  },
+  {
+    "machine": "スマスロ化物語",
+    "category": "AT当選率偏り",
+    "treatment": "冷遇",
+    "summary": "差枚+1000枚以降にボーナスへ当選しても解呪連モードが解除される等、勝ち逃げを防ぐような抑制挙動があるとの実践値報告(180,000G検証者の考察含む)。",
+    "sample_size": "個人検証 累計180,000G",
+    "confidence": "低",
+    "source_type": "個人ブログ",
+    "source_name": "note (pyon3300)",
+    "source_url": "https://note.com/pyon3300/n/n1be83f0edb7b"
+  },
+  {
+    "machine": "スマスロ化物語",
+    "category": "内部モード示唆",
+    "treatment": "不明",
+    "summary": "冷遇移行の考察条件として、電源投入後の有利区間移行時／差枚+1500枚以上／AT終了後／怪異との遭遇後、など複数の考察があるが、いずれも未確定の個人考察段階。",
+    "confidence": "低",
+    "source_type": "個人ブログ",
+    "source_name": "note (watawata2030)",
+    "source_url": "https://note.com/watawata2030/n/nc75709b815f3"
+  }
+]

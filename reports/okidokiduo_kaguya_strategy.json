@@ -1,0 +1,71 @@
+[
+  {
+    "machine": "スマスロ沖ドキ！DUO アンコール",
+    "category": "天井",
+    "title": "ゲーム数天井とモード別短縮",
+    "summary": "ゲーム数天井800Gでボーナス当選。天井到達時は「のるカナチャンス」濃厚。「引き戻しモード」「チャンスモード」は天井200Gに短縮。",
+    "tenjyo_min": 200,
+    "tenjyo_max": 800,
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/universal-slot/246716/"
+  },
+  {
+    "machine": "スマスロ沖ドキ！DUO アンコール",
+    "category": "ゾーン",
+    "title": "仮天井モード(300G〜400G)",
+    "summary": "300G〜400Gが仮天井モード。実戦データ(21万サンプル超)では300G台がピークの期待値、250G〜300G台が非常に強い区間。",
+    "source_name": "note (スロットAI情報屋)",
+    "source_url": "https://note.com/winning_datalab/n/n9ce73e355b86"
+  },
+  {
+    "machine": "スマスロ沖ドキ！DUO アンコール",
+    "category": "設定示唆",
+    "title": "機械割と純増",
+    "summary": "機械割は設定1:97.2%、設定2:98.6%、設定3:102.4%、設定5:106.8%、設定6:110.0%と設定3から100%超。AT純増約4.0枚/G。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/universal-slot/246716/"
+  },
+  {
+    "machine": "スマスロ沖ドキ！DUO アンコール",
+    "category": "狙い目",
+    "title": "規定回数(スルー回数)別の移行率",
+    "summary": "ボーナス後に天国以上へ行かない回数を内部で1〜10回の中から抽選している。「3回」が選ばれる確率は状況によらず約24.6%(体感的には約25%)。規定回数5回または10回が選ばれた場合は次回ドキドキモード以上が濃厚(10回なら50%で超ドキドキへ)。設定変更時は5回の振り分けが上がる。",
+    "source_name": "なな徹 / パチセブン",
+    "source_url": "https://nana-press.com/kaiseki/machine/1071/33879/"
+  },
+  {
+    "machine": "スマスロ沖ドキ！DUO アンコール",
+    "category": "狙い目",
+    "title": "天井狙いの時給目安",
+    "summary": "実戦データ(21万6054サンプル超)では250Gで損益分岐突破、300Gで時給+7,784円、500G以上で時給+8,000円超、800G目前で時給+37,976円と報告されている、トップクラスのハイエナ対象機種。",
+    "sample_size": "21万6054サンプル超",
+    "source_name": "note (スロットAI情報屋)",
+    "source_url": "https://note.com/winning_datalab/n/n9ce73e355b86"
+  },
+  {
+    "machine": "パチスロ かぐや様は告らせたい",
+    "category": "天井",
+    "title": "ゲーム数天井とスルー天井",
+    "summary": "通常時1,100G+α(REG後900G+α)。設定変更後は800G+αに短縮。CZスルー天井(7回)、チャンス目カウンター天井(30回)もあり。",
+    "tenjyo_min": 800,
+    "tenjyo_max": 1100,
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sankyo-slot/216319/"
+  },
+  {
+    "machine": "パチスロ かぐや様は告らせたい",
+    "category": "ゾーン",
+    "title": "規定G数によるCZ抽選ゾーン",
+    "summary": "130G・300G・600Gにゾーンがあり、規定G数消化でCZ抽選が行われる。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sankyo-slot/216319/"
+  },
+  {
+    "machine": "パチスロ かぐや様は告らせたい",
+    "category": "設定示唆",
+    "title": "疑似ボーナスと設定差要素",
+    "summary": "疑似ボーナスループ型、純増約9.0枚。SUPER BIG/BIG/REGULARの疑似ボーナス3種。数値的な設定差はボーナス初当たり確率程度に限定的で、ボーナス終了画面・ミニ藤原・REG中のキャラ紹介等の示唆演出が判別の中心。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sankyo-slot/216319/"
+  }
+]

@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<title>機種リファレンス</title>
+<style>
+  :root {
+    color-scheme: light dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    margin: 0;
+    padding: 0 0 3rem 0;
+    background: #f4f5f7;
+    color: #1c1c1e;
+    line-height: 1.6;
+  }
+  header {
+    background: #1c1c1e;
+    color: #fff;
+    padding: 1rem 1rem 0.8rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  header h1 {
+    font-size: 1.1rem;
+    margin: 0 0 0.6rem 0;
+  }
+  .toc {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding-bottom: 0.6rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .toc-item {
+    flex: 0 0 auto;
+    background: #2c2c2e;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0.8rem;
+  }
+  .machine-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    scroll-margin-top: 5.5rem;
+  }
+  .machine-name {
+    font-size: 1.25rem;
+    margin: 0 0 0.6rem 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.4rem;
+  }
+  .section-label {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 1rem 0 0.5rem 0;
+  }
+  .info-card {
+    border: 1px solid #e5e5e7;
+    border-radius: 10px;
+    padding: 0.7rem 0.8rem;
+    margin-bottom: 0.6rem;
+    background: #fafafa;
+  }
+  .bias-card {
+    background: #fff8f0;
+    border-color: #f0dcc0;
+  }
+  .info-card-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.4rem;
+  }
+  .info-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    color: #fff;
+    font-weight: 600;
+  }
+  .badge-tenjyo { background: #2b6cb0; }
+  .badge-zone   { background: #2f855a; }
+  .badge-settei { background: #6b46c1; }
+  .badge-nerai  { background: #b7791f; }
+  .badge-other  { background: #718096; }
+  .badge-cat    { background: #4a5568; }
+  .badge-yugu   { background: #c53030; }
+  .badge-reigu  { background: #2c5282; }
+  .badge-fumei  { background: #718096; }
+  .conf-badge {
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  .conf-high { background: #e6fffa; border-color: #38b2ac; color: #234e52; }
+  .conf-mid  { background: #fffbea; border-color: #d69e2e; color: #744210; }
+  .conf-low  { background: #fff5f5; border-color: #e53e3e; color: #742a2a; }
+  .target-setting {
+    font-size: 0.8rem;
+    color: #444;
+  }
+  .info-summary {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+  }
+  .tenjyo-range, .sample-size {
+    font-size: 0.82rem;
+    color: #333;
+    margin-bottom: 0.2rem;
+  }
+  .info-source {
+    font-size: 0.75rem;
+    color: #777;
+    margin-top: 0.3rem;
+    word-break: break-all;
+  }
+  .info-source a { color: #2b6cb0; }
+  .empty {
+    color: #999;
+    font-size: 0.85rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body { background: #000; color: #eee; }
+    .machine-section { background: #1c1c1e; box-shadow: none; }
+    .machine-name { border-bottom-color: #333; }
+    .info-card { background: #2c2c2e; border-color: #3a3a3c; }
+    .bias-card { background: #2e2620; border-color: #5a4a30; }
+    .info-source a { color: #6cb2eb; }
+    .section-label { color: #aaa; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>機種リファレンス（攻略情報・優遇冷遇まとめ）</h1>
+  <nav class="toc"><a class="toc-item" href="#m-Lパチスロ 革命機ヴァルヴレイヴ2">Lパチスロ 革命機ヴァルヴレイヴ2</a><a class="toc-item" href="#m-スマスロバイオハザードRE:3">スマスロバイオハザードRE:3</a><a class="toc-item" href="#m-スマスロモンキーターンV">スマスロモンキーターンV</a><a class="toc-item" href="#m-スマスロ化物語">スマスロ化物語</a><a class="toc-item" href="#m-スマスロ北斗の拳">スマスロ北斗の拳</a><a class="toc-item" href="#m-スマスロ北斗の拳 転生の章2">スマスロ北斗の拳 転生の章2</a><a class="toc-item" href="#m-スマスロ攻殻機動隊">スマスロ攻殻機動隊</a><a class="toc-item" href="#m-スマスロ新鬼武者3">スマスロ新鬼武者3</a><a class="toc-item" href="#m-スマスロ沖ドキ！DUO アンコール">スマスロ沖ドキ！DUO アンコール</a><a class="toc-item" href="#m-スマスロ甲鉄城のカバネリ海門決戦">スマスロ甲鉄城のカバネリ海門決戦</a><a class="toc-item" href="#m-スマスロ頭文字D 2nd">スマスロ頭文字D 2nd</a><a class="toc-item" href="#m-スロット ソードアート・オンラインII">スロット ソードアート・オンラインII</a><a class="toc-item" href="#m-パチスロ かぐや様は告らせたい">パチスロ かぐや様は告らせたい</a><a class="toc-item" href="#m-沖ドキ！GOLD">沖ドキ！GOLD</a></nav>
+</header>
+<main>
+
+    <section class="machine-section" id="m-Lパチスロ 革命機ヴァルヴレイヴ2">
+      <h2 class="machine-name">Lパチスロ 革命機ヴァルヴレイヴ2</h2>
+      <h3 class="section-label">攻略情報（公式・一般）</h3>
+      
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-tenjyo">天井</span>
+        <span class="info-title">複数天井の構成</span>
+      </div>
+      <p class="info-summary">ボーナス/AT間天井は1500G+α(設定変更後1000G+α)。CZ間天井999G+α、周期天井6周期(設定変更後3周期)、決戦ボーナススルー3連続後の天井もあり。</p>
+      <div class="tenjyo-range">天井目安: 1000G 〜 1500G</div>
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/sankyo-slot/243853/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-zone">ゾーン</span>
+        <span class="info-title">電脳ゾーン・ルーンドライブ</span>
+      </div>
+      <p class="info-summary">「電脳ゾーン」は周期ポイント特化ゾーン。「ルーンドライブ」は通常時BAR揃いから突入するSTタイプのCZ高確率ゾーン。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/sankyo-slot/243853/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">天井期待値のプラスライン</span>
+      </div>
+      <p class="info-summary">CZ間天井は等価交換で550Gから、5.6枚交換では600Gからプラス域に。設定1想定のボーナス/AT間天井は等価交換で750Gから、5.6枚交換で950Gからプラスラインとされる。</p>
+      <div class="tenjyo-range">天井目安: 550G 〜 750G</div>
+      <div class="info-source">出典: <a href="https://nana-press.com/kaiseki/machine/1040/32805/" target="_blank" rel="noopener">なな徹</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">周期(ポイント)狙いの目安</span>
+      </div>
+      <p class="info-summary">1周期目の天井は200pt。130pt付近から積極的に狙うのが推奨され、150pt付近の残り台も見つかることがある。</p>
+      
+      <div class="info-source">出典: <a href="https://note.com/g1slotapple/n/na0ccce1ee768" target="_blank" rel="noopener">note (たられば)</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">やめどきの目安</span>
+      </div>
+      <p class="info-summary">ボーナス後はアイキャッチを確認してからやめ、AT後は66Gの引き戻しを確認してからやめる。</p>
+      
+      <div class="info-source">出典: <a href="https://haienakun.com/vvv2/" target="_blank" rel="noopener">haienakun (ハイエナ狙い目まとめ)</a>（2026-07-21収集）</div>
+    </div>
+    
+      <h3 class="section-label">優遇/冷遇・実践値情報（未検証・参考情報）</h3>
+      
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-yugu">優遇</span>
+        <span class="badge badge-cat">演出頻度偏り</span>
+        <span class="conf-badge conf-mid">信頼度:中</span>
+        <span class="target-setting">対象設定: 4-6</span>
+      </div>
+      <p class="info-summary">ハラキリドライブ演出の発生頻度は高設定ほど優遇。設定1-2は15-20連に1回、設定4-6は6-8連に1回程度、との実践報告。</p>
+      
+      <div class="info-source">出典: [まとめサイト] <a href="https://passlotime.com/2025/12/02/post-49912/" target="_blank" rel="noopener">ぱっすろたいむ（10万G検証ポスト紹介）</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-yugu">優遇</span>
+        <span class="badge badge-cat">内部モード示唆</span>
+        <span class="conf-badge conf-mid">信頼度:中</span>
+        
+      </div>
+      <p class="info-summary">革命ボーナス後や下位〜中位AT(9連以下)後は優遇状態に移行しやすく、決戦ボーナス後や10連以上の上位AT(超革命ラッシュ)後は優遇に移行しにくいとの実践報告。直前のAT・ボーナス種別が優遇冷遇判断の重要な手がかりとされる。</p>
+      
+      <div class="info-source">出典: [個人ブログ] <a href="https://note.com/pachi_bi/n/nc1f93c3402fb" target="_blank" rel="noopener">note (ぱちべー)</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-yugu">優遇</span>
+        <span class="badge badge-cat">演出頻度偏り</span>
+        <span class="conf-badge conf-mid">信頼度:中</span>
+        
+      </div>
+      <p class="info-summary">優遇状態は100〜250GでCZ・ボーナス当選を繰り返す「ミミズ」グラフになりやすく、200pt以内(多くは100pt付近)での周期到達・3周期以内の当選が多い。超革命ラッシュは9連以内で終わることが多く(10連目に壁)、CZ・ボーナス当選後もループ的に優遇が継続する傾向。</p>
+      <div class="sample-size">サンプル: 個人検証 約10万G</div>
+      <div class="info-source">出典: [個人ブログ] <a href="https://passlotime.com/2025/12/02/post-49912/" target="_blank" rel="noopener">ぱっすろたいむ(10万G検証ポスト紹介)</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-reigu">冷遇</span>
+        <span class="badge badge-cat">演出頻度偏り</span>
+        <span class="conf-badge conf-mid">信頼度:中</span>
+        
+      </div>
+      <p class="info-summary">冷遇状態はCZキャラが「咲」以下に限定され非確定役の突破率が大幅に低下。アキラ・マリーの選択が回避され突破確定演出が出にくい。弱レア役成立後のG数短縮に強いペナルティがあり、ボーナス間隔が1000G近くまで延びることがある。切断後に冷遇入りすると通常Aループが続く特徴的なグラフになるとの報告。</p>
+      <div class="sample-size">サンプル: 個人検証 約10万G</div>
+      <div class="info-source">出典: [個人ブログ] <a href="https://passlotime.com/2025/12/02/post-49912/" target="_blank" rel="noopener">ぱっすろたいむ(10万G検証ポスト紹介)</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-fumei">不明</span>
+        <span class="badge badge-cat">内部モード示唆</span>
+        <span class="conf-badge conf-mid">信頼度:中</span>
+        
+      </div>
+      <p class="info-summary">優遇状態は200pt以内での周期到達・3周期以内当選が多い傾向。冷遇区間は通常Aループが多くCZ中もハズレ寄り演出が続く傾向。サブモニターのヴァルヴレイヴ出現でモード示唆(演出選択で奇数/偶数設定寄りとの報告あり)。</p>
+      
+      <div class="info-source">出典: [個人ブログ] <a href="https://1geki.jp/slot/l_valvrave2/0/" target="_blank" rel="noopener">1geki.jp ヴァルヴレイヴ2考察記事</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-fumei">不明</span>
+        <span class="badge badge-cat">AT当選率偏り</span>
+        <span class="conf-badge conf-low">信頼度:低</span>
+        
+      </div>
+      <p class="info-summary">有利区間切断(リセット目的の大量出玉終了)は、超革命ラッシュ中かつ有利区間内差枚+900〜1000枚で発生すると考えられている。より詳細な観察では上位AT継続時に差枚+1530〜1655枚の間で切断される可能性も指摘されており、差枚の推移が切断タイミングの目安になる。</p>
+      
+      <div class="info-source">出典: [個人ブログ] <a href="https://note.com/kitaichi_lifer/n/nb161bdc91e57" target="_blank" rel="noopener">note (人生期待値論)</a>（2026-07-21収集）</div>
+    </div>
+    
+    </section>
+    
+    <section class="machine-section" id="m-スマスロバイオハザードRE:3">
+      <h2 class="machine-name">スマスロバイオハザードRE:3</h2>
+      <h3 class="section-label">攻略情報（公式・一般）</h3>
+      
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-tenjyo">天井</span>
+        <span class="info-title">ゲーム数天井・CZスルー天井</span>
+      </div>
+      <p class="info-summary">ゲーム数天井とCZスルー天井の2種類がある。ゲーム数天井到達時は「パンデミックチャンス」を経由してATに突入する。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/enta-slot/253191/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-zone">ゾーン</span>
+        <span class="info-title">NEポイントによるCZ抽選</span>
+      </div>
+      <p class="info-summary">「NEポイント」は50pt刻みでCZ当選の可能性があり、100pt到達ごとにチャンス。500pt到達時は必ずCZ「ネメシスバトル」に突入する。100pt・300pt・500ptが特に強い期待度ゾーン。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/enta-slot/253191/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-settei">設定示唆</span>
+        <span class="info-title">スペックと純増</span>
+      </div>
+      <p class="info-summary">2026/5/11導入(エンターライズ)。AT中純増1.0枚/G、ボーナス中・上位AT中は4.5枚/G。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/enta-slot/253191/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">天井狙いのラインとNEポイント狙い目</span>
+      </div>
+      <p class="info-summary">通常条件なら天井狙いは等価400G〜、5.6枚500G〜でプラス域。設定変更時は天井短縮のため等価150G〜、5.6枚250G〜でプラス域。NEポイントが100pt以下で放置されている台や、200pt台後半〜300pt到達直前の台は積極的に狙いたい。</p>
+      
+      <div class="info-source">出典: <a href="https://note.com/kenslodata/n/n0d5efbc741df" target="_blank" rel="noopener">note (けんけん@スロットデータ分析)</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">やめどきの目安</span>
+      </div>
+      <p class="info-summary">基本は状態確認後の即ヤメが無難。引き継いだNEポイントが300ptに近い場合は300ptのゾーンまで続行する価値がある。上位AT後は50ptでCZ当選となるため、即ヤメ台があれば狙い目。</p>
+      
+      <div class="info-source">出典: <a href="https://nana-press.com/kaiseki/machine/1140/36681/" target="_blank" rel="noopener">なな徹</a>（2026-07-21収集）</div>
+    </div>
+    
+      <h3 class="section-label">優遇/冷遇・実践値情報（未検証・参考情報）</h3>
+      
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-yugu">優遇</span>
+        <span class="badge badge-cat">AT当選率偏り</span>
+        <span class="conf-badge conf-low">信頼度:低</span>
+        
+      </div>
+      <p class="info-summary">通常時のレア役成立時のCZ「ネメシスバトル」当選率とAT直撃率は高設定ほど優遇されると推測されているが、現状判明しているのは設定1の数値のみで詳細な設定差は未解明。</p>
+      
+      <div class="info-source">出典: [まとめサイト] <a href="https://1geki.jp/slot/l_bhr2/" target="_blank" rel="noopener">1geki.jp</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-fumei">不明</span>
+        <span class="badge badge-cat">内部モード示唆</span>
+        <span class="conf-badge conf-mid">信頼度:中</span>
+        
+      </div>
+      <p class="info-summary">1,592万Gの実践値集計に基づく分析があり、通常AT終了後は400G付近が基本的な狙い目ラインとされる。掲示板ではメーカー公表の解析値と実際の挙動にギャップがあるとの指摘があり、実践値ベースでの期待値算出が重視されている機種。</p>
+      <div class="sample-size">サンプル: 1,592万G</div>
+      <div class="info-source">出典: [個人ブログ] <a href="https://note.com/tada_katutameni/n/naf81d19376df" target="_blank" rel="noopener">note (期待値の密告者@INFORMER)</a>（2026-07-21収集）</div>
+    </div>
+    
+    </section>
+    
+    <section class="machine-section" id="m-スマスロモンキーターンV">
+      <h2 class="machine-name">スマスロモンキーターンV</h2>
+      <h3 class="section-label">攻略情報（公式・一般）</h3>
+      
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-tenjyo">天井</span>
+        <span class="info-title">ゲーム数天井と周期天井</span>
+      </div>
+      <p class="info-summary">795Gのゲーム数天井と最大6周期の周期天井の2種類。優出モード突入を1周期として5スルー後6回目でAT当選。設定変更後・青島VS波多野敗北後は短縮される。</p>
+      <div class="tenjyo-range">天井目安: -G 〜 795G</div>
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/yamasa-slot/198173/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-zone">ゾーン</span>
+        <span class="info-title">周期ポイントによるゾーン</span>
+      </div>
+      <p class="info-summary">1周期は222pt天井で100G+α程度、2周期以降は666pt天井で300G程度がゾーンの目安。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/yamasa-slot/198173/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-settei">設定示唆</span>
+        <span class="info-title">機械割とAT初当たり</span>
+      </div>
+      <p class="info-summary">設定6機械割114.9%、設定4でも104.5%と高スペック。AT初当たりは設定1で約1/300。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/yamasa-slot/198173/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">狙い目G数と朝イチ・示唆演出</span>
+      </div>
+      <p class="info-summary">等価なら410G〜または5周期〜が狙い目、5.6枚現金なら500G〜が目安。朝イチなら50Gからの打ち始めでも出率105%と非常に甘い状況。ヘルメット示唆で【ロゴ+キラキラ】や【Vロゴ】が確認できれば天国まで回す価値がある。有利区間内差枚+1400枚以上でも天国フォローが推奨される。</p>
+      
+      <div class="info-source">出典: <a href="https://note.com/g1slotapple/n/n4daeb2db6c33" target="_blank" rel="noopener">note (たられば)</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">有利区間リセットの差枚目安</span>
+      </div>
+      <p class="info-summary">有利区間差枚が1500〜1600枚以上でATが終了すると青島VS波多野に突入していることから、このライン付近が有利区間リセット条件と推測されている。差枚+1400枚以上の状態で即ヤメされていた台は、1周期だけ様子を見る立ち回りが有効な可能性がある。</p>
+      
+      <div class="info-source">出典: <a href="https://tsuranuki-method.com/expected-value-about-limit/monkeyturn5-1/" target="_blank" rel="noopener">ツラヌキメソッド</a>（2026-07-21収集）</div>
+    </div>
+    
+      <h3 class="section-label">優遇/冷遇・実践値情報（未検証・参考情報）</h3>
+      
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-reigu">冷遇</span>
+        <span class="badge badge-cat">AT当選率偏り</span>
+        <span class="conf-badge conf-mid">信頼度:中</span>
+        
+      </div>
+      <p class="info-summary">青島SG(AT)終了後の1〜150G区間は当選率が公表値より下がるとの実践報告(体感では30%程度の低下という声も)。ただし継続率は公表値通りとする分析もあり、指標によって公表値との一致・乖離が分かれる。</p>
+      
+      <div class="info-source">出典: [個人ブログ] <a href="https://esperhouse.work/seiha110/" target="_blank" rel="noopener">エスパーハウス</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-fumei">不明</span>
+        <span class="badge badge-cat">内部モード示唆</span>
+        <span class="conf-badge conf-mid">信頼度:中</span>
+        
+      </div>
+      <p class="info-summary">2億4000万G規模の実践データを基にした差枚別期待値・やめ時判断データが複数の解析者により公開されている。</p>
+      <div class="sample-size">サンプル: 累計2億4000万G(複数解析者の合算)</div>
+      <div class="info-source">出典: [個人ブログ] <a href="https://note.com/slot_hissho_lab/n/n4ba082c9c271" target="_blank" rel="noopener">note (スロット必勝Lab_鳥餡)</a>（2026-07-21収集）</div>
+    </div>
+    
+    </section>
+    
+    <section class="machine-section" id="m-スマスロ化物語">
+      <h2 class="machine-name">スマスロ化物語</h2>
+      <h3 class="section-label">攻略情報（公式・一般）</h3>
+      
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-tenjyo">天井</span>
+        <span class="info-title">天井G数と恩恵</span>
+      </div>
+      <p class="info-summary">天井は1000G+α、恩恵はAT+倍々チャンス当選濃厚。設定変更時は600Gに短縮。</p>
+      <div class="tenjyo-range">天井目安: 600G 〜 1000G</div>
+      <div class="info-source">出典: <a href="https://www.slopachi-quest.com/article/bakemonogatari-tenjou/" target="_blank" rel="noopener">slopachi-quest</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-zone">ゾーン</span>
+        <span class="info-title">CZ抽選ゾーン</span>
+      </div>
+      <p class="info-summary">280G〜からゾーン狙いが有効。100G・200G・300GでCZ抽選が行われ、300Gでは設定1でも約40%でCZ当選。</p>
+      
+      <div class="info-source">出典: <a href="https://www.slopachi-quest.com/article/bakemonogatari-tenjou/" target="_blank" rel="noopener">slopachi-quest</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-settei">設定示唆</span>
+        <span class="info-title">AT初当たり確率の設定差</span>
+      </div>
+      <p class="info-summary">AT初当たり確率に設定差があり、設定4以上の判別目安は概ね1/240程度。</p>
+      
+      <div class="info-source">出典: <a href="https://note.com/watawata2030/n/nc75709b815f3" target="_blank" rel="noopener">note (watawata2030)</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">狙い目G数と前回AT獲得枚数による判断</span>
+      </div>
+      <p class="info-summary">狙い目は500G〜。100G・200G・300GでCZ抽選があり、300Gが最も期待できるゾーン。前回AT獲得枚数が1000枚を超えている台は出玉が伸びやすい傾向が顕著で、50G+α程度までは様子を見る価値がある。</p>
+      
+      <div class="info-source">出典: <a href="https://note.com/kitaitilabo/n/ne97c6cf3c0c6" target="_blank" rel="noopener">note (シオン@期待値研究所)</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">やめどきと差枚引き継ぎの注意点</span>
+      </div>
+      <p class="info-summary">AT後またはCZ後、前兆や解呪連モードにいないことを確認してヤメる。背景全体に「怪異」やCZチャンス背景の「学習塾」「夜」が出ている間はヤメない。AT終了後50G以内の引き戻しは差枚を引き継ぐ仕様があるため、やめどきを誤ると大損する可能性がある点に要注意。</p>
+      
+      <div class="info-source">出典: <a href="https://1geki.jp/slot/l_bakemonogatari/3/" target="_blank" rel="noopener">1geki.jp</a>（2026-07-21収集）</div>
+    </div>
+    
+      <h3 class="section-label">優遇/冷遇・実践値情報（未検証・参考情報）</h3>
+      
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-reigu">冷遇</span>
+        <span class="badge badge-cat">AT当選率偏り</span>
+        <span class="conf-badge conf-low">信頼度:低</span>
+        
+      </div>
+      <p class="info-summary">差枚+1000枚以降にボーナスへ当選しても解呪連モードが解除される等、勝ち逃げを防ぐような抑制挙動があるとの実践値報告(180,000G検証者の考察含む)。</p>
+      <div class="sample-size">サンプル: 個人検証 累計180,000G</div>
+      <div class="info-source">出典: [個人ブログ] <a href="https://note.com/pyon3300/n/n1be83f0edb7b" target="_blank" rel="noopener">note (pyon3300)</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-fumei">不明</span>
+        <span class="badge badge-cat">内部モード示唆</span>
+        <span class="conf-badge conf-low">信頼度:低</span>
+        
+      </div>
+      <p class="info-summary">冷遇移行の考察条件として、電源投入後の有利区間移行時／差枚+1500枚以上／AT終了後／怪異との遭遇後、など複数の考察があるが、いずれも未確定の個人考察段階。</p>
+      
+      <div class="info-source">出典: [個人ブログ] <a href="https://note.com/watawata2030/n/nc75709b815f3" target="_blank" rel="noopener">note (watawata2030)</a>（2026-07-21収集）</div>
+    </div>
+    
+    </section>
+    
+    <section class="machine-section" id="m-スマスロ北斗の拳">
+      <h2 class="machine-name">スマスロ北斗の拳</h2>
+      <h3 class="section-label">攻略情報（公式・一般）</h3>
+      
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-tenjyo">天井</span>
+        <span class="info-title">天井G数とAT当選条件</span>
+      </div>
+      <p class="info-summary">天井は1268G+αでAT(バトルボーナス)当選。設定変更時は800G+αに短縮。天井到達時は通常のAT当選より継続率が優遇される。</p>
+      <div class="tenjyo-range">天井目安: 800G 〜 1268G</div>
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/sammy-slot/181626/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-zone">ゾーン</span>
+        <span class="info-title">天井短縮抽選ゾーン</span>
+      </div>
+      <p class="info-summary">通常時300G・777G・800Gで天井短縮抽選が行われ、成功すると最大32G前兆を経てAT当選。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/sammy-slot/181626/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-settei">設定示唆</span>
+        <span class="info-title">バトルボーナス当選率の設定差</span>
+      </div>
+      <p class="info-summary">バトルボーナス当選率は高設定ほど優遇されており、設定1と6で差が大きい。2023/4/3導入のサミー第1弾スマスロ。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/sammy-slot/181626/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">天井狙いのプラスラインとゾーンの有無</span>
+      </div>
+      <p class="info-summary">本機にゾーンはなく、G数による当選は天井のみ。5.6円交換でも期待値プラスとなるのは700G以上、期待値1,000円以上を狙うなら800G以上が目安。天井短縮抽選(300G/777G/800G)をスルーした後は1268Gの天井が近いため、ゾーン狙いより天井狙いに専念するのが有効とされる。</p>
+      
+      <div class="info-source">出典: <a href="https://1geki.jp/slot/s_sma_hokutonoken/3/" target="_blank" rel="noopener">1geki.jp</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">やめどきの目安</span>
+      </div>
+      <p class="info-summary">AT後はモードを見てやめるのが基本。差枚750枚以上の場合は1G回してからやめる。</p>
+      
+      <div class="info-source">出典: <a href="https://1geki.jp/slot/s_sma_hokutonoken/3/" target="_blank" rel="noopener">1geki.jp</a>（2026-07-21収集）</div>
+    </div>
+    
+      <h3 class="section-label">優遇/冷遇・実践値情報（未検証・参考情報）</h3>
+      
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-yugu">優遇</span>
+        <span class="badge badge-cat">AT当選率偏り</span>
+        <span class="conf-badge conf-mid">信頼度:中</span>
+        
+      </div>
+      <p class="info-summary">差枚が大きくマイナス(-1300枚等)の状態が続くと「優遇区間」に入り、AT当選率が上がるとの実践値報告。</p>
+      
+      <div class="info-source">出典: [個人ブログ] <a href="https://esperhouse.work/seiha114/" target="_blank" rel="noopener">エスパーハウス</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-reigu">冷遇</span>
+        <span class="badge badge-cat">AT当選率偏り</span>
+        <span class="conf-badge conf-mid">信頼度:中</span>
+        
+      </div>
+      <p class="info-summary">直近の差枚がプラスに振れすぎると「冷遇区間」に入り、AT当選率・継続率が抑制されるとの実践値報告。</p>
+      <div class="sample-size">サンプル: 329台分の実践検証</div>
+      <div class="info-source">出典: [個人ブログ] <a href="https://slokkasucouple.com/hokutonokenreiguuyuuguu10/" target="_blank" rel="noopener">スロっかすカップルのパチスロ情報局</a>（2026-07-21収集）</div>
+    </div>
+    
+    </section>
+    
+    <section class="machine-section" id="m-スマスロ北斗の拳 転生の章2">
+      <h2 class="machine-name">スマスロ北斗の拳 転生の章2</h2>
+      <h3 class="section-label">攻略情報（公式・一般）</h3>
+      
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-tenjyo">天井</span>
+        <span class="info-title">あべし天井</span>
+      </div>
+      <p class="info-summary">通常時の天井は1536あべし。設定変更後は最大1280あべしに短縮される。</p>
+      <div class="tenjyo-range">天井目安: 1280G 〜 1536G</div>
+      <div class="info-source">出典: <a href="https://www.slopachi-quest.com/article/hokuto-tensei2-tenjou/" target="_blank" rel="noopener">slopachi-quest</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-zone">ゾーン</span>
+        <span class="info-title">あべしゾーン</span>
+      </div>
+      <p class="info-summary">全モード共通で193〜256あべしのゾーンが濃い。200あべし〜のゾーン狙いが有効とされる。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/sammy-slot/246735/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-settei">設定示唆</span>
+        <span class="info-title">スペックとAT性能</span>
+      </div>
+      <p class="info-summary">2026/1/5導入のサミー機。AT「闘神演舞」は純増約4.0枚/Gのセット数管理型、上位AT「裏闘神演舞」もあり。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/sammy-slot/246735/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">リセット後・通常AT後の天井期待値ライン</span>
+      </div>
+      <p class="info-summary">朝一リセット時の天井期待値は等価交換50Gから、5.6枚交換300Gからプラス域(1,000円以上を狙うなら等価300G、5.6枚500Gから)。通常AT後の天井期待値は等価交換250Gから、5.6枚交換350Gからプラス域(1,000円以上を狙うなら等価350G、5.6枚500Gから)。あべし数の目安は700〜900あべし。</p>
+      
+      <div class="info-source">出典: <a href="https://www.amuse-p.com/blog/hokuto_tensei2-movement/" target="_blank" rel="noopener">アミュタメ</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">やめどきの目安(あべし数基準)</span>
+      </div>
+      <p class="info-summary">AT終了後のあべし数で判断する。あべしが少ない場合は即やめ、128あべしや256あべしに近い場合は天国やゾーンでのAT当選を期待して様子を見る。</p>
+      
+      <div class="info-source">出典: <a href="https://www.amuse-p.com/blog/hokuto_tensei2-movement/" target="_blank" rel="noopener">アミュタメ</a>（2026-07-21収集）</div>
+    </div>
+    
+      <h3 class="section-label">優遇/冷遇・実践値情報（未検証・参考情報）</h3>
+      
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-yugu">優遇</span>
+        <span class="badge badge-cat">AT当選率偏り</span>
+        <span class="conf-badge conf-low">信頼度:低</span>
+        
+      </div>
+      <p class="info-summary">優遇区間では弱役(スイカ・弱チェリー等)からの天破抽選が通りやすく、トータル差枚・直近差枚がマイナスの場合に優遇区間に入りやすいとの実践報告。</p>
+      <div class="sample-size">サンプル: 2,480万G分析</div>
+      <div class="info-source">出典: [個人ブログ] <a href="https://note.com/flick7/n/n8395559dc897" target="_blank" rel="noopener">note (flick7期待値スキャナー)</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-reigu">冷遇</span>
+        <span class="badge badge-cat">内部モード示唆</span>
+        <span class="conf-badge conf-low">信頼度:低</span>
+        
+      </div>
+      <p class="info-summary">冷遇区間は有利区間切断(差枚2300枚以上)直後や無想転生後の特定挙動で発生するほか、規定あべし分布の偏りで現れる傾向があるとの考察。ただしサンプル1万件以上で「大きな優遇冷遇傾向はナシ」とする解析サイトもあり、存在自体についてプレイヤー間でも見解が分かれる。</p>
+      
+      <div class="info-source">出典: [個人ブログ] <a href="https://note.com/tada_katutameni/n/nb6e125b6270e" target="_blank" rel="noopener">note (期待値の密告者@INFORMER)</a>（2026-07-21収集）</div>
+    </div>
+    
+    </section>
+    
+    <section class="machine-section" id="m-スマスロ攻殻機動隊">
+      <h2 class="machine-name">スマスロ攻殻機動隊</h2>
+      <h3 class="section-label">攻略情報（公式・一般）</h3>
+      
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-tenjyo">天井</span>
+        <span class="info-title">CZ間天井・AT間天井</span>
+      </div>
+      <p class="info-summary">CZ間天井550G+α、AT間天井999G+α。設定変更後はCZ間350G+α、AT間699G+αに短縮され、設定1でも機械割100%超。</p>
+      <div class="tenjyo-range">天井目安: 699G 〜 999G</div>
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/sammy-slot/248703/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-zone">ゾーン</span>
+        <span class="info-title">殲滅ゾーンとタチコマCZ</span>
+      </div>
+      <p class="info-summary">50G・250G・350G・450Gで「殲滅ゾーン」に約25%以上で突入。200G・400GはCZ「タチコマの家出」に期待できる。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/sammy-slot/248703/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-settei">設定示唆</span>
+        <span class="info-title">スペックと純増</span>
+      </div>
+      <p class="info-summary">2026年2月導入、純増約4.0枚〜最大8.5枚の出玉性能。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/sammy-slot/248703/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">差枚と天井狙いの具体的ライン</span>
+      </div>
+      <p class="info-summary">狙い目は差枚500〜600あたりが妥当なライン。CZ間天井狙いは等価で300G〜(白の境界後は170G〜)、AT間天井狙いは等価で650G〜。差枚数が上振れている時は積極的に狙うべきだが、打てば打つほど期待値が下がる立ち回りのため区切りどころの判断が重要。</p>
+      
+      <div class="info-source">出典: <a href="https://note.com/g1slotapple/n/nc3863b19c212" target="_blank" rel="noopener">note (たられば)</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">やめどきの目安</span>
+      </div>
+      <p class="info-summary">AT終了後は即ヤメが基本。ただし通常Dに滞在している場合は150G+αでCZ当選のチャンスがあるため、捨てずにモード示唆を確認してからやめる。</p>
+      
+      <div class="info-source">出典: <a href="https://note.com/norihey_01/n/n670f5449c182" target="_blank" rel="noopener">note (のりへい)</a>（2026-07-21収集）</div>
+    </div>
+    
+      <h3 class="section-label">優遇/冷遇・実践値情報（未検証・参考情報）</h3>
+      
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-yugu">優遇</span>
+        <span class="badge badge-cat">AT当選率偏り</span>
+        <span class="conf-badge conf-mid">信頼度:中</span>
+        <span class="target-setting">対象設定: 4-6</span>
+      </div>
+      <p class="info-summary">AT初当たり確率は高設定ほど優遇されており、設定4以上の判別目安は概ね1/300を切る水準とされる。</p>
+      
+      <div class="info-source">出典: [個人ブログ] <a href="https://note.com/alert_macaw1109/n/naa14c590f29e" target="_blank" rel="noopener">note (リセイヤマン)</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-reigu">冷遇</span>
+        <span class="badge badge-cat">内部モード示唆</span>
+        <span class="conf-badge conf-mid">信頼度:中</span>
+        
+      </div>
+      <p class="info-summary">168万G超の実践データ分析で、特定の獲得枚数を超えた瞬間にCZ・セクション9・白の境界の当選分布が変化するとの指摘。ATに入っても75%が500枚以下で終了(中央値240枚)という厳しめの実績が報告されている。</p>
+      <div class="sample-size">サンプル: 個人検証 累計168万G超</div>
+      <div class="info-source">出典: [個人ブログ] <a href="https://note.com/slot_detective/n/n9258489bed3a" target="_blank" rel="noopener">note (スロット攻略探偵)</a>（2026-07-21収集）</div>
+    </div>
+    
+    </section>
+    
+    <section class="machine-section" id="m-スマスロ新鬼武者3">
+      <h2 class="machine-name">スマスロ新鬼武者3</h2>
+      <h3 class="section-label">攻略情報（公式・一般）</h3>
+      
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-tenjyo">天井</span>
+        <span class="info-title">周期天井とリセット短縮</span>
+      </div>
+      <p class="info-summary">周期天井は最大6周期。設定変更(リセット)後は最大4周期に短縮される。1周期あたり約110G前後で推移し、等価交換での天井狙い目は5周期〜(550G〜)が目安。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/enta-slot/240678/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-22収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-zone">ゾーン</span>
+        <span class="info-title">周期ポイントとAT後のゾーン狙い</span>
+      </div>
+      <p class="info-summary">1周期100pt〜、上位AT後0G〜のゾーン狙いが有効とされる。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/enta-slot/240678/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-22収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-settei">設定示唆</span>
+        <span class="info-title">AT初当たり確率の設定差</span>
+      </div>
+      <p class="info-summary">AT初当たり確率は設定1で1/379.7、設定6で1/293.1と設定差が大きい。純増2.5枚/G。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/enta-slot/240678/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-22収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-other">その他</span>
+        <span class="info-title">AT・CZの基本ゲーム性</span>
+      </div>
+      <p class="info-summary">主にAT「蒼剣RUSH」で出玉を増やすタイプ。通常時は規定周期到達・鬼斬チャージ中の抽選・リーチ目直撃からAT当選を目指す。AT中は3・5・7セット継続時に上位ATへのCZ「覚醒チャレンジ」に突入する可能性があり、10セット継続やエンディング後は「秀吉最終決戦」へ移行、成功すれば純増5.5枚・継続率89%の上位AT「真蒼剣RUSH」に突入するツラヌキ性能を持つ。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/enta-slot/240678/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-22収集）</div>
+    </div>
+    
+      <h3 class="section-label">優遇/冷遇・実践値情報（未検証・参考情報）</h3>
+      
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-yugu">優遇</span>
+        <span class="badge badge-cat">内部モード示唆</span>
+        <span class="conf-badge conf-low">信頼度:低</span>
+        
+      </div>
+      <p class="info-summary">有利区間切断(リセット)後のモード移行は、前回獲得枚数1000枚以上でモードC以上への移行率が約35%アップとの実戦値報告。</p>
+      
+      <div class="info-source">出典: [個人ブログ] <a href="https://nakaoshi.com/?p=1285" target="_blank" rel="noopener">なかおしくん</a>（2026-07-22収集）</div>
+    </div>
+    
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-yugu">優遇</span>
+        <span class="badge badge-cat">AT当選率偏り</span>
+        <span class="conf-badge conf-low">信頼度:低</span>
+        
+      </div>
+      <p class="info-summary">前回獲得枚数が1500枚超だと次回初当たりが約45G軽くなり、期待値・出玉率が向上。有利区間差枚+2000以上でもモードD移行率約22%、次回初当たりまでの投資が平均1800円減との実践値報告。</p>
+      
+      <div class="info-source">出典: [個人ブログ] <a href="https://note.com/happy_bear275/n/n000a1230dee2" target="_blank" rel="noopener">note (suropati)</a>（2026-07-22収集）</div>
+    </div>
+    
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-reigu">冷遇</span>
+        <span class="badge badge-cat">AT当選率偏り</span>
+        <span class="conf-badge conf-low">信頼度:低</span>
+        
+      </div>
+      <p class="info-summary">前回獲得枚数が1〜500枚(少なめ)だった場合、次回初当たりが重くなる(約1/408)、期待値マイナス約1550円、出玉率95.34%との実践値報告。</p>
+      
+      <div class="info-source">出典: [個人ブログ] <a href="https://note.com/happy_bear275/n/n000a1230dee2" target="_blank" rel="noopener">note (suropati)</a>（2026-07-22収集）</div>
+    </div>
+    
+    </section>
+    
+    <section class="machine-section" id="m-スマスロ沖ドキ！DUO アンコール">
+      <h2 class="machine-name">スマスロ沖ドキ！DUO アンコール</h2>
+      <h3 class="section-label">攻略情報（公式・一般）</h3>
+      
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-tenjyo">天井</span>
+        <span class="info-title">ゲーム数天井とモード別短縮</span>
+      </div>
+      <p class="info-summary">ゲーム数天井800Gでボーナス当選。天井到達時は「のるカナチャンス」濃厚。「引き戻しモード」「チャンスモード」は天井200Gに短縮。</p>
+      <div class="tenjyo-range">天井目安: 200G 〜 800G</div>
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/universal-slot/246716/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-zone">ゾーン</span>
+        <span class="info-title">仮天井モード(300G〜400G)</span>
+      </div>
+      <p class="info-summary">300G〜400Gが仮天井モード。実戦データ(21万サンプル超)では300G台がピークの期待値、250G〜300G台が非常に強い区間。</p>
+      
+      <div class="info-source">出典: <a href="https://note.com/winning_datalab/n/n9ce73e355b86" target="_blank" rel="noopener">note (スロットAI情報屋)</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-settei">設定示唆</span>
+        <span class="info-title">機械割と純増</span>
+      </div>
+      <p class="info-summary">機械割は設定1:97.2%、設定2:98.6%、設定3:102.4%、設定5:106.8%、設定6:110.0%と設定3から100%超。AT純増約4.0枚/G。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/universal-slot/246716/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">規定回数(スルー回数)別の移行率</span>
+      </div>
+      <p class="info-summary">ボーナス後に天国以上へ行かない回数を内部で1〜10回の中から抽選している。「3回」が選ばれる確率は状況によらず約24.6%(体感的には約25%)。規定回数5回または10回が選ばれた場合は次回ドキドキモード以上が濃厚(10回なら50%で超ドキドキへ)。設定変更時は5回の振り分けが上がる。</p>
+      
+      <div class="info-source">出典: <a href="https://nana-press.com/kaiseki/machine/1071/33879/" target="_blank" rel="noopener">なな徹 / パチセブン</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">天井狙いの時給目安</span>
+      </div>
+      <p class="info-summary">実戦データ(21万6054サンプル超)では250Gで損益分岐突破、300Gで時給+7,784円、500G以上で時給+8,000円超、800G目前で時給+37,976円と報告されている、トップクラスのハイエナ対象機種。</p>
+      
+      <div class="info-source">出典: <a href="https://note.com/winning_datalab/n/n9ce73e355b86" target="_blank" rel="noopener">note (スロットAI情報屋)</a>（2026-07-21収集）</div>
+    </div>
+    
+      <h3 class="section-label">優遇/冷遇・実践値情報（未検証・参考情報）</h3>
+      <p class="empty">登録なし（未確認）</p>
+    </section>
+    
+    <section class="machine-section" id="m-スマスロ甲鉄城のカバネリ海門決戦">
+      <h2 class="machine-name">スマスロ甲鉄城のカバネリ海門決戦</h2>
+      <h3 class="section-label">攻略情報（公式・一般）</h3>
+      
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-tenjyo">天井</span>
+        <span class="info-title">ゲーム数天井と周期天井</span>
+      </div>
+      <p class="info-summary">通常時996G消化または最大6周期到達でエピソードボーナス当選、ST突入濃厚。リセット後はゲーム数天井596G、周期天井最大4周期に短縮。</p>
+      <div class="tenjyo-range">天井目安: 596G 〜 996G</div>
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/sammy-slot/248689/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-zone">ゾーン</span>
+        <span class="info-title">周期到達手前のゾーン狙い</span>
+      </div>
+      <p class="info-summary">周期システムが特殊で150Gで1周期・300Gで2周期に到達。周期到達手前(130G、270G付近)がゾーン狙い目とされる。</p>
+      
+      <div class="info-source">出典: <a href="https://www.slopachi-quest.com/article/kabaneri2-unato-tenjou/" target="_blank" rel="noopener">slopachi-quest</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-settei">設定示唆</span>
+        <span class="info-title">設定5・6の勝率目安と機械割上昇</span>
+      </div>
+      <p class="info-summary">設定5の勝率目安80%、設定6は85%と高め。下段ベル確率に段階的な設定差あり。前作の設定6機械割110.0%に対し本作は114.9%に上昇。</p>
+      
+      <div class="info-source">出典: <a href="https://note.com/choro_ssjp/n/n4dc54a080430" target="_blank" rel="noopener">note (choro_ssjp)</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">推奨狙い目ラインと周期到達の期待度</span>
+      </div>
+      <p class="info-summary">推奨狙い目ラインは等価400G〜、5.6枚(持メダル)450G〜、5.6枚(現金)500G〜。天井短縮時はこのラインから300〜350G引いて計算する。1周期目到達の平均は約100G、2周期目到達の平均は約250G。150Gまでのボーナス期待度は約52%、300Gまでのボーナス期待度は約77%。リセット時は0G時点の期待値が通常時-1,564円→リセット時+1,000円と約2,600円のギャップがある。(3億2000万G規模の集計データ分析に基づく)</p>
+      
+      <div class="info-source">出典: <a href="https://note.com/seiyamaster/n/n9e8d2028126f" target="_blank" rel="noopener">note (ヲ猿)</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">やめどきの目安</span>
+      </div>
+      <p class="info-summary">CZポイントが溜まっていない状態であれば即ヤメでよい。ST駆け抜け後や景之ST終了後は、サブ液晶背景が「海門城」に変化すれば次回ボーナスまでフォローする。</p>
+      
+      <div class="info-source">出典: <a href="https://www.slopachi-quest.com/article/kabaneri2-unato-tenjou/" target="_blank" rel="noopener">slopachi-quest</a>（2026-07-21収集）</div>
+    </div>
+    
+      <h3 class="section-label">優遇/冷遇・実践値情報（未検証・参考情報）</h3>
+      
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-reigu">冷遇</span>
+        <span class="badge badge-cat">AT当選率偏り</span>
+        <span class="conf-badge conf-low">信頼度:低</span>
+        
+      </div>
+      <p class="info-summary">差枚(獲得枚数の差)が一定の閾値を超えると「ナビ冷遇モード」に入り、周期到達(規定回数)の当選率が大きく低下し、天井短縮当選率が増加するとの考察。設定6でもこの状態に入ると天井短縮当選率が約25%まで低下するとされる。</p>
+      
+      <div class="info-source">出典: [個人ブログ] <a href="https://note.com/tada_katutameni/n/n0454855fab65" target="_blank" rel="noopener">note (期待値の密告者@INFORMER)</a>（2026-07-21収集）</div>
+    </div>
+    
+    </section>
+    
+    <section class="machine-section" id="m-スマスロ頭文字D 2nd">
+      <h2 class="machine-name">スマスロ頭文字D 2nd</h2>
+      <h3 class="section-label">攻略情報（公式・一般）</h3>
+      
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-tenjyo">天井</span>
+        <span class="info-title">ゲーム数天井と短縮条件</span>
+      </div>
+      <p class="info-summary">基本の天井は599G+α。設定変更時は50%の確率で299G+αに短縮される。天井到達後の次回天井も299G+αに短縮。</p>
+      <div class="tenjyo-range">天井目安: 299G 〜 599G</div>
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/sammy-slot/218631/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-zone">ゾーン</span>
+        <span class="info-title">ゲーム数ゾーン</span>
+      </div>
+      <p class="info-summary">1G・101G・201G・301G・401G・501Gにゾーンが設定されている。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/sammy-slot/218631/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-settei">設定示唆</span>
+        <span class="info-title">スペックとAT初当たり</span>
+      </div>
+      <p class="info-summary">2024/10/7導入。AT「レジェンドRUSH」純増2.4 or 4.0枚。AT初当たりは1/405〜1/296。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/sammy-slot/218631/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">天井・レジェンドバトル間の狙い目G数</span>
+      </div>
+      <p class="info-summary">599Gの天井狙いは80G〜。レジェンドバトル間の狙い目は短縮時60G〜、非短縮時370G〜、リセット後160G〜。レジェンドバトルは6スルー後、7回目でレジェンドRUSHが濃厚とされる。ただしレジェンドバトルとラッシュのデータカウンタ信号が同一のため、実践データからの正確な天井期待値算出は難しく、本機の狙い目情報は暫定版である点に留意。</p>
+      
+      <div class="info-source">出典: <a href="https://note.com/asakurayane/n/n78474a479573" target="_blank" rel="noopener">note (0101 期待値プラス)</a>（2026-07-21収集）</div>
+    </div>
+    
+      <h3 class="section-label">優遇/冷遇・実践値情報（未検証・参考情報）</h3>
+      
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-yugu">優遇</span>
+        <span class="badge badge-cat">AT当選率偏り</span>
+        <span class="conf-badge conf-low">信頼度:低</span>
+        
+      </div>
+      <p class="info-summary">レジェンドバトル終了時の差枚がマイナスの場合、直撃フラグの抽選値が優遇される傾向があるとの報告。内部モードが高いほどレジェンドバトル当選率・AT当選率も優遇されるとの考察。</p>
+      
+      <div class="info-source">出典: [個人ブログ] <a href="https://note.com/slot_hissho_lab/n/n86d34081368c" target="_blank" rel="noopener">note (差枚からの優遇冷遇まとめ)</a>（2026-07-21収集）</div>
+    </div>
+    
+    </section>
+    
+    <section class="machine-section" id="m-スロット ソードアート・オンラインII">
+      <h2 class="machine-name">スロット ソードアート・オンラインII</h2>
+      <h3 class="section-label">攻略情報（公式・一般）</h3>
+      
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-tenjyo">天井</span>
+        <span class="info-title">AT間天井・CZ間天井</span>
+      </div>
+      <p class="info-summary">AT間天井とCZ間天井の2種類があり、液晶ゲーム数天井は内部モードにより変動。設定変更時・初回上位CZ失敗後は実ゲーム数天井が256G+αに短縮。</p>
+      <div class="tenjyo-range">天井目安: 256G 〜 -G</div>
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/daito-slot/256112/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-zone">ゾーン</span>
+        <span class="info-title">100G到達CZ抽選</span>
+      </div>
+      <p class="info-summary">モード共通で100G到達時にCZ抽選のチャンス。ゲーム数はCZ・AT突入でリセットされる。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/daito-slot/256112/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-settei">設定示唆</span>
+        <span class="info-title">AT初当たり確率・CZ確率の設定差</span>
+      </div>
+      <p class="info-summary">AT初当たり確率は偶数設定・高設定ほど優遇（設定1&lt;3&lt;2&lt;5&lt;4&lt;6の順）、設定4以上の目安は約1/340。CZ「スコードロンバトル」も偶数高設定ほど当選しやすく設定6のみ1/200切り。2026/6/8導入。</p>
+      
+      <div class="info-source">出典: <a href="https://1geki.jp/slot/l_sao2/0/" target="_blank" rel="noopener">1geki.jp</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">状況別の狙い目G数</span>
+      </div>
+      <p class="info-summary">天井狙いは不問時750G〜、特定モード時200G〜。CZ天井狙いは実G数300G〜、液晶G数600G〜。リセット天井狙い・初回上位失敗後狙いはともに80G〜が目安。等価交換なら450Gから、5.6枚交換なら650Gから期待値がプラスになる。GGOモード滞在時は種類を問わず機械割100%オーバーで、メニュー画面のアイテム示唆で滞在が分かれば積極的に狙う価値がある。</p>
+      
+      <div class="info-source">出典: <a href="https://nana-press.com/kaiseki/machine/1158/37243/" target="_blank" rel="noopener">なな徹</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">やめどきの目安</span>
+      </div>
+      <p class="info-summary">下位AT後はAT終了後に即やめ、上位AT後は引き戻し(50G)を確認してからやめる。</p>
+      
+      <div class="info-source">出典: <a href="https://nana-press.com/kaiseki/machine/1158/37243/" target="_blank" rel="noopener">なな徹</a>（2026-07-21収集）</div>
+    </div>
+    
+      <h3 class="section-label">優遇/冷遇・実践値情報（未検証・参考情報）</h3>
+      <p class="empty">登録なし（未確認）</p>
+    </section>
+    
+    <section class="machine-section" id="m-パチスロ かぐや様は告らせたい">
+      <h2 class="machine-name">パチスロ かぐや様は告らせたい</h2>
+      <h3 class="section-label">攻略情報（公式・一般）</h3>
+      
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-tenjyo">天井</span>
+        <span class="info-title">ゲーム数天井とスルー天井</span>
+      </div>
+      <p class="info-summary">通常時1,100G+α(REG後900G+α)。設定変更後は800G+αに短縮。CZスルー天井(7回)、チャンス目カウンター天井(30回)もあり。</p>
+      <div class="tenjyo-range">天井目安: 800G 〜 1100G</div>
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/sankyo-slot/216319/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-zone">ゾーン</span>
+        <span class="info-title">規定G数によるCZ抽選ゾーン</span>
+      </div>
+      <p class="info-summary">130G・300G・600Gにゾーンがあり、規定G数消化でCZ抽選が行われる。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/sankyo-slot/216319/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-settei">設定示唆</span>
+        <span class="info-title">疑似ボーナスと設定差要素</span>
+      </div>
+      <p class="info-summary">疑似ボーナスループ型、純増約9.0枚。SUPER BIG/BIG/REGULARの疑似ボーナス3種。数値的な設定差はボーナス初当たり確率程度に限定的で、ボーナス終了画面・ミニ藤原・REG中のキャラ紹介等の示唆演出が判別の中心。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/sankyo-slot/216319/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+      <h3 class="section-label">優遇/冷遇・実践値情報（未検証・参考情報）</h3>
+      
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-reigu">冷遇</span>
+        <span class="badge badge-cat">AT当選率偏り</span>
+        <span class="conf-badge conf-low">信頼度:低</span>
+        
+      </div>
+      <p class="info-summary">内部ランク1-2は特に危険な「冷遇」状態とされ、深いハマりの後にREG当選が続いても連鎖的な当たりに繋がらない「負のサイクル」に陥りやすいとの報告。天井BIG当選時の2択チャレンジをわざと外す等で優遇/冷遇を判別しようとする手法があるが、正確性についてはプレイヤー間で議論が継続している。</p>
+      
+      <div class="info-source">出典: [個人ブログ] <a href="https://passlotime.com/2025/05/09/post-45480/" target="_blank" rel="noopener">ぱっすろたいむ</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card bias-card">
+      <div class="info-card-head">
+        <span class="badge badge-fumei">不明</span>
+        <span class="badge badge-cat">内部モード示唆</span>
+        <span class="conf-badge conf-low">信頼度:低</span>
+        
+      </div>
+      <p class="info-summary">CZ突入率・AT性能・小役成立率など複数要素に影響する「隠れた内部ランク」が存在するとの実践報告(約9,000回転・推定設定6の個人体験ベース)。プレイが進むにつれてランクが変化するとされる。</p>
+      <div class="sample-size">サンプル: 個人検証 約9,000回転</div>
+      <div class="info-source">出典: [個人ブログ] <a href="https://note.com/pyon3300/n/n1a021173202c" target="_blank" rel="noopener">note (pyon3300)</a>（2026-07-21収集）</div>
+    </div>
+    
+    </section>
+    
+    <section class="machine-section" id="m-沖ドキ！GOLD">
+      <h2 class="machine-name">沖ドキ！GOLD</h2>
+      <h3 class="section-label">攻略情報（公式・一般）</h3>
+      
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-tenjyo">天井</span>
+        <span class="info-title">天井G数と狙い目</span>
+      </div>
+      <p class="info-summary">通常時最大999G+αでボーナス当選。天井狙いの目安は560G〜。滞在モードで期待値が変化し、通常Bからの転落がない仕様。</p>
+      <div class="tenjyo-range">天井目安: -G 〜 999G</div>
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/universal-slot/176479/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-zone">ゾーン</span>
+        <span class="info-title">天国間ハマりゾーン</span>
+      </div>
+      <p class="info-summary">スルー回数・天国間のハマりゲーム数が増えるほど天国移行率が上がる傾向。2000〜2400Gのハマりが狙い目とされる。</p>
+      
+      <div class="info-source">出典: <a href="https://chonborista.com/slot/universal-slot/176479/" target="_blank" rel="noopener">ちょんぼりすた パチスロ解析</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-settei">設定示唆</span>
+        <span class="info-title">小役確率による設定判別要素</span>
+      </div>
+      <p class="info-summary">BIG/REG当選率、チェリーB・確定役Bの出現率、チェリー/スイカ成立時のボーナス当選率などに設定差あり。2022/12/19導入。</p>
+      
+      <div class="info-source">出典: <a href="https://1geki.jp/slot/s_okidoki_gold/0/" target="_blank" rel="noopener">1geki.jp</a>（2026-07-21収集）</div>
+    </div>
+    
+    <div class="info-card">
+      <div class="info-card-head">
+        <span class="badge badge-nerai">狙い目</span>
+        <span class="info-title">天国スルー回数と天井狙いの具体的ライン</span>
+      </div>
+      <p class="info-summary">有利区間天井到達時は約70%で天国移行し、これがメインの狙い目。天国間で2,000G以上ハマった際のボーナス当選は連チャンに期待でき、2,000G消化後に通常B滞在中のボーナス当選は天国移行からの連チャンが狙える。天井狙いは期待値を考慮すると700Gから(等価で約2,550円)、400Gからプラス域に入る。天国スルー回数が増えるほど天国移行率・初当り枚数・天国平均枚数が上昇する。</p>
+      
+      <div class="info-source">出典: <a href="https://note.com/g1slotapple/n/n9f9f7cf4134d" target="_blank" rel="noopener">note (たられば) / スロごりのぱちすろブログ</a>（2026-07-21収集）</div>
+    </div>
+    
+      <h3 class="section-label">優遇/冷遇・実践値情報（未検証・参考情報）</h3>
+      <p class="empty">登録なし（未確認）</p>
+    </section>
+    
+</main>
+</body>
+</html>

@@ -1,0 +1,99 @@
+[
+  {
+    "machine": "スマスロモンキーターンV",
+    "category": "AT当選率偏り",
+    "treatment": "冷遇",
+    "summary": "青島SG(AT)終了後の1〜150G区間は当選率が公表値より下がるとの実践報告(体感では30%程度の低下という声も)。ただし継続率は公表値通りとする分析もあり、指標によって公表値との一致・乖離が分かれる。",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "エスパーハウス",
+    "source_url": "https://esperhouse.work/seiha110/"
+  },
+  {
+    "machine": "スマスロモンキーターンV",
+    "category": "内部モード示唆",
+    "treatment": "不明",
+    "summary": "2億4000万G規模の実践データを基にした差枚別期待値・やめ時判断データが複数の解析者により公開されている。",
+    "sample_size": "累計2億4000万G(複数解析者の合算)",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "note (スロット必勝Lab_鳥餡)",
+    "source_url": "https://note.com/slot_hissho_lab/n/n4ba082c9c271"
+  },
+  {
+    "machine": "スマスロ攻殻機動隊",
+    "category": "内部モード示唆",
+    "treatment": "冷遇",
+    "summary": "168万G超の実践データ分析で、特定の獲得枚数を超えた瞬間にCZ・セクション9・白の境界の当選分布が変化するとの指摘。ATに入っても75%が500枚以下で終了(中央値240枚)という厳しめの実績が報告されている。",
+    "sample_size": "個人検証 累計168万G超",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "note (スロット攻略探偵)",
+    "source_url": "https://note.com/slot_detective/n/n9258489bed3a"
+  },
+  {
+    "machine": "スマスロ攻殻機動隊",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "4-6",
+    "summary": "AT初当たり確率は高設定ほど優遇されており、設定4以上の判別目安は概ね1/300を切る水準とされる。",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "note (リセイヤマン)",
+    "source_url": "https://note.com/alert_macaw1109/n/naa14c590f29e"
+  },
+  {
+    "machine": "スマスロ北斗の拳 転生の章2",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "summary": "優遇区間では弱役(スイカ・弱チェリー等)からの天破抽選が通りやすく、トータル差枚・直近差枚がマイナスの場合に優遇区間に入りやすいとの実践報告。",
+    "sample_size": "2,480万G分析",
+    "confidence": "低",
+    "source_type": "個人ブログ",
+    "source_name": "note (flick7期待値スキャナー)",
+    "source_url": "https://note.com/flick7/n/n8395559dc897"
+  },
+  {
+    "machine": "スマスロ北斗の拳 転生の章2",
+    "category": "内部モード示唆",
+    "treatment": "冷遇",
+    "summary": "冷遇区間は有利区間切断(差枚2300枚以上)直後や無想転生後の特定挙動で発生するほか、規定あべし分布の偏りで現れる傾向があるとの考察。ただしサンプル1万件以上で「大きな優遇冷遇傾向はナシ」とする解析サイトもあり、存在自体についてプレイヤー間でも見解が分かれる。",
+    "confidence": "低",
+    "source_type": "個人ブログ",
+    "source_name": "note (期待値の密告者@INFORMER)",
+    "source_url": "https://note.com/tada_katutameni/n/nb6e125b6270e",
+    "notes": "優遇冷遇の存在自体について解析サイト間で見解が割れている点に留意。"
+  },
+  {
+    "machine": "スマスロバイオハザードRE:3",
+    "category": "内部モード示唆",
+    "treatment": "不明",
+    "summary": "1,592万Gの実践値集計に基づく分析があり、通常AT終了後は400G付近が基本的な狙い目ラインとされる。掲示板ではメーカー公表の解析値と実際の挙動にギャップがあるとの指摘があり、実践値ベースでの期待値算出が重視されている機種。",
+    "sample_size": "1,592万G",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "note (期待値の密告者@INFORMER)",
+    "source_url": "https://note.com/tada_katutameni/n/naf81d19376df"
+  },
+  {
+    "machine": "スマスロバイオハザードRE:3",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "summary": "通常時のレア役成立時のCZ「ネメシスバトル」当選率とAT直撃率は高設定ほど優遇されると推測されているが、現状判明しているのは設定1の数値のみで詳細な設定差は未解明。",
+    "confidence": "低",
+    "source_type": "まとめサイト",
+    "source_name": "1geki.jp",
+    "source_url": "https://1geki.jp/slot/l_bhr2/"
+  },
+  {
+    "machine": "スマスロ頭文字D 2nd",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "summary": "レジェンドバトル終了時の差枚がマイナスの場合、直撃フラグの抽選値が優遇される傾向があるとの報告。内部モードが高いほどレジェンドバトル当選率・AT当選率も優遇されるとの考察。",
+    "confidence": "低",
+    "source_type": "個人ブログ",
+    "source_name": "note (差枚からの優遇冷遇まとめ)",
+    "source_url": "https://note.com/slot_hissho_lab/n/n86d34081368c",
+    "notes": "詳細な差枚別データの一部は有料記事の可能性があるため、無料範囲で確認できた要点のみ参考情報として記録。"
+  }
+]

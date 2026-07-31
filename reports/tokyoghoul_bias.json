@@ -1,0 +1,41 @@
+[
+  {
+    "machine": "スマスロ東京喰種",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": null,
+    "summary": "有利区間差枚がマイナス1500〜2500付近の台はAT獲得枚数が優遇される傾向。逆に差枚プラス域では初当たり確率が優遇される傾向があるとの実戦値報告(前回AT獲得枚数600枚付近が基準になっている可能性も指摘)。",
+    "sample_size": "解析データ2000件over",
+    "confidence": "低",
+    "source_type": "個人ブログ",
+    "source_name": "ハヤミちゃん (note.com/fun_slot_site、無料公開明記)",
+    "source_url": "https://note.com/fun_slot_site/n/n43cf34b64b3e",
+    "notes": "著者自身が『(前回データについて)確証が持てなかった』と留保しており、統計的有意性や信頼区間の明記もないため信頼度は低めに設定。ただし2000件超のサンプルがあり、今後の追加検証で確度が上がる可能性がある。"
+  },
+  {
+    "machine": "スマスロ東京喰種",
+    "category": "内部モード示唆",
+    "treatment": "優遇",
+    "target_setting": null,
+    "summary": "AT間天井『駆け抜け』後(天井到達前にAT当選)は、AT即前兆・低いスルー天井の選択率など複数の恩恵が確認されており、AT性能自体が強化される。朝一のAT間狙いの期待値は104.5%まで上昇する。",
+    "sample_size": "総回転数6278万G超・初当たり255,836回",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "たられば@放牧中 (note.com/g1slotapple)",
+    "source_url": "https://note.com/g1slotapple/n/n72af989a26d5",
+    "notes": "差枚数ベースの優遇冷遇特許パターンとは別系統で、『駆け抜け(天井前当選)』という状況をトリガーとする優遇仕様。大サンプルの信頼できる情報源のため信頼度中。"
+  },
+  {
+    "machine": "スマスロ東京喰種",
+    "category": "その他",
+    "treatment": "優遇",
+    "target_setting": null,
+    "summary": "天井1200Gからの逆算理論として、差枚-3600〜-4800G相当が型式試験の出玉率下限対策としての優遇判定ラインになっているのではという考察がある。ただし著者自身、駆け抜け後優遇や凹み台救済特許の存在により独立した優遇が無い可能性も指摘しており推測段階。",
+    "sample_size": "実戦値ではなく理論的な逆算による推測",
+    "confidence": "低",
+    "source_type": "個人ブログ",
+    "source_name": "人生期待値論 (note.com/kitaichi_lifer)",
+    "source_url": "https://note.com/kitaichi_lifer/n/n7e55bfeac530",
+    "notes": "著者本人が推測段階と明言。差枚ではなくG数(3600〜4800G)ベースの理論である点、他機種の一般的な差枚+2300〜2400枚パターンとは切り口が異なる点に注意。"
+  }
+]

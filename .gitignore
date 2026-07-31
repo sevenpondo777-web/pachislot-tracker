@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Claude local settings (machine-specific paths / permissions)
+.claude/settings.local.json
+
+# OS
+Thumbs.db
+.DS_Store

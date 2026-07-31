@@ -1,0 +1,15 @@
+[
+  {
+    "machine": "スマスロモンキーターンV",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": null,
+    "summary": "有利区間差枚がマイナス2000枚を超えたあたりから優遇に入りやすく、マイナス幅が大きいほど優遇が強くなる傾向があるとの実戦値報告。",
+    "sample_size": "初当たり約1万回分のデータ(差枚マイナス4000枚以下は少数のためブレの可能性ありと著者注記)",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "人生期待値論 (note.com/kitaichi_lifer、無料公開確認済み)",
+    "source_url": "https://note.com/kitaichi_lifer/n/nba3cdd0401d9",
+    "notes": "差枚マイナスで優遇という方向性は、他機種で見られる優遇冷遇特許のパターン([[pachislot_bias_patent_heuristic]])の『優遇』側(net losingで優遇)と一致。前編記事のため後編(通常時の優遇と期待値)の追加確認が望ましい。"
+  }
+]

@@ -1,0 +1,129 @@
+[
+  {
+    "machine": "スマスロモンキーターンV",
+    "category": "天井",
+    "title": "ゲーム数天井と周期天井",
+    "summary": "795Gのゲーム数天井と最大6周期の周期天井の2種類。優出モード突入を1周期として5スルー後6回目でAT当選。設定変更後・青島VS波多野敗北後は短縮される。",
+    "tenjyo_max": 795,
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/yamasa-slot/198173/"
+  },
+  {
+    "machine": "スマスロモンキーターンV",
+    "category": "ゾーン",
+    "title": "周期ポイントによるゾーン",
+    "summary": "1周期は222pt天井で100G+α程度、2周期以降は666pt天井で300G程度がゾーンの目安。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/yamasa-slot/198173/"
+  },
+  {
+    "machine": "スマスロモンキーターンV",
+    "category": "設定示唆",
+    "title": "機械割とAT初当たり",
+    "summary": "設定6機械割114.9%、設定4でも104.5%と高スペック。AT初当たりは設定1で約1/300。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/yamasa-slot/198173/"
+  },
+  {
+    "machine": "スマスロ攻殻機動隊",
+    "category": "天井",
+    "title": "CZ間天井・AT間天井",
+    "summary": "CZ間天井550G+α、AT間天井999G+α。設定変更後はCZ間350G+α、AT間699G+αに短縮され、設定1でも機械割100%超。",
+    "tenjyo_min": 699,
+    "tenjyo_max": 999,
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sammy-slot/248703/"
+  },
+  {
+    "machine": "スマスロ攻殻機動隊",
+    "category": "ゾーン",
+    "title": "殲滅ゾーンとタチコマCZ",
+    "summary": "50G・250G・350G・450Gで「殲滅ゾーン」に約25%以上で突入。200G・400GはCZ「タチコマの家出」に期待できる。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sammy-slot/248703/"
+  },
+  {
+    "machine": "スマスロ攻殻機動隊",
+    "category": "設定示唆",
+    "title": "スペックと純増",
+    "summary": "2026年2月導入、純増約4.0枚〜最大8.5枚の出玉性能。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sammy-slot/248703/"
+  },
+  {
+    "machine": "スマスロ北斗の拳 転生の章2",
+    "category": "天井",
+    "title": "あべし天井",
+    "summary": "通常時の天井は1536あべし。設定変更後は最大1280あべしに短縮される。",
+    "tenjyo_min": 1280,
+    "tenjyo_max": 1536,
+    "source_name": "slopachi-quest",
+    "source_url": "https://www.slopachi-quest.com/article/hokuto-tensei2-tenjou/"
+  },
+  {
+    "machine": "スマスロ北斗の拳 転生の章2",
+    "category": "ゾーン",
+    "title": "あべしゾーン",
+    "summary": "全モード共通で193〜256あべしのゾーンが濃い。200あべし〜のゾーン狙いが有効とされる。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sammy-slot/246735/"
+  },
+  {
+    "machine": "スマスロ北斗の拳 転生の章2",
+    "category": "設定示唆",
+    "title": "スペックとAT性能",
+    "summary": "2026/1/5導入のサミー機。AT「闘神演舞」は純増約4.0枚/Gのセット数管理型、上位AT「裏闘神演舞」もあり。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sammy-slot/246735/"
+  },
+  {
+    "machine": "スマスロバイオハザードRE:3",
+    "category": "天井",
+    "title": "ゲーム数天井・CZスルー天井",
+    "summary": "ゲーム数天井とCZスルー天井の2種類がある。ゲーム数天井到達時は「パンデミックチャンス」を経由してATに突入する。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/enta-slot/253191/"
+  },
+  {
+    "machine": "スマスロバイオハザードRE:3",
+    "category": "ゾーン",
+    "title": "NEポイントによるCZ抽選",
+    "summary": "「NEポイント」は50pt刻みでCZ当選の可能性があり、100pt到達ごとにチャンス。500pt到達時は必ずCZ「ネメシスバトル」に突入する。100pt・300pt・500ptが特に強い期待度ゾーン。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/enta-slot/253191/"
+  },
+  {
+    "machine": "スマスロバイオハザードRE:3",
+    "category": "設定示唆",
+    "title": "スペックと純増",
+    "summary": "2026/5/11導入(エンターライズ)。AT中純増1.0枚/G、ボーナス中・上位AT中は4.5枚/G。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/enta-slot/253191/"
+  },
+  {
+    "machine": "スマスロ頭文字D 2nd",
+    "category": "天井",
+    "title": "ゲーム数天井と短縮条件",
+    "summary": "基本の天井は599G+α。設定変更時は50%の確率で299G+αに短縮される。天井到達後の次回天井も299G+αに短縮。",
+    "tenjyo_min": 299,
+    "tenjyo_max": 599,
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sammy-slot/218631/"
+  },
+  {
+    "machine": "スマスロ頭文字D 2nd",
+    "category": "ゾーン",
+    "title": "ゲーム数ゾーン",
+    "summary": "1G・101G・201G・301G・401G・501Gにゾーンが設定されている。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sammy-slot/218631/"
+  },
+  {
+    "machine": "スマスロ頭文字D 2nd",
+    "category": "設定示唆",
+    "title": "スペックとAT初当たり",
+    "summary": "2024/10/7導入。AT「レジェンドRUSH」純増2.4 or 4.0枚。AT初当たりは1/405〜1/296。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sammy-slot/218631/"
+  }
+]

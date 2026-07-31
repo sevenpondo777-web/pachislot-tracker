@@ -1,0 +1,38 @@
+[
+  {
+    "machine": "スマスロ鉄拳6",
+    "category": "天井",
+    "title": "天井狙い目とスルー天井(大サンプル実戦値)",
+    "summary": "ゲーム数天井は最大900pt(実ゲーム平均630G)、ボーナススルー数天井は最大3スルー。AT後の実ゲーム数狙いは106%ラインで5枚等価490G/5.6枚持ちメダル500G/5.6枚現金530G。3スルー天井到達時の期待値は約5500円、2スルー0Gから打つ場合でも+1500円程度の期待値。AT後データ3026万G、朝イチ143万G超(21日間集計、初当たり1/213.9)という大規模サンプルに基づく。",
+    "tenjyo_min": 490,
+    "tenjyo_max": 900,
+    "source_name": "たられば@放牧中 (note.com/g1slotapple)",
+    "source_url": "https://note.com/g1slotapple/n/n3bbd54a5fc80"
+  },
+  {
+    "machine": "スマスロ鉄拳6",
+    "category": "ゾーン",
+    "title": "朝イチゾーンとステージ滞在狙い",
+    "summary": "朝イチは300ptゾーンが非常に強く、浅めからの狙いが有効(朝イチ全体の評価もかなり甘い)。滞在ステージが『仁』『平八』の場合はCZ当選まで継続推奨。『BAR』ステージ確認時は狙いを下げてよい。リセット後は10G前後で鉄拳ゾーンが出現するパターンがある。",
+    "source_name": "たられば@放牧中 (note.com/g1slotapple)",
+    "source_url": "https://note.com/g1slotapple/n/n3bbd54a5fc80"
+  },
+  {
+    "machine": "スマスロ鉄拳6",
+    "category": "その他",
+    "title": "設定変更時のリセット恩恵",
+    "summary": "設定変更時はゲーム数天井が500pt+αに短縮、スルー天井も2回に短縮(3回目でAT濃厚)されるため朝一狙いの期待値が高い。設定変更後の実ゲーム数狙いは5枚等価140G/5.6枚持ちメダル150G/5.6枚現金170G。",
+    "tenjyo_min": 140,
+    "tenjyo_max": 500,
+    "source_name": "ちょんぼりすた パチスロ解析 / たられば を横断",
+    "source_url": "https://chonborista.com/slot/yamasa-slot/247112/"
+  },
+  {
+    "machine": "スマスロ鉄拳6",
+    "category": "設定示唆",
+    "title": "設定示唆演出まとめ",
+    "summary": "鉄拳チャンス中のBIG終了画面で設定を直接示唆。ケロットトロフィーは金or虹出現で高設定濃厚。木人示唆は規定ポイントまでの距離を示唆し設定判別の補助になる。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/yamasa-slot/247112/"
+  }
+]

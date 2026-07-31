@@ -1,0 +1,28 @@
+[
+  {
+    "machine": "スマスロ戦国乙女5",
+    "category": "AT当選率偏り",
+    "treatment": "冷遇",
+    "target_setting": null,
+    "summary": "差枚がプラスでも機械割が上昇する傾向は見られず、むしろ差枚+1500〜2000枚付近では初当たりが重くなる傾向が報告されている。",
+    "sample_size": "記事内に具体的サンプル数の明記なし(実戦データ解析に基づく早期の考察)",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "パミ (note.com/pamiruo、無料公開明記)",
+    "source_url": "https://note.com/pamiruo/n/n922ed1a4d32a",
+    "notes": "新台導入から間もない段階の考察で正式なサンプル数は非公開だが、他機種で広く見られる差枚+2300〜2400枚前後での冷遇パターン([[pachislot_bias_patent_heuristic]])と方向性が一致しており、閾値がやや低い点を除けば整合的。信頼できる無料分析者(パミ)のソースのため中信頼度とした。"
+  },
+  {
+    "machine": "スマスロ戦国乙女5",
+    "category": "内部モード示唆",
+    "treatment": "不明",
+    "target_setting": null,
+    "summary": "前回獲得枚数の多寡による優遇冷遇の傾向は、今のところ(新台導入から間もない時点で)見られないとの報告。新鬼武者3やヴァルヴレイヴ2で見られるような『前回AT獲得枚数ベース』の優遇冷遇は本機では(現時点で)確認されていない。",
+    "sample_size": "記事内に具体的サンプル数の明記なし",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "パミ (note.com/pamiruo、無料公開明記)",
+    "source_url": "https://note.com/pamiruo/n/n922ed1a4d32a",
+    "notes": "『傾向が無い』という否定的知見。新台のため今後のサンプル増加で変わる可能性がある。狙い目を探す際に前回獲得枚数を過度に重視しなくてよいという参考情報として記録。"
+  }
+]

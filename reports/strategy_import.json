@@ -1,0 +1,148 @@
+[
+  {
+    "machine": "スマスロ北斗の拳",
+    "category": "天井",
+    "title": "天井G数とAT当選条件",
+    "summary": "天井は1268G+αでAT(バトルボーナス)当選。設定変更時は800G+αに短縮。天井到達時は通常のAT当選より継続率が優遇される。",
+    "tenjyo_min": 800,
+    "tenjyo_max": 1268,
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sammy-slot/181626/"
+  },
+  {
+    "machine": "スマスロ北斗の拳",
+    "category": "ゾーン",
+    "title": "天井短縮抽選ゾーン",
+    "summary": "通常時300G・777G・800Gで天井短縮抽選が行われ、成功すると最大32G前兆を経てAT当選。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sammy-slot/181626/"
+  },
+  {
+    "machine": "スマスロ北斗の拳",
+    "category": "設定示唆",
+    "title": "バトルボーナス当選率の設定差",
+    "summary": "バトルボーナス当選率は高設定ほど優遇されており、設定1と6で差が大きい。2023/4/3導入のサミー第1弾スマスロ。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sammy-slot/181626/"
+  },
+  {
+    "machine": "Lパチスロ 革命機ヴァルヴレイヴ2",
+    "category": "天井",
+    "title": "複数天井の構成",
+    "summary": "ボーナス/AT間天井は1500G+α(設定変更後1000G+α)。CZ間天井999G+α、周期天井6周期(設定変更後3周期)、決戦ボーナススルー3連続後の天井もあり。",
+    "tenjyo_min": 1000,
+    "tenjyo_max": 1500,
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sankyo-slot/243853/"
+  },
+  {
+    "machine": "Lパチスロ 革命機ヴァルヴレイヴ2",
+    "category": "ゾーン",
+    "title": "電脳ゾーン・ルーンドライブ",
+    "summary": "「電脳ゾーン」は周期ポイント特化ゾーン。「ルーンドライブ」は通常時BAR揃いから突入するSTタイプのCZ高確率ゾーン。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sankyo-slot/243853/"
+  },
+  {
+    "machine": "沖ドキ！GOLD",
+    "category": "天井",
+    "title": "天井G数と狙い目",
+    "summary": "通常時最大999G+αでボーナス当選。天井狙いの目安は560G〜。滞在モードで期待値が変化し、通常Bからの転落がない仕様。",
+    "tenjyo_max": 999,
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/universal-slot/176479/"
+  },
+  {
+    "machine": "沖ドキ！GOLD",
+    "category": "ゾーン",
+    "title": "天国間ハマりゾーン",
+    "summary": "スルー回数・天国間のハマりゲーム数が増えるほど天国移行率が上がる傾向。2000〜2400Gのハマりが狙い目とされる。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/universal-slot/176479/"
+  },
+  {
+    "machine": "沖ドキ！GOLD",
+    "category": "設定示唆",
+    "title": "小役確率による設定判別要素",
+    "summary": "BIG/REG当選率、チェリーB・確定役Bの出現率、チェリー/スイカ成立時のボーナス当選率などに設定差あり。2022/12/19導入。",
+    "source_name": "1geki.jp",
+    "source_url": "https://1geki.jp/slot/s_okidoki_gold/0/"
+  },
+  {
+    "machine": "スマスロ化物語",
+    "category": "天井",
+    "title": "天井G数と恩恵",
+    "summary": "天井は1000G+α、恩恵はAT+倍々チャンス当選濃厚。設定変更時は600Gに短縮。",
+    "tenjyo_min": 600,
+    "tenjyo_max": 1000,
+    "source_name": "slopachi-quest",
+    "source_url": "https://www.slopachi-quest.com/article/bakemonogatari-tenjou/"
+  },
+  {
+    "machine": "スマスロ化物語",
+    "category": "ゾーン",
+    "title": "CZ抽選ゾーン",
+    "summary": "280G〜からゾーン狙いが有効。100G・200G・300GでCZ抽選が行われ、300Gでは設定1でも約40%でCZ当選。",
+    "source_name": "slopachi-quest",
+    "source_url": "https://www.slopachi-quest.com/article/bakemonogatari-tenjou/"
+  },
+  {
+    "machine": "スマスロ化物語",
+    "category": "設定示唆",
+    "title": "AT初当たり確率の設定差",
+    "summary": "AT初当たり確率に設定差があり、設定4以上の判別目安は概ね1/240程度。",
+    "source_name": "note (watawata2030)",
+    "source_url": "https://note.com/watawata2030/n/nc75709b815f3"
+  },
+  {
+    "machine": "スマスロ甲鉄城のカバネリ海門決戦",
+    "category": "天井",
+    "title": "ゲーム数天井と周期天井",
+    "summary": "通常時996G消化または最大6周期到達でエピソードボーナス当選、ST突入濃厚。リセット後はゲーム数天井596G、周期天井最大4周期に短縮。",
+    "tenjyo_min": 596,
+    "tenjyo_max": 996,
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/sammy-slot/248689/"
+  },
+  {
+    "machine": "スマスロ甲鉄城のカバネリ海門決戦",
+    "category": "ゾーン",
+    "title": "周期到達手前のゾーン狙い",
+    "summary": "周期システムが特殊で150Gで1周期・300Gで2周期に到達。周期到達手前(130G、270G付近)がゾーン狙い目とされる。",
+    "source_name": "slopachi-quest",
+    "source_url": "https://www.slopachi-quest.com/article/kabaneri2-unato-tenjou/"
+  },
+  {
+    "machine": "スマスロ甲鉄城のカバネリ海門決戦",
+    "category": "設定示唆",
+    "title": "設定5・6の勝率目安と機械割上昇",
+    "summary": "設定5の勝率目安80%、設定6は85%と高め。下段ベル確率に段階的な設定差あり。前作の設定6機械割110.0%に対し本作は114.9%に上昇。",
+    "source_name": "note (choro_ssjp)",
+    "source_url": "https://note.com/choro_ssjp/n/n4dc54a080430"
+  },
+  {
+    "machine": "スロット ソードアート・オンラインII",
+    "category": "天井",
+    "title": "AT間天井・CZ間天井",
+    "summary": "AT間天井とCZ間天井の2種類があり、液晶ゲーム数天井は内部モードにより変動。設定変更時・初回上位CZ失敗後は実ゲーム数天井が256G+αに短縮。",
+    "tenjyo_min": 256,
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/daito-slot/256112/"
+  },
+  {
+    "machine": "スロット ソードアート・オンラインII",
+    "category": "ゾーン",
+    "title": "100G到達CZ抽選",
+    "summary": "モード共通で100G到達時にCZ抽選のチャンス。ゲーム数はCZ・AT突入でリセットされる。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/daito-slot/256112/"
+  },
+  {
+    "machine": "スロット ソードアート・オンラインII",
+    "category": "設定示唆",
+    "title": "AT初当たり確率・CZ確率の設定差",
+    "summary": "AT初当たり確率は偶数設定・高設定ほど優遇（設定1<3<2<5<4<6の順）、設定4以上の目安は約1/340。CZ「スコードロンバトル」も偶数高設定ほど当選しやすく設定6のみ1/200切り。2026/6/8導入。",
+    "source_name": "1geki.jp",
+    "source_url": "https://1geki.jp/slot/l_sao2/0/"
+  }
+]

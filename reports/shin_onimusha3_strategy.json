@@ -1,0 +1,34 @@
+[
+  {
+    "machine": "スマスロ新鬼武者3",
+    "category": "天井",
+    "title": "周期天井とリセット短縮",
+    "summary": "周期天井は最大6周期。設定変更(リセット)後は最大4周期に短縮される。1周期あたり約110G前後で推移し、等価交換での天井狙い目は5周期〜(550G〜)が目安。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/enta-slot/240678/"
+  },
+  {
+    "machine": "スマスロ新鬼武者3",
+    "category": "ゾーン",
+    "title": "周期ポイントとAT後のゾーン狙い",
+    "summary": "1周期100pt〜、上位AT後0G〜のゾーン狙いが有効とされる。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/enta-slot/240678/"
+  },
+  {
+    "machine": "スマスロ新鬼武者3",
+    "category": "設定示唆",
+    "title": "AT初当たり確率の設定差",
+    "summary": "AT初当たり確率は設定1で1/379.7、設定6で1/293.1と設定差が大きい。純増2.5枚/G。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/enta-slot/240678/"
+  },
+  {
+    "machine": "スマスロ新鬼武者3",
+    "category": "その他",
+    "title": "AT・CZの基本ゲーム性",
+    "summary": "主にAT「蒼剣RUSH」で出玉を増やすタイプ。通常時は規定周期到達・鬼斬チャージ中の抽選・リーチ目直撃からAT当選を目指す。AT中は3・5・7セット継続時に上位ATへのCZ「覚醒チャレンジ」に突入する可能性があり、10セット継続やエンディング後は「秀吉最終決戦」へ移行、成功すれば純増5.5枚・継続率89%の上位AT「真蒼剣RUSH」に突入するツラヌキ性能を持つ。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/enta-slot/240678/"
+  }
+]
