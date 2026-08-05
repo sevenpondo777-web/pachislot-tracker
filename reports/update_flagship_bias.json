@@ -1,0 +1,26 @@
+[
+  {
+    "machine": "スマスロ北斗の拳",
+    "category": "内部モード示唆",
+    "treatment": "優遇",
+    "target_setting": "高設定",
+    "summary": "高設定ほど内部モードの移行率が優遇されるとの解析・実践報告。地獄・通常滞在時に弱レア役から高確へ移行しやすい台は高設定期待度が高く狙い目とされる。差枚ベースの優遇/冷遇区間(既存エントリ)とは別軸のモード優遇として、弱レア役後の高確移行のしやすさに注目。",
+    "sample_size": "解析・実践報告",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "note (マチ子先生)",
+    "source_url": "https://note.com/machiko666/n/nb8e7cbe22c7f"
+  },
+  {
+    "machine": "スマスロ化物語",
+    "category": "演出頻度偏り",
+    "treatment": "優遇",
+    "target_setting": "高設定",
+    "summary": "弱チェリー成立時のAT直撃に大きな設定差があり、設定1で約0.4%に対し設定6で約3.8%との解析。高設定ほど弱チェからの直撃頻度が上がるため、弱チェ後の直撃回数が高設定判別の強い手がかりになる。弱チェ出現率自体も高設定ほど優遇。",
+    "sample_size": "解析ベース",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "アルテマ (設定差)",
+    "source_url": "https://altema.jp/pachimo/lbakemonosetteisa"
+  }
+]
