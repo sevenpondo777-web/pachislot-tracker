@@ -1,6 +1,6 @@
 # パチスロ・ハイエナ稼働データ管理システム
 
-対象ホール: **相模原プラザ**（神奈川県相模原市）ほか
+対象ホール: **サンプルホール**（任意のホール名に変更して利用してください）ほか
 
 ローカルSQLiteで動作する、**世の中の無料公開情報を継続的に集めて「台を打つときの判断根拠」を
 作るためのツール**です。中心となるのは以下の2種類のデータで、これを蓄積して
@@ -68,7 +68,7 @@ cd pachislot-tracker
 python init_db.py
 ```
 
-`db/pachislot.db` が作成され、対象ホール「相模原プラザ」が自動登録されます。
+`db/pachislot.db` が作成され、対象ホール「サンプルホール」が自動登録されます。
 DBを作り直したい場合（既存データは削除されます）:
 
 ```powershell
@@ -99,7 +99,7 @@ pachislot-tracker/
 
 | テーブル | 内容 |
 |---|---|
-| `halls` | ホールマスタ（相模原プラザ等） |
+| `halls` | ホールマスタ（サンプルホール等） |
 | `machines` | 機種マスタ |
 | `machine_strategy_info` | 機種の一般攻略情報（メーカー公式等の無料公開情報・手動投入）【中心データ】 |
 | `machine_bias_info` | 優遇/冷遇・実践値ベースの設定推測情報（コミュニティ実践値・無料公開情報）【中心データ】 |
@@ -271,7 +271,7 @@ python log_data.py --machine "北斗の拳" --game 500 --diff -300
 |---|---|
 | `--machine` (必須) | 機種名 |
 | `--diff` (必須) | 差枚（例: -300, 850） |
-| `--hall` | ホール名（デフォルト: 相模原プラザ） |
+| `--hall` | ホール名（デフォルト: サンプルホール） |
 | `--date` | 稼働日 YYYY-MM-DD（デフォルト: 今日） |
 | `--unit` | 台番号 |
 | `--game` | 消化G数 |
@@ -286,7 +286,7 @@ python log_data.py --machine "北斗の拳" --game 500 --diff -300
 例（詳細記録）:
 
 ```powershell
-python log_data.py --machine "ジャグラーガールズSS" --hall "相模原プラザ" `
+python log_data.py --machine "ジャグラーガールズSS" --hall "サンプルホール" `
   --unit 123 --game 3200 --diff 850 --investment 8000 --payout 12000 `
   --setting-hint "設定6示唆演出多数" --estimated-setting 6 --hyena `
   --memo "朝一ゾーン狙い"
@@ -381,7 +381,7 @@ Actions が `python build_site.py --rebuild-db` を実行して `site/` を生�
    ```
 9. 「開始（オプション）」に作業ディレクトリを指定:
    ```
-   C:\Users\seven\OneDrive\Desktop\pachislot-tracker
+   C:\Users\<ユーザー名>\OneDrive\Desktop\pachislot-tracker
    ```
 10. 「完了」をクリック。必要に応じてタスクのプロパティから
     「ユーザーがログオンしているかどうかにかかわらず実行する」を有効化してください。
@@ -393,7 +393,7 @@ PowerShellまたはコマンドプロンプトを**管理者権限で**開き、
 
 ```powershell
 schtasks /create /tn "パチスロ週次レポート生成" `
-  /tr "cmd /c chcp 65001 >nul & cd /d C:\Users\seven\OneDrive\Desktop\pachislot-tracker & python weekly_report.py --days 7 --format both" `
+  /tr "cmd /c chcp 65001 >nul & cd /d C:\Users\<ユーザー名>\OneDrive\Desktop\pachislot-tracker & python weekly_report.py --days 7 --format both" `
   /sc weekly /d MON /st 09:00
 ```
 
@@ -419,7 +419,7 @@ schtasks /delete /tn "パチスロ週次レポート生成" /f
 
 - タスクスケジューラーから実行する場合、Pythonの実行ファイルパスが通っていないと
   失敗することがあります。`python` コマンドが見つからない場合は、
-  `python.exe` のフルパス（例: `C:\Users\seven\AppData\Local\Programs\Python\Python312\python.exe`）
+  `python.exe` のフルパス（例: `C:\Users\<ユーザー名>\AppData\Local\Programs\Python\Python312\python.exe`）
   を指定してください。
 - `db/pachislot.db` は稼働データ・攻略情報を含む個人データです。OneDrive等の
   同期対象に含まれる場合、同期タイミングによる競合に注意してください。

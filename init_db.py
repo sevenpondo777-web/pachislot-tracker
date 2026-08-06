@@ -4,7 +4,7 @@ init_db.py
 
 ローカルSQLite (db/pachislot.db) にスキーマを作成する。
 既にDBが存在する場合はテーブル作成をスキップ（CREATE TABLE IF NOT EXISTS）し、
-対象ホール（相模原プラザ）のマスタレコードのみ存在確認の上で投入する。
+対象ホール（デフォルト: サンプルホール）のマスタレコードのみ存在確認の上で投入する。
 
 実行方法:
     python init_db.py
@@ -19,9 +19,9 @@ import sys
 DB_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "db")
 DB_PATH = os.path.join(DB_DIR, "pachislot.db")
 
-DEFAULT_HALL_NAME = "相模原プラザ"
-DEFAULT_HALL_PREF = "神奈川県"
-DEFAULT_HALL_CITY = "相模原市"
+DEFAULT_HALL_NAME = "サンプルホール"
+DEFAULT_HALL_PREF = ""
+DEFAULT_HALL_CITY = ""
 
 SCHEMA_SQL = """
 -- ホール（店舗）マスタ

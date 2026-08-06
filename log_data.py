@@ -4,7 +4,7 @@ log_data.py
 
 使用例:
     python log_data.py --machine "北斗の拳" --game 500 --diff -300
-    python log_data.py --machine "ジャグラーガールズSS" --hall "相模原プラザ" \\
+    python log_data.py --machine "ジャグラーガールズSS" --hall "サンプルホール" \\
         --unit 123 --game 3200 --diff 850 --investment 8000 --payout 12000 \\
         --setting-hint "設定6示唆演出多数" --estimated-setting 6 --hyena --memo "朝一ゾーン狙い"
 
@@ -18,7 +18,7 @@ import sys
 from datetime import date
 
 DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "db", "pachislot.db")
-DEFAULT_HALL_NAME = "相模原プラザ"
+DEFAULT_HALL_NAME = "サンプルホール"
 
 
 def get_connection() -> sqlite3.Connection:
