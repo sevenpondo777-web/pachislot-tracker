@@ -32,6 +32,8 @@ permissions:
 
 concurrency:
   group: pages
+  # 進行中のデプロイを打ち消さない（GitHub Pages公式ワークフロー準拠）。
+  # true にすると再実行同士が衝突し "Deployment cancelled" が発生する。
   cancel-in-progress: false
 
 jobs:
