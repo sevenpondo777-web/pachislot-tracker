@@ -1,0 +1,72 @@
+[
+  {
+    "machine": "スマスロ Re:ゼロから始める異世界生活 season2",
+    "category": "天井",
+    "title": "天井pt(1400pt)と恩恵・平均到達G数",
+    "summary": "通常時は液晶に常時表示されるポイントが最大1400ptに到達するとAT『殲滅ラッシュ』に当選。1400pt到達時はロングフリーズ(上位AT契機)が確定するとされる。ポイントはレア役等でランダム加算されるため、平均では約930G前後で1400ptに到達するイメージ。導入は2024/10/21、メーカーは大都技研。",
+    "tenjyo_min": 930,
+    "tenjyo_max": 1400,
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/daito-slot/rizero2/224736/"
+  },
+  {
+    "machine": "スマスロ Re:ゼロから始める異世界生活 season2",
+    "category": "天井",
+    "title": "設定変更(リセット)時の天井短縮",
+    "summary": "設定変更時はポイントがランダムに加算される抽選が行われ、規定ptが1000pt以下(400/600/800/1000ptのいずれか)に短縮される。このためリセット台は天井到達までの必要投資が抑えられ、最大でも約21,000円程度で天井に届く点が狙い目になりやすい。",
+    "tenjyo_min": 400,
+    "tenjyo_max": 1000,
+    "source_name": "一撃(1geki.jp)",
+    "source_url": "https://1geki.jp/slot/l_rezero_season2/3/"
+  },
+  {
+    "machine": "スマスロ Re:ゼロから始める異世界生活 season2",
+    "category": "その他",
+    "title": "AT『殲滅ラッシュ』のスペック概要",
+    "summary": "初当りは全て直撃ATで純増約9.0枚/G。増加区間から突入する上位AT『スーパーグリードRUSH』が出玉のメイン契機。設定6の出玉率は約114.9%と現行機種でもトップクラスとされる。",
+    "source_name": "ABEMA TIMES(スペック解説記事)",
+    "source_url": "https://times.abema.tv/articles/-/10147209"
+  },
+  {
+    "machine": "スマスロ Re:ゼロから始める異世界生活 season2",
+    "category": "狙い目",
+    "title": "天井狙い・リセット狙いの目安pt",
+    "summary": "通常時は420pt以降が狙い目の目安。前回が高難度モード後(連チャン限定などの示唆)であれば170pt以降から狙えるケースもある。朝一はリセット台の立ち上がりが早く必要投資も少ないため、据え置きよりリセット台を優先して拾うのが効率的。",
+    "tenjyo_min": 170,
+    "tenjyo_max": 420,
+    "source_name": "ハイエナくん",
+    "source_url": "https://haienakun.com/rezero_season2/"
+  },
+  {
+    "machine": "スマスロ Re:ゼロから始める異世界生活 season2",
+    "category": "狙い目",
+    "title": "やめどき(死に戻り32Gの確認)",
+    "summary": "通常はAT後1G回してやめでよいが、AT終了後の約32G間は『死に戻り(引き戻し)抽選』が発生し筐体上部ランプが点滅する。この32Gは必ず消化し、ランプ点滅が消えて引き戻しが無いことを確認してからやめるのが基本。上位AT後も同様に引き戻し区間をチェックする。",
+    "source_name": "アルテマ(死に戻り解説)",
+    "source_url": "https://altema.jp/pachimo/lrezero2shinimodori"
+  },
+  {
+    "machine": "スマスロ Re:ゼロから始める異世界生活 season2",
+    "category": "ゾーン",
+    "title": "規定ptゾーンの奇数/偶数傾向",
+    "summary": "規定ポイントのゾーンによるAT当選率は高設定ほど優遇され、特に百の位が奇数の規定ゾーンでのAT当選率は設定1と6で倍以上の差があるとの解析。狙う際は百の位の切り替わり(400/600/800/1000pt付近)を意識するとよい。",
+    "source_name": "なな徹(設定判別)",
+    "source_url": "https://nana-press.com/kaiseki/machine/819/24858/"
+  },
+  {
+    "machine": "スマスロ Re:ゼロから始める異世界生活 season2",
+    "category": "設定示唆",
+    "title": "AT終了画面・時計演出による設定示唆",
+    "summary": "AT終了画面で設定を示唆。露天風呂の終了画面は設定6濃厚、特定設定以上濃厚のパターンも存在する。ベアトリス/エキドナの終了画面はAT復活に期待。また菜月家ステージの時計演出は、時刻が6時6分で設定6濃厚、5時6分で設定5以上濃厚。",
+    "source_name": "アルテマ(終了画面・時計の示唆)",
+    "source_url": "https://altema.jp/pachimo/lrezero2gamen"
+  },
+  {
+    "machine": "スマスロ Re:ゼロから始める異世界生活 season2",
+    "category": "設定示唆",
+    "title": "AT初当り確率の設定差",
+    "summary": "AT初当り確率に設定差があり、設定1で約1/417.2、設定6で約1/305.4。高設定ほどAT初当りを引きやすい。加えてAT終了後32Gの死に戻り(引き戻し)発生率も設定1と6で約2倍の差があるとされ、判別要素として重要。",
+    "source_name": "なな徹(設定判別)",
+    "source_url": "https://nana-press.com/kaiseki/machine/819/24858/"
+  }
+]
