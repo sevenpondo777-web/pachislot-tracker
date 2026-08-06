@@ -1,0 +1,14 @@
+[
+  {
+    "machine": "チバリヨ30",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "ボーナス(AT)初当り確率が高設定ほど優遇されるのが基本。加えて弱チェリー成立時のボーナス期待度にも設定差があり、高設定ほど弱チェリー契機のボーナスが増えやすい。初当りの軽さと弱チェリーからの当選頻度が高設定挙動の目安になる。",
+    "sample_size": "解析・有志実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "なな徹(設定差・設定示唆)",
+    "source_url": "https://nana-press.com/kaiseki/machine/473/12914/"
+  }
+]

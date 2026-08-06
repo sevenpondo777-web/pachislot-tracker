@@ -1,0 +1,26 @@
+[
+  {
+    "machine": "パチスロ かぐや様は告らせたい",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "ボーナスのBIG比率に設定差があり、高設定ほどBIGに寄りやすい。推定設定6の実践では約60%がBIG振り分けだったのに対し推定設定4の台は約40%だったとの報告があり、BIG比率の高さが高設定挙動の目安になる。特化ゾーン突入率・ロングフリーズ確率も高設定が優遇。",
+    "sample_size": "推定設定6 約9000G等の実践報告",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "なかおしくん(推定設定6実践データ)",
+    "source_url": "https://nakaoshi.com/?p=891"
+  },
+  {
+    "machine": "パチスロ かぐや様は告らせたい",
+    "category": "内部モード示唆",
+    "treatment": "優遇",
+    "target_setting": "4-6",
+    "summary": "CZスルー天井発動までのスルー回数振り分けが高設定ほど優遇されるとの報告。スルー回数が浅め(少ない回数でCZ・ボーナスに繋がる)傾向が続く台は高設定に期待できる。BIG/スーパーBIG中の1G連当選時の特化ゾーン(白銀覚醒/ガチきゅんPUSH/チカブレイク)突入も高設定ほど入りやすい。",
+    "sample_size": "解析・実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "なな徹(設定差・高設定挙動)",
+    "source_url": "https://nana-press.com/kaiseki/machine/804/23719/"
+  }
+]

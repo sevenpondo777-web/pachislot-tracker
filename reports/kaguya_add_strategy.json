@@ -1,0 +1,28 @@
+[
+  {
+    "machine": "パチスロ かぐや様は告らせたい",
+    "category": "天井",
+    "title": "前回ボーナス別の天井G数とリセット短縮",
+    "summary": "天井ゲーム数は前回当たりの種類で変化し、前回BIGなら1100G、BR(レギュラー)なら900Gが天井。設定変更(リセット)後は800G+αに短縮される。狙う際は前回ボーナス種別を確認して天井までの残りGを見積もるのが基本。",
+    "tenjyo_min": 800,
+    "tenjyo_max": 1100,
+    "source_name": "なな徹(天井恩恵)",
+    "source_url": "https://nana-press.com/kaiseki/machine/804/23721/"
+  },
+  {
+    "machine": "パチスロ かぐや様は告らせたい",
+    "category": "狙い目",
+    "title": "ゾーン狙い(130/300/600G)とREG後の優遇",
+    "summary": "130G・300G・600G付近がCZ抽選のゾーンで狙い目。100G以内のCZ当選は130G付近に回されるためCZ期待度が高い。特にREG後はチャンス目規定回数のモードが優遇されるため、REG後の台はゾーンまで積極的に狙える。",
+    "source_name": "アルテマ(天井・狙い目)",
+    "source_url": "https://altema.jp/pachimo/lkaguyasamatenjyo"
+  },
+  {
+    "machine": "パチスロ かぐや様は告らせたい",
+    "category": "狙い目",
+    "title": "引き戻し狙いとやめどき(5連目以降に注意)",
+    "summary": "基本はボーナス後にやめでよいが、5連目以降のボーナス後は引き戻し期待度が約50%まで上がるため、5連目以降の即やめ台は引き戻し狙いの対象になる。ただし天井狙いと違い必ず当たるわけではない点に注意し、通常時のやめどきは規定ゾーンを回避したポイントで見切る。",
+    "source_name": "スロパチクエスト(天井・やめ時)",
+    "source_url": "https://www.slopachi-quest.com/article/kaguyasamahakokurasetai-tenjou/"
+  }
+]
