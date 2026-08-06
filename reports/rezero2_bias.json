@@ -1,0 +1,49 @@
+[
+  {
+    "machine": "スマスロ Re:ゼロから始める異世界生活 season2",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "AT初当り確率が高設定ほど優遇。実践・解析値では設定1が約1/417、設定6が約1/305とされ、高設定ほどAT初当りを引きやすい傾向。設定6の出玉率は約114.9%と現行トップクラスとの評価が多い。",
+    "sample_size": "解析・有志実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "なな徹(設定判別)",
+    "source_url": "https://nana-press.com/kaiseki/machine/819/24858/"
+  },
+  {
+    "machine": "スマスロ Re:ゼロから始める異世界生活 season2",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "5-6",
+    "summary": "AT終了後32G間の『死に戻り(引き戻し)』発生率に実戦上の設定差があり、設定1で約7%、設定6で約19%と2倍以上開くとの複数報告。1日で複数回の引き戻しを確認できれば高設定に期待できる、という実践的な使い方がされている。",
+    "sample_size": "有志実践報告(複数)",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "pachiseven(立ち回り・死に戻り設定差考察)",
+    "source_url": "https://pachiseven.jp/articles/detail/22872"
+  },
+  {
+    "machine": "スマスロ Re:ゼロから始める異世界生活 season2",
+    "category": "内部モード示唆",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "規定ポイントのゾーンによるAT当選率が高設定ほど優遇され、特に百の位が奇数の規定ゾーンでのAT当選率は設定1と6で倍以上の差があるとの解析報告。奇数ゾーンでのAT当選が目立つ台は高設定寄りの挙動として参考になる。",
+    "sample_size": "解析ベース",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "なな徹(設定判別)",
+    "source_url": "https://nana-press.com/kaiseki/machine/819/24858/"
+  },
+  {
+    "machine": "スマスロ Re:ゼロから始める異世界生活 season2",
+    "category": "その他",
+    "treatment": "不明",
+    "summary": "設定変更(リセット)時は規定ptが1000pt以下(400/600/800/1000pt)に短縮されるうえ、朝一の立ち上がりが早くなる傾向。据え置きより投資が抑えられるため、リセット挙動を見極めて朝一のリセット台を優先的に拾う立ち回りが有効とされる。",
+    "sample_size": "解析・実践報告",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "一撃(1geki.jp)",
+    "source_url": "https://1geki.jp/slot/l_rezero_season2/3/"
+  }
+]

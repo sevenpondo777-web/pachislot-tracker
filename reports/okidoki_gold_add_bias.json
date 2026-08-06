@@ -1,0 +1,38 @@
+[
+  {
+    "machine": "沖ドキ！GOLD",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "ボーナス初当り確率が高設定ほど軽く、設定6は約1/230・機械割約110%と高い。設定1(約1/299.6)と比べて約70G早くボーナスに当選しやすいとされる。BIG・REGの当選率、通常A・通常Bのボーナス当選率にも設定差があり、初当りの軽さが高設定挙動の中心的な目安になる。",
+    "sample_size": "解析・有志実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "なな徹(設定判別)",
+    "source_url": "https://nana-press.com/kaiseki/machine/478/12869/"
+  },
+  {
+    "machine": "沖ドキ！GOLD",
+    "category": "内部モード示唆",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "沖ドキシリーズで最重要の天国移行率が高設定ほど優遇され、設定6は天国移行率・通常B滞在時の天国移行率が高い(通常B→天国は約75%との数値)。連チャンからの天国ループが強い台は高設定に期待できる。",
+    "sample_size": "解析・実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "なな徹(設定判別)",
+    "source_url": "https://nana-press.com/kaiseki/machine/478/12869/"
+  },
+  {
+    "machine": "沖ドキ！GOLD",
+    "category": "演出頻度偏り",
+    "treatment": "優遇",
+    "target_setting": "4-6",
+    "summary": "チェリーB確率・確定役B確率に設定差があり、いずれも停止形から判別できるため実戦で数えやすい。特にチェリーBは高設定を見抜く指標として有用で、チェリー・スイカ成立時のボーナス抽選にも設定差がある。停止形を意識してチェリーB/確定役Bをカウントすると設定推測が進めやすい。",
+    "sample_size": "解析・実践報告",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "ヘソスロの期待値道(チェリーB判別)",
+    "source_url": "https://hesosulo.com/hannbetsu-okidokigold-tyerib/"
+  }
+]

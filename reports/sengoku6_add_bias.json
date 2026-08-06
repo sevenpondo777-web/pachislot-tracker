@@ -1,0 +1,38 @@
+[
+  {
+    "machine": "戦国コレクション6",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "4-6",
+    "summary": "AT初当り確率が高設定ほど優遇。実践・解析ベースでは設定4以上を見極める目安として、AT初当りが概ね1/290を切ってくるかどうかが一つの基準とされる。試行を重ねて初当りが軽い台は高設定寄りの挙動として参考にできる。",
+    "sample_size": "解析・有志実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "なな徹(設定判別)",
+    "source_url": "https://nana-press.com/kaiseki/machine/1156/37681/"
+  },
+  {
+    "machine": "戦国コレクション6",
+    "category": "演出頻度偏り",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "AT中の特化ゾーン出現率に設定差があり、特に『夢幻斬り』の出現率は設定6が最も高いとされる。特化ゾーン、なかでも夢幻斬りへ入りやすい台は高設定に期待できるため、AT中の特化突入頻度が設定推測の軸になる。",
+    "sample_size": "解析ベース",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "アルテマ(設定差一覧)",
+    "source_url": "https://altema.jp/pachimo/lsencoll6settei"
+  },
+  {
+    "machine": "戦国コレクション6",
+    "category": "その他",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "確定系の設定示唆が複数あり、AT消化中の獲得枚数表示で573枚OVERが出れば設定6濃厚。AT中の7揃いが特殊な停止形になった場合は設定4以上濃厚。夢幻斬りWONDERのリザルト画面でチャンスボタンを押すとランプの色で設定示唆(高速消化ほど示唆精度アップ)。いずれも実戦での高設定確定/絞り込みに使える。",
+    "sample_size": "解析ベース",
+    "confidence": "高",
+    "source_type": "まとめサイト",
+    "source_name": "一撃(設定差・終了画面)",
+    "source_url": "https://1geki.jp/slot/l_sencolle6/0/"
+  }
+]
