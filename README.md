@@ -313,6 +313,47 @@ python weekly_report.py --output-dir reports # 出力先指定
 - ホール別集計
 - ベスト5 / ワースト5（差枚順）
 
+## スマホアプリ化（PWA）とWeb公開（GitHub Pages）
+
+`reports/machine_reference.html` を、スマホの「ホーム画面に追加」でアプリのように使え、
+電波が無くてもオフラインで閲覧できる **PWA（Progressive Web App）** として配信できます。
+配信は GitHub Pages を使い、データを更新して push すると自動で最新版に反映されます。
+
+### ビルド（サイト一式の生成）
+
+```powershell
+python build_site.py --rebuild-db
+```
+
+このコマンドは以下を順に行い、配信用の `site/` を作ります（`site/` はビルド生成物のため
+Git管理対象外です）。
+
+1. `reports/*.json` を「正（source of truth）」として DB を作り直す（`build_db.py`）
+2. PWAアイコンを生成（`web/make_icons.py`、標準ライブラリのみ）
+3. `machine_report.py` でスマホ向けHTMLを生成
+4. `site/` に `index.html` と PWA静的ファイル（`manifest.webmanifest` / `sw.js` / `icons/`）をまとめる
+
+> `--rebuild-db` を付けると `reports/*.json` から毎回同じDBを再現します（`init_db.py --reset --yes`
+> を内部で使用）。DBを触らずHTMLだけ作り直したい場合は `--rebuild-db` を外してください。
+
+### 情報収集はこれまで通り「手動キュレーション」
+
+このビルド自動化が対象とするのは **「JSON → DB → HTML → 公開」という機械的な作業だけ**です。
+どの情報を集めるか・保存してよいかの判断（＝設計方針の核）は従来どおり人（またはClaudeとの
+対話）が行います。無人の自動巡回・スクレイピングは引き続き行いません。
+
+### GitHub Pages への自動デプロイ
+
+`.github/workflows/deploy.yml` を同梱しています。**初回のみ**、リポジトリの
+Settings → Pages → Build and deployment → Source を **「GitHub Actions」** に変更してください。
+
+以後、デフォルトブランチ（main）に `reports/` や生成コードの変更を push すると、
+Actions が `python build_site.py --rebuild-db` を実行して `site/` を生成し、Pages に公開します
+（Actionsタブから手動実行も可能）。公開URLは Actions の実行結果／Settings → Pages に表示されます。
+
+スマホでそのURLを開き、ブラウザメニューから「ホーム画面に追加」すればアプリのように起動でき、
+一度開けばオフラインでも閲覧できます。
+
 ## Windowsタスクスケジューラーでの自動実行設定
 
 ※ この章は**オプション機能**である週次稼働レポート（`weekly_report.py`）向けの設定です。
