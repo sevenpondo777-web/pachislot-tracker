@@ -1,0 +1,56 @@
+[
+  {
+    "machine": "スマスロ ラブ嬢3",
+    "category": "天井",
+    "title": "天井の構成(モード別)",
+    "summary": "天井はゲーム数天井の1種類でシンプル。通常A・Bは750G+α、通常Cは500G+α、天国A・Bは100G+αで当選。設定変更時は天井が最大500Gに短縮される。スマスロの中では荒れにくくマイルドな出玉性能で、天井も比較的浅くとっつきやすい。",
+    "tenjyo_min": 100,
+    "tenjyo_max": 750,
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/amute/198299/"
+  },
+  {
+    "machine": "スマスロ ラブ嬢3",
+    "category": "ゾーン",
+    "title": "500Gゾーンと天国ゾーン",
+    "summary": "朝一以外は500Gゾーンが最強。通常Cの天井(500G)に通常A・Bのゾーンも重なるため当選が集中する。朝一・設定変更後は天国が強く、設定変更後は100Gまでの当選率が40%近くあり天国ゾーン狙いが成立する。",
+    "source_name": "イチカツ！",
+    "source_url": "https://itikatu.jp/lovejo3/"
+  },
+  {
+    "machine": "スマスロ ラブ嬢3",
+    "category": "狙い目",
+    "title": "通常時の500Gゾーン狙い",
+    "summary": "朝一以外は500Gゾーン手前が狙い目。通常C天井と通常ABのゾーンが重なる最強ゾーンのため、400G台後半〜500G付近の残り台を狙う。天井が浅く荒れにくいため、多数の天井・ゾーン狙いで期待値を積み重ねるタイプ。",
+    "tenjyo_min": 450,
+    "tenjyo_max": 500,
+    "source_name": "ツラヌキメソッド",
+    "source_url": "https://tsuranuki-method.com/expected-value-about-limit/rabujou/"
+  },
+  {
+    "machine": "スマスロ ラブ嬢3",
+    "category": "狙い目",
+    "title": "リセット・天国狙い(朝一)",
+    "summary": "設定変更時は天井が最大500Gに短縮され、かつ天国A・Bの振り分けも高いため0G〜でも狙える。設定変更後は100Gまでの天国当選が40%近くあり、朝一のリセット・天国ゾーン狙いが有効。ハイエナはリセット・ゾーン狙いが特に拾いやすい。",
+    "tenjyo_min": 0,
+    "tenjyo_max": 500,
+    "source_name": "note (ゼマ)",
+    "source_url": "https://note.com/zema/n/n387464d10739"
+  },
+  {
+    "machine": "スマスロ ラブ嬢3",
+    "category": "狙い目",
+    "title": "やめどきの目安",
+    "summary": "AT・CZ後は終了画面や状態示唆を確認してやめる。AT終了後100G以内のAT当選時は前回のキャスト攻略状態を引き継ぐ仕様のため、AT後100Gの引き戻し(連チャン)ゾーンは回してから見切る。",
+    "source_name": "note (なるちゃん)",
+    "source_url": "https://note.com/naruchanshow/n/n2605f4f9329d"
+  },
+  {
+    "machine": "スマスロ ラブ嬢3",
+    "category": "設定示唆",
+    "title": "設定判別のポイント",
+    "summary": "有利区間移行時(設定変更後など)は低確への移行がなく、高設定ほど高確以上へ移行しやすい。設定変更時は高設定ほど天国A/Bの選択率が優遇され、設定6なら約24.5%で天国A/Bスタート。設定6確定画面も存在する。",
+    "source_name": "1geki.jp",
+    "source_url": "https://1geki.jp/slot/l_lovejou3/0/"
+  }
+]

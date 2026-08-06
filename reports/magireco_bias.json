@@ -1,0 +1,37 @@
+[
+  {
+    "machine": "スマスロ マギアレコード",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "高設定",
+    "summary": "ボーナス・AT初当たり確率が高設定ほど優遇され、特にAT初当たりの設定差が大きいとの解析。高設定ほど初当たりが軽くなり通常時のボーナス/AT当選が偏るため、初当たりの重さが設定推測の主軸になる。",
+    "sample_size": "解析ベース",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "なな徹 (設定判別)",
+    "source_url": "https://nana-press.com/kaiseki/machine/914/28425/"
+  },
+  {
+    "machine": "スマスロ マギアレコード",
+    "category": "演出頻度偏り",
+    "treatment": "優遇",
+    "target_setting": "高設定",
+    "summary": "弱チェリーの出現率が高設定ほど優遇。スイカからのCZ当選率にも大きな設定差があり、高設定はレア役からのCZ・ボーナス契機で当たりが偏る。エピソードボーナス中の『黒江』選択率も高設定ほど高く、演出・選択率の偏りが高設定サイン。",
+    "sample_size": "解析ベース",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "スロパチクエスト (設定差まとめ)",
+    "source_url": "https://www.slopachi-quest.com/article/magireco-settei/"
+  },
+  {
+    "machine": "スマスロ マギアレコード",
+    "category": "内部モード示唆",
+    "treatment": "不明",
+    "summary": "有利区間リセット(試打では差枚2150枚付近が目安)や準備区間経由で恩恵状態『エンブリオ・イブ覚醒』へ突入する可能性があり、リセット直後は演出優遇状態に入っていることがある。魔法少女モードは有利区間移行時・AT終了後に振り分けられ、前任者の状態次第で立ち回りが変わる。",
+    "sample_size": "試打・実践報告",
+    "confidence": "低",
+    "source_type": "個人ブログ",
+    "source_name": "note (けんけん)",
+    "source_url": "https://note.com/kenslodata/n/nf73890fb871e"
+  }
+]

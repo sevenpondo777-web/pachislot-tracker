@@ -110,14 +110,15 @@ CREATE INDEX IF NOT EXISTS idx_bias_machine      ON machine_bias_info(machine_id
 """
 
 
-def init_db(reset: bool = False) -> None:
+def init_db(reset: bool = False, assume_yes: bool = False) -> None:
     os.makedirs(DB_DIR, exist_ok=True)
 
     if reset and os.path.exists(DB_PATH):
-        answer = input(f"'{DB_PATH}' を削除して初期化し直します。よろしいですか？ (yes/no): ")
-        if answer.strip().lower() != "yes":
-            print("中止しました。")
-            sys.exit(0)
+        if not assume_yes:
+            answer = input(f"'{DB_PATH}' を削除して初期化し直します。よろしいですか？ (yes/no): ")
+            if answer.strip().lower() != "yes":
+                print("中止しました。")
+                sys.exit(0)
         os.remove(DB_PATH)
         print("既存DBを削除しました。")
 
@@ -144,8 +145,10 @@ def init_db(reset: bool = False) -> None:
 def main():
     parser = argparse.ArgumentParser(description="パチスロ稼働データDBの初期化")
     parser.add_argument("--reset", action="store_true", help="既存DBを削除して作り直す")
+    parser.add_argument("--yes", action="store_true",
+                        help="--reset時の確認プロンプトを省略する（自動化・CI用）")
     args = parser.parse_args()
-    init_db(reset=args.reset)
+    init_db(reset=args.reset, assume_yes=args.yes)
 
 
 if __name__ == "__main__":

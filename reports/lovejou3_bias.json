@@ -1,0 +1,37 @@
+[
+  {
+    "machine": "スマスロ ラブ嬢3",
+    "category": "内部モード示唆",
+    "treatment": "優遇",
+    "target_setting": "高設定",
+    "summary": "設定変更(有利区間移行)時は高設定ほど天国A/Bの選択率が優遇される。設定6では約24.5%で天国A/Bスタートとの解析。朝一の天国スタート率が高設定判別・立ち回りの手がかりになる。",
+    "sample_size": "解析ベース",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/amute/198299/"
+  },
+  {
+    "machine": "スマスロ ラブ嬢3",
+    "category": "内部モード示唆",
+    "treatment": "優遇",
+    "target_setting": "高設定",
+    "summary": "有利区間移行時は低確への移行がなく必ず通常以上からスタートし、高設定ほど高確以上へ移行しやすい。ラブゾーン(CZ)終了後は超高確A以下だった場合のみ状態が再抽選されるとの報告があり、高設定ほど高確以上に居座りやすい。",
+    "sample_size": "解析・実践報告",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "ぽこすろっと",
+    "source_url": "https://www.nankaikoya.jp/lovejou3-kitaichi/"
+  },
+  {
+    "machine": "スマスロ ラブ嬢3",
+    "category": "AT当選率偏り",
+    "treatment": "不明",
+    "summary": "AT終了後100G以内のAT当選時は前回のキャスト攻略状態を引き継ぐ仕様。引き継ぎ状態が良い(攻略が進んだ)台はAT後100G以内の連チャンで出玉が伸びやすく、実戦上は前任者の状態が残っている可能性を考慮した立ち回りが有効とされる。",
+    "sample_size": "解析ベース",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "note (なるちゃん)",
+    "source_url": "https://note.com/naruchanshow/n/n2605f4f9329d"
+  }
+]

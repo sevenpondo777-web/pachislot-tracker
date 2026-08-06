@@ -11,3 +11,7 @@ venv/
 # OS
 Thumbs.db
 .DS_Store
+
+# 生成物（ビルドで再生成されるためコミットしない）
+site/
+web/icons/
