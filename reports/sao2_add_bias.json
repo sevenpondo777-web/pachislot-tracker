@@ -1,0 +1,26 @@
+[
+  {
+    "machine": "スロット ソードアート・オンラインII",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "AT初当り確率は解析上、設定6のみ大きめの設定差があり他の設定間の差は小さいとされる。よって設定6かどうかの見極めが中心で、初当りが継続して軽い台は6を意識できる。確定CZ関連にも設定差があり、THE END状態からのスタート(確定CZ)や強チャンス目経由の確定CZ当選率は高設定ほど当選しやすい。",
+    "sample_size": "解析・有志実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "なな徹(設定差・設定示唆)",
+    "source_url": "https://nana-press.com/kaiseki/machine/490/14837/"
+  },
+  {
+    "machine": "スロット ソードアート・オンラインII",
+    "category": "内部モード示唆",
+    "treatment": "優遇",
+    "target_setting": "5-6",
+    "summary": "高設定ほど上位状態のGGOモードへ移行しやすい傾向が報告されている。GGOモード滞在が目立つ台は高設定寄りの挙動として参考になる。エンディング中・マザーズロザリオ中のレア役成立時に出現するミニキャラも設定を示唆する。",
+    "sample_size": "解析・実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "アルテマ(設定差・CZ当選率)",
+    "source_url": "https://altema.jp/pachimo/lsaosettei"
+  }
+]

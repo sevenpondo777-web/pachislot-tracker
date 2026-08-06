@@ -1,0 +1,26 @@
+[
+  {
+    "machine": "スマスロ鉄拳6",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "4-6",
+    "summary": "AT直撃確率に大きな設定差があり、設定1が約1/12580、設定6が約1/3565と約3倍の差。直撃が頻発する台は高設定に期待できる。弱チャンス役・チャンス目からのボーナス当選率も設定間で約4倍の差があり、複数回確認できれば設定4以上の期待度が大きく上がる。AT引き戻しモードへの移行率(AT終了時のみ抽選)も高設定ほど優遇。",
+    "sample_size": "解析・有志実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "アルテマ(設定差一覧)",
+    "source_url": "https://altema.jp/pachimo/ltekken6settei"
+  },
+  {
+    "machine": "スマスロ鉄拳6",
+    "category": "その他",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "赤7BB当選時のエピソードボーナス昇格率に設定差があり、設定6なら8回に1回以上の割合でエピソードへ昇格するとされる。赤7からのエピソード昇格が目立つ台は設定6寄りの挙動。ケロットトロフィーの色でも特定設定以上を示唆すると見られる。",
+    "sample_size": "解析・実践報告",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "一撃(設定差・終了画面)",
+    "source_url": "https://1geki.jp/slot/l_tekken6/0/"
+  }
+]

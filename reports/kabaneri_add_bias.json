@@ -1,0 +1,26 @@
+[
+  {
+    "machine": "スマスロ甲鉄城のカバネリ海門決戦",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "5-6",
+    "summary": "ボーナス初当り・ST確率が高設定ほど優遇。設定5以上の目安はボーナス初当りが1/200前後、ST確率が1/320前後とされる。周期当選期待度にも設定差があり、特に3周期の当選期待度は設定1と6で約2倍近い差。450G到達時の当選率は設定1で約14%と低いが設定差は最も大きく高設定ほど優遇される。",
+    "sample_size": "解析・有志実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "アルテマ(設定差一覧)",
+    "source_url": "https://altema.jp/pachimo/lkabanerisettei"
+  },
+  {
+    "machine": "スマスロ甲鉄城のカバネリ海門決戦",
+    "category": "演出頻度偏り",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "通常時・AT中を問わず出現する下段ベルの出現率に設定差があり高設定ほど優遇。長時間の試行で下段ベルの頻度を数えると設定推測の補助になる。ST終了画面も全員集合で高設定示唆、無名と菖蒲の水着画面で設定6濃厚など高設定寄りの示唆が用意されている。",
+    "sample_size": "解析ベース",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "一撃(設定差・終了画面)",
+    "source_url": "https://1geki.jp/slot/l_kabaneri2/0/"
+  }
+]
