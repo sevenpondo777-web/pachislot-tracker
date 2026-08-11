@@ -1,0 +1,37 @@
+[
+  {
+    "machine": "スマスロ モンスターハンターライズ",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "AT初当り確率が高設定ほど優遇され、設定1で約1/309.5、設定6で約1/230.8。高設定狙いの目安は初当り1/250以下。強レア役からのAT直撃当選率も設定1で約1.6%、設定6で約6.3%と約4倍の差があり、直撃が複数回確認できれば高設定の期待度が大きく上がる。",
+    "sample_size": "解析・有志実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "アルテマ(設定差一覧)",
+    "source_url": "https://altema.jp/pachimo/lmhrisesettei"
+  },
+  {
+    "machine": "スマスロ モンスターハンターライズ",
+    "category": "内部モード示唆",
+    "treatment": "優遇",
+    "target_setting": "5-6",
+    "summary": "AT当選契機で移行するクエストテーブルの移行率に設定差があり、高設定ほど上位テーブルへ移行しやすい。また弱レア役からのライズゾーン当選率にも設定差があり、通常時のライズゾーン当選率は設定1と6で約10%ほど差がある。ライズゾーン当選やクエスト当選が目立つ台は高設定寄りの挙動。",
+    "sample_size": "解析・実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "なな徹(設定判別)",
+    "source_url": "https://nana-press.com/kaiseki/machine/837/25295/"
+  },
+  {
+    "machine": "スマスロ モンスターハンターライズ",
+    "category": "その他",
+    "treatment": "優遇",
+    "summary": "設定変更(リセット)時の恩恵が強く、リセット後1回目の狩猟ボーナスは約50%で金冠モンスターが出現し、ループストック抽選で大量出玉に発展しうる。さらにクエストテーブルが75%以上で天国準備以上に移行するため、朝一リセット台は早期AT・出玉のチャンスとして相対的に優遇される。",
+    "sample_size": "解析・実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "アルテマ(リセット恩恵)",
+    "source_url": "https://altema.jp/pachimo/lmhrisereset"
+  }
+]
