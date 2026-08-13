@@ -1,0 +1,37 @@
+[
+  {
+    "machine": "スマスロ ゴジラ対エヴァンゲリオン",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "スイカ成立時のCZ当選率が高設定ほど優遇され、本機の重要な設定判別要素とされる。高設定はボーナス・AT初当りも相対的に軽くなる傾向。スイカからのCZ当選が目立つ台は高設定に期待できる。",
+    "sample_size": "解析・有志実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "アルテマ(設定差と設定判別要素)",
+    "source_url": "https://altema.jp/pachimo/lgojievasettei"
+  },
+  {
+    "machine": "スマスロ ゴジラ対エヴァンゲリオン",
+    "category": "その他",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "確定系の設定示唆が複数あり実戦で高設定を絞り込める。AT中の獲得枚数表示で456枚/666枚OVERなどのゾロ目・順目は特定設定濃厚、AT終了画面のカヲルは設定6濃厚(初号機+ゴジラで設定5以上、モスラで設定4以上)、エンディング中のカヲルボイスも設定6濃厚。ボーナス終了画面のエヴァ&ゴジラは設定4以上確定。",
+    "sample_size": "解析ベース",
+    "confidence": "高",
+    "source_type": "まとめサイト",
+    "source_name": "なな徹(設定判別)",
+    "source_url": "https://nana-press.com/kaiseki/machine/688/19477/"
+  },
+  {
+    "machine": "スマスロ ゴジラ対エヴァンゲリオン",
+    "category": "その他",
+    "treatment": "優遇",
+    "summary": "設定変更(リセット)時はゲーム数天井が1000G→700G、スルー天井が8→5スルーに短縮されるため、朝一リセット台は投資が抑えられ相対的に有利。据え置きより早い当選が見込めるので、朝一はリセット挙動を見極めて狙う価値がある。",
+    "sample_size": "解析・実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "なな徹(天井・恩恵)",
+    "source_url": "https://nana-press.com/kaiseki/machine/688/19493/"
+  }
+]
