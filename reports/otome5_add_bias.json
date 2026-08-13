@@ -1,0 +1,26 @@
+[
+  {
+    "machine": "スマスロ戦国乙女5",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "5-6",
+    "summary": "AT初当り確率が高設定ほど優遇され、設定5以上を見据える目安は1/270前後。さらに『戦国乙女ボーナス』出現率が本機最大級の設定差で、設定1で約1/21206、設定6で約1/5502と約4倍の差がある。戦国乙女ボーナスを引けた台は高設定の期待度が大きく上がる。",
+    "sample_size": "解析・有志実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "アルテマ(設定差一覧)",
+    "source_url": "https://altema.jp/pachimo/lotome5settei"
+  },
+  {
+    "machine": "スマスロ戦国乙女5",
+    "category": "内部モード示唆",
+    "treatment": "優遇",
+    "target_setting": "5-6",
+    "summary": "周期到達ゲーム数に顕著な設定差があり、設定5・6では50Gでの周期到達も目立つ(高設定ほど周期が早く回る)。巫女カウンターのポイント0到達時のCZ『乙女アタック』当選率や出陣ボーナス確率にも設定差があり、高設定ほど当選しやすい傾向。周期の早さと乙女アタック当選が高設定挙動の目安。",
+    "sample_size": "解析・実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "なな徹(設定判別)",
+    "source_url": "https://nana-press.com/kaiseki/machine/1160/37314/"
+  }
+]
