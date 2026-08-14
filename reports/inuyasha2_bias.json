@@ -1,0 +1,38 @@
+[
+  {
+    "machine": "スマスロ 犬夜叉2",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "4-6",
+    "summary": "初当り確率が高設定ほど優遇され、設定4以上は1/360前後が判別の目安。CZ『妖勝負』の当選率も高設定ほど高く、当選率が1/200に近づくほど高設定期待度が上がる。初当りの軽さとCZ当選頻度が高設定挙動の中心的な指標。",
+    "sample_size": "解析・有志実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "なな徹(設定判別)",
+    "source_url": "https://nana-press.com/kaiseki/machine/846/25664/"
+  },
+  {
+    "machine": "スマスロ 犬夜叉2",
+    "category": "内部モード示唆",
+    "treatment": "優遇",
+    "target_setting": "5-6",
+    "summary": "高設定ほど浅いゲーム数の『高確間G数』が選択されやすく、高確・超高確に移行しやすい傾向。AT中の引き戻しゾーンも高設定ほど『ブッた斬りゾーン』へ突入しやすい。高確移行の早さや引き戻しの強さが目立つ台は高設定寄りの挙動。",
+    "sample_size": "解析・実践報告",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "アルテマ(設定差一覧)",
+    "source_url": "https://altema.jp/pachimo/linuyasha2settei"
+  },
+  {
+    "machine": "スマスロ 犬夜叉2",
+    "category": "その他",
+    "treatment": "優遇",
+    "target_setting": "4-6",
+    "summary": "AT終了画面に特大設定差があり最重要の判別要素。加えて紫札は好機で高設定示唆・勝機で設定4以上濃厚、EDボイスでも高設定示唆がある。これらの確定・示唆パターンを終了画面と合わせて確認すると高設定を絞り込める。",
+    "sample_size": "解析ベース",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "一撃(設定差・終了画面・EDボイス)",
+    "source_url": "https://1geki.jp/slot/l_inuyasya2/0/"
+  }
+]

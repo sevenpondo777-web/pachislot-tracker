@@ -1,0 +1,52 @@
+[
+  {
+    "machine": "スマスロ 犬夜叉2",
+    "category": "天井",
+    "title": "ゲーム数天井・CZスルー天井とリセット短縮",
+    "summary": "通常時のゲーム数天井は666G、CZ(妖勝負)を7回スルーでも天井到達しAT当選。設定変更(リセット)時はゲーム数天井が333Gに短縮され、CZスルー天井も3スルーに短縮。AT駆け抜け(単発)後も3スルーで天井となる。メーカーはサミー。",
+    "tenjyo_min": 333,
+    "tenjyo_max": 666,
+    "source_name": "スロパチクエスト(天井まとめ)",
+    "source_url": "https://www.slopachi-quest.com/article/inuyasya2-tenjou/"
+  },
+  {
+    "machine": "スマスロ 犬夜叉2",
+    "category": "その他",
+    "title": "スペックとAT『ブッた斬りスラッシュ』概要",
+    "summary": "AT『ブッた斬りスラッシュ』は20G+αのST型で純増約1.8枚(または約5.0枚)。報酬アップZONEで初期報酬個数を増やし、奈落覚醒ZONE経由で上位AT『奈落決戦』へ。差枚1000枚以上になると引き戻しゾーンに突入し、成功率は約50%とされる。",
+    "source_name": "ちょんぼりすた(スペック・解析)",
+    "source_url": "https://chonborista.com/slot/f/221755/"
+  },
+  {
+    "machine": "スマスロ 犬夜叉2",
+    "category": "ゾーン",
+    "title": "CZ規定ゲーム数ゾーン(151/333/666G)と狙い目",
+    "summary": "CZ当選の規定ゲーム数は151G・333G・666G。狙い目の目安は151Gゾーンが130G〜、333Gゾーンが310G〜。規定ゾーン手前から狙うと効率がよい。CZ抽選は滞在状態で当選率が変わり、超高確中はCZ当選率が大幅アップする。",
+    "source_name": "アミュタメ(ゾーン・狙い目)",
+    "source_url": "https://www.amuse-p.com/blog/inuyasha2/"
+  },
+  {
+    "machine": "スマスロ 犬夜叉2",
+    "category": "狙い目",
+    "title": "リセット狙い・駆け抜け後0スルー狙い",
+    "summary": "朝一リセット台は天井が333G・CZ3スルーに短縮されるため狙いやすい。AT駆け抜け(単発)後は3スルー以内のAT当選が濃厚になるため、駆け抜け後0スルーの台は好条件。有利区間の差枚とスルー数を合わせて残り期待度を判断する。",
+    "source_name": "ハイエナくん(狙い目まとめ)",
+    "source_url": "https://haienakun.com/inuyasya2/"
+  },
+  {
+    "machine": "スマスロ 犬夜叉2",
+    "category": "狙い目",
+    "title": "やめどき(ぶった斬りZONE消化・駆け抜け後は続行)",
+    "summary": "基本はAT終了時、またはぶった斬りZONEを消化しきった時点がやめどき。ただしATが単発(駆け抜け)で終了した場合はCZ3スルー以内のAT当選が濃厚なので、AT当選まで続行を推奨。終了画面や札の示唆も確認してからやめる。",
+    "source_name": "アルテマ(やめどき)",
+    "source_url": "https://altema.jp/pachimo/inuyasyayamedoki"
+  },
+  {
+    "machine": "スマスロ 犬夜叉2",
+    "category": "設定示唆",
+    "title": "終了画面・EDボイス・札・初当り/CZ当選率の設定差",
+    "summary": "AT終了画面に特大設定差があり最注目ポイント。EDボイスや紫札でも示唆し、紫札は好機で高設定示唆・勝機で設定4以上濃厚。初当り確率は高設定ほど高く設定4以上は1/360前後が目安。CZ『妖勝負』の当選率が1/200に近づくほど高設定期待度が上がる。",
+    "source_name": "一撃(設定差・終了画面)",
+    "source_url": "https://1geki.jp/slot/l_inuyasya2/0/"
+  }
+]
