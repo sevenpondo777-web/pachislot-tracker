@@ -1,0 +1,60 @@
+[
+  {
+    "machine": "スマスロ邪神ちゃんドロップキック",
+    "category": "天井",
+    "title": "ゲーム数天井とスルー天井",
+    "summary": "通常時のゲーム数天井は最大799G(前兆込み)。設定変更(リセット)時は599Gまで短縮される。もう一つの天井条件としてボーナス10スルーがあり、どちらか早い方でCZ濃厚となる。恩恵はボーナス当選。",
+    "tenjyo_min": 599,
+    "tenjyo_max": 799,
+    "source_name": "スロベース",
+    "source_url": "https://slobase.jp/machines/jashin-chan-dropkick"
+  },
+  {
+    "machine": "スマスロ邪神ちゃんドロップキック",
+    "category": "ゾーン",
+    "title": "通常Aゾーンの狙い目",
+    "summary": "通常時の内部モード「通常A」滞在時は400G付近にゾーンが設定されているとの解析まとめが複数サイトで一致しており、370G前後から様子を見て天井を意識した打ち方が推奨されている。",
+    "source_name": "ナナプレス",
+    "source_url": "https://nana-press.com/kaiseki/machine/1181/38248/"
+  },
+  {
+    "machine": "スマスロ邪神ちゃんドロップキック",
+    "category": "狙い目",
+    "title": "電源ON/OFF・前日ハマり台の恩恵",
+    "summary": "設定変更を伴わない電源のOFF→ONでは、天井までのゲーム数・内部モード・ラインポイントがすべて引き継がれる仕様。そのため前日深めのハマりで閉店した台は朝一から天井が近く狙い目になりやすい。設定変更ありの場合は天井が599Gに短縮され内部モードも「通常C」または「天国」に固定される。",
+    "source_name": "スロぱちクエスト",
+    "source_url": "https://www.slopachi-quest.com/article/l-jashin-chan-doroppukikku-tenjou/"
+  },
+  {
+    "machine": "スマスロ邪神ちゃんドロップキック",
+    "category": "その他",
+    "title": "ちゃんすラインシステム(ラインポイント)の仕組み",
+    "summary": "業界初と謳う「ちゃんすラインシステム」では、中段・上段・下段・右下がり・右上がりの5ラインごとにラインポイントを個別管理。対象ラインに小役が揃うとポイントが加算され、1ライン50pt到達で周期抽選が発生し、最大5周期の到達でCZ「ちゃんすだヨ！全員集合」に当選する。",
+    "source_name": "スロぱちクエスト",
+    "source_url": "https://www.slopachi-quest.com/article/jashin-chan-doroppukikku-settei/"
+  },
+  {
+    "machine": "スマスロ邪神ちゃんドロップキック",
+    "category": "設定示唆",
+    "title": "設定示唆演出まとめ(クジラッキー・終了画面)",
+    "summary": "ボーナス終了画面(初回の小悪魔ボーナスを除く)に出現する「クジラッキートロフィー」は銅(設定2以上)・銀(設定3以上)・金(設定4以上)・虎柄(設定5以上)・虹(設定6濃厚)の5色で設定を示唆。加えてAT終了画面は11種類、小悪魔ボーナス中のキャラクター紹介は24種類がそれぞれ設定示唆の要素として確認されている。",
+    "source_name": "一撃",
+    "source_url": "https://1geki.jp/slot/l_jashinchan/0/"
+  },
+  {
+    "machine": "スマスロ邪神ちゃんドロップキック",
+    "category": "狙い目",
+    "title": "やめどきの目安",
+    "summary": "ボーナス・AT終了後は基本的に即ヤメでよいが、終了後数ゲームで前兆に入りそのままボーナスに当選するケースが確認されているため、余裕があれば天国示唆となる99G前後までは前兆の有無を確認してからヤメるのが無難とされる。",
+    "source_name": "一撃",
+    "source_url": "https://1geki.jp/slot/l_jashinchan/3/"
+  },
+  {
+    "machine": "スマスロ邪神ちゃんドロップキック",
+    "category": "その他",
+    "title": "AT仕様と機械割",
+    "summary": "BONUS×ATループの王道スペックで、メインATは純増約2.5枚の「人生シアター」。上乗せ特化ゾーンを経由すると純増約5.0枚の上位ATに移行する。機械割は設定1で97.8%、設定6で114.1%とされ、設定4以上で数値が大きく跳ね上がる形。",
+    "source_name": "P-WORLD",
+    "source_url": "https://www.p-world.co.jp/machine/database/10498"
+  }
+]
