@@ -181,16 +181,49 @@ def render_machine_section(name: str, strategy_rows, bias_rows) -> str:
     """
 
 
-def render_toc(names) -> str:
+def render_picker(names) -> str:
+    """スマホ向けの機種セレクタ（下部固定ボタン＋全画面ボトムシート）。
+
+    画面下部の親指が届く位置に「機種を選ぶ」ボタンを常駐させ、タップすると
+    検索欄付きの一覧シートが立ち上がる。インクリメンタル検索で目的の機種を
+    絞り込み、タップでその機種セクションへスクロールする。
+    """
     items = "".join(
-        f'<a class="toc-item" href="#m-{html.escape(n, quote=True)}">{esc(n)}</a>' for n in names
+        f'<button type="button" class="pick-item" data-target="m-{html.escape(n, quote=True)}">'
+        f'<span class="pick-name">{esc(n)}</span><span class="pick-go" aria-hidden="true">›</span>'
+        f'</button>'
+        for n in names
     )
-    return f'<nav class="toc">{items}</nav>'
+    count = len(names)
+    return f"""
+    <div class="pick-bar">
+      <button type="button" class="pick-top" id="pickTop" aria-label="ページ上部へ戻る">↑</button>
+      <button type="button" class="pick-open" id="pickOpen" aria-haspopup="dialog" aria-expanded="false">
+        <span class="pick-open-ico">🎰</span>機種を選ぶ<span class="pick-open-count">{count}</span>
+      </button>
+    </div>
+    <div class="sheet" id="sheet" hidden>
+      <div class="sheet-backdrop" data-close></div>
+      <div class="sheet-panel" role="dialog" aria-modal="true" aria-label="機種を選ぶ">
+        <div class="sheet-grip"></div>
+        <div class="sheet-head">
+          <input type="search" id="pickSearch" class="sheet-search"
+                 placeholder="機種名で検索（例: 北斗 / モンキー）"
+                 autocomplete="off" enterkeyhint="search" aria-label="機種名で検索">
+          <button type="button" class="sheet-close" data-close aria-label="閉じる">✕</button>
+        </div>
+        <div class="sheet-list" id="sheetList">
+          {items}
+        </div>
+        <p class="sheet-empty" id="sheetEmpty" hidden>該当する機種がありません</p>
+      </div>
+    </div>
+    """
 
 
 def render_html(sections_data) -> str:
     names = [name for name, _, _ in sections_data]
-    toc = render_toc(names)
+    picker = render_picker(names) if sections_data else ""
     body = "".join(render_machine_section(name, s, b) for name, s, b in sections_data)
     if not sections_data:
         body = '<p class="empty">登録されている機種情報がありません。fetch_public_info.py で追加してください。</p>'
@@ -199,7 +232,7 @@ def render_html(sections_data) -> str:
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
 <title>機種リファレンス</title>
 <meta name="theme-color" content="#1c1c1e">
 <meta name="description" content="パチスロ機種の攻略情報・優遇冷遇まとめ（無料公開情報ベース）">
@@ -236,10 +269,12 @@ def render_html(sections_data) -> str:
     --fumei:  #64748b;
   }}
   * {{ box-sizing: border-box; }}
+  html {{ overflow-x: hidden; }}
   body {{
     font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Segoe UI", sans-serif;
     margin: 0;
-    padding: 0 0 3rem 0;
+    overflow-x: hidden;
+    padding: 0 0 calc(6rem + env(safe-area-inset-bottom)) 0;
     background: linear-gradient(180deg, var(--bg-2), var(--bg) 240px);
     background-attachment: fixed;
     color: var(--ink);
@@ -281,30 +316,162 @@ def render_html(sections_data) -> str:
     color: rgba(255,255,255,.82);
     letter-spacing: .02em;
   }}
-  .toc {{
+  /* ===== 下部固定の機種セレクタ ===== */
+  .pick-bar {{
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 40;
     display: flex;
-    gap: 0.45rem;
-    overflow-x: auto;
-    padding-bottom: 0.35rem;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.55rem 0.9rem calc(0.55rem + env(safe-area-inset-bottom));
+    background: linear-gradient(180deg, transparent, var(--bg) 45%);
+    pointer-events: none;
   }}
-  .toc::-webkit-scrollbar {{ display: none; }}
-  .toc-item {{
-    flex: 0 0 auto;
-    background: rgba(255,255,255,.14);
-    border: 1px solid rgba(255,255,255,.24);
-    color: #fff;
-    padding: 0.34rem 0.8rem;
+  .pick-open {{
+    pointer-events: auto;
+    flex: 0 1 430px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 3rem;
+    padding: 0 1.3rem;
+    border: 0;
     border-radius: 999px;
-    font-size: 0.82rem;
-    font-weight: 500;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: background .15s ease, transform .1s ease;
+    cursor: pointer;
+    font-size: 0.98rem;
+    font-weight: 700;
+    letter-spacing: .02em;
+    color: #fff;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    box-shadow: 0 12px 28px -8px rgba(79,70,229,.62), 0 2px 6px rgba(0,0,0,.15);
+    transition: transform .1s ease;
   }}
-  .toc-item:active {{ transform: scale(.96); }}
-  .toc-item:hover {{ background: rgba(255,255,255,.26); }}
+  .pick-open:active {{ transform: translateY(1px) scale(.99); }}
+  .pick-open-ico {{ font-size: 1.05rem; }}
+  .pick-open-count {{
+    font-size: .72rem;
+    font-weight: 700;
+    background: rgba(255,255,255,.22);
+    padding: .05rem .5rem;
+    border-radius: 999px;
+  }}
+  .pick-top {{
+    pointer-events: none;
+    width: 2.7rem; height: 2.7rem;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--ink);
+    font-size: 1.15rem;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity .18s ease, transform .18s ease;
+    box-shadow: var(--shadow);
+  }}
+  .pick-top.show {{ pointer-events: auto; opacity: 1; transform: none; }}
+
+  /* ===== 全画面ボトムシート ===== */
+  .sheet {{ position: fixed; inset: 0; z-index: 60; }}
+  .sheet[hidden] {{ display: none; }}
+  .sheet-backdrop {{
+    position: absolute; inset: 0;
+    background: rgba(10,12,20,.5);
+    opacity: 0;
+    transition: opacity .22s ease;
+  }}
+  .sheet.open .sheet-backdrop {{ opacity: 1; }}
+  .sheet-panel {{
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    max-width: 720px;
+    margin: 0 auto;
+    max-height: 82vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--surface);
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -14px 44px -12px rgba(0,0,0,.42);
+    transform: translateY(100%);
+    transition: transform .26s cubic-bezier(.22,1,.36,1);
+    padding-bottom: env(safe-area-inset-bottom);
+  }}
+  .sheet.open .sheet-panel {{ transform: none; }}
+  .sheet-grip {{
+    width: 38px; height: 4px;
+    border-radius: 999px;
+    background: var(--border);
+    margin: .55rem auto .1rem;
+  }}
+  .sheet-head {{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem .9rem .7rem;
+  }}
+  .sheet-search {{
+    flex: 1;
+    height: 2.85rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    color: var(--ink);
+    font-size: 1rem;
+    padding: 0 .9rem;
+    outline: none;
+    transition: border-color .15s ease, box-shadow .15s ease;
+  }}
+  .sheet-search:focus {{
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 20%, transparent);
+  }}
+  .sheet-close {{
+    width: 2.6rem; height: 2.6rem;
+    flex: 0 0 auto;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    color: var(--muted);
+    font-size: 1rem;
+    cursor: pointer;
+  }}
+  .sheet-list {{
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: .2rem .7rem 1rem;
+  }}
+  .pick-item {{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .6rem;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    padding: .85rem .9rem;
+    margin-bottom: .4rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface-2);
+    color: var(--ink);
+    font-size: .95rem;
+    font-weight: 600;
+    letter-spacing: .01em;
+  }}
+  .pick-item:active {{ background: color-mix(in srgb, var(--primary) 10%, var(--surface-2)); }}
+  .pick-name {{ min-width: 0; line-height: 1.4; word-break: break-word; }}
+  .pick-go {{ font-size: 1.25rem; font-weight: 700; color: var(--primary); flex: 0 0 auto; line-height: 1; }}
+  .sheet-empty {{
+    text-align: center;
+    color: var(--faint);
+    padding: 1.4rem;
+    font-size: .9rem;
+  }}
+  body.sheet-lock {{ overflow: hidden; }}
   main {{
     max-width: 720px;
     margin: 0 auto;
@@ -318,7 +485,7 @@ def render_html(sections_data) -> str:
     padding: 1.15rem 1.15rem 1.25rem;
     margin-bottom: 1.1rem;
     box-shadow: var(--shadow);
-    scroll-margin-top: 6.5rem;
+    scroll-margin-top: 4.75rem;
     overflow: hidden;
   }}
   .machine-section::before {{
@@ -336,7 +503,9 @@ def render_html(sections_data) -> str:
     font-weight: 700;
     letter-spacing: .01em;
     margin: 0.25rem 0 1rem 0;
+    overflow-wrap: anywhere;
   }}
+  .info-title, .pick-name {{ overflow-wrap: anywhere; }}
   .machine-name::before {{
     content: "";
     flex: 0 0 auto;
@@ -534,7 +703,6 @@ def render_html(sections_data) -> str:
 <header>
   <h1><span class="logo">🎰</span>機種リファレンス</h1>
   <p class="subtitle">攻略情報・優遇/冷遇まとめ（無料公開情報ベース）</p>
-  {toc}
 </header>
 <main>
 {body}
@@ -543,12 +711,74 @@ def render_html(sections_data) -> str:
   掲載情報は無料公開情報をもとにした参考値です。優遇/冷遇・実践値は未検証情報を含みます。<br>
   最終的な判断はご自身の責任でお願いします。
 </footer>
+{picker}
 <script>
   if ("serviceWorker" in navigator) {{
     window.addEventListener("load", function () {{
       navigator.serviceWorker.register("sw.js").catch(function () {{}});
     }});
   }}
+
+  (function () {{
+    var sheet = document.getElementById("sheet");
+    if (!sheet) return;
+    var openBtn = document.getElementById("pickOpen");
+    var topBtn = document.getElementById("pickTop");
+    var search = document.getElementById("pickSearch");
+    var empty = document.getElementById("sheetEmpty");
+    var items = [].slice.call(document.querySelectorAll(".pick-item"));
+
+    function norm(s) {{ return (s || "").toLowerCase().replace(/\\s+/g, ""); }}
+    function filter(q) {{
+      var nq = norm(q), shown = 0;
+      items.forEach(function (it) {{
+        var hit = nq === "" || norm(it.textContent).indexOf(nq) >= 0;
+        it.style.display = hit ? "" : "none";
+        if (hit) shown++;
+      }});
+      empty.hidden = shown !== 0;
+    }}
+    function openSheet() {{
+      sheet.hidden = false;
+      document.body.classList.add("sheet-lock");
+      openBtn.setAttribute("aria-expanded", "true");
+      search.value = ""; filter("");
+      requestAnimationFrame(function () {{
+        sheet.classList.add("open");
+        setTimeout(function () {{ try {{ search.focus(); }} catch (e) {{}} }}, 90);
+      }});
+    }}
+    function closeSheet() {{
+      sheet.classList.remove("open");
+      document.body.classList.remove("sheet-lock");
+      openBtn.setAttribute("aria-expanded", "false");
+      setTimeout(function () {{ sheet.hidden = true; }}, 220);
+    }}
+
+    openBtn.addEventListener("click", openSheet);
+    topBtn.addEventListener("click", function () {{
+      window.scrollTo({{ top: 0, behavior: "smooth" }});
+    }});
+    search.addEventListener("input", function () {{ filter(search.value); }});
+    sheet.addEventListener("click", function (e) {{
+      var t = e.target;
+      if (t.closest && t.closest("[data-close]")) {{ closeSheet(); return; }}
+      var item = t.closest ? t.closest(".pick-item") : null;
+      if (item) {{
+        var id = item.getAttribute("data-target");
+        closeSheet();
+        var el = document.getElementById(id);
+        if (el) {{ setTimeout(function () {{ el.scrollIntoView({{ behavior: "smooth", block: "start" }}); }}, 240); }}
+      }}
+    }});
+    document.addEventListener("keydown", function (e) {{
+      if (e.key === "Escape" && !sheet.hidden) closeSheet();
+    }});
+    window.addEventListener("scroll", function () {{
+      if (window.scrollY > 400) topBtn.classList.add("show");
+      else topBtn.classList.remove("show");
+    }}, {{ passive: true }});
+  }})();
 </script>
 </body>
 </html>
