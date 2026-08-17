@@ -41,6 +41,21 @@ CONFIDENCE_BADGE_CLASS = {
     "低": "conf-low",
 }
 
+# カード左端のアクセント色を切り替えるためのキー
+CATEGORY_KEY = {
+    "天井": "tenjyo",
+    "ゾーン": "zone",
+    "設定示唆": "settei",
+    "狙い目": "nerai",
+    "その他": "other",
+}
+
+TREATMENT_KEY = {
+    "優遇": "yugu",
+    "冷遇": "reigu",
+    "不明": "fumei",
+}
+
 
 def get_connection() -> sqlite3.Connection:
     if not os.path.exists(DB_PATH):
@@ -105,47 +120,49 @@ def esc(value) -> str:
 
 def render_strategy_card(row) -> str:
     badge_class = CATEGORY_BADGE_CLASS.get(row["category"], "badge-other")
+    acc = CATEGORY_KEY.get(row["category"], "other")
     tenjyo_range = ""
     if row["tenjyo_min"] is not None or row["tenjyo_max"] is not None:
-        tmin = row["tenjyo_min"] if row["tenjyo_min"] is not None else "-"
-        tmax = row["tenjyo_max"] if row["tenjyo_max"] is not None else "-"
-        tenjyo_range = f'<div class="tenjyo-range">天井目安: {esc(tmin)}G 〜 {esc(tmax)}G</div>'
+        tmin = row["tenjyo_min"] if row["tenjyo_min"] is not None else "?"
+        tmax = row["tenjyo_max"] if row["tenjyo_max"] is not None else "?"
+        tenjyo_range = f'<div class="chip chip-tenjyo">🎯 天井目安 {esc(tmin)}–{esc(tmax)}G</div>'
     source_line = esc(row["source_name"])
     if row["source_url"]:
         source_line = f'<a href="{esc(row["source_url"])}" target="_blank" rel="noopener">{source_line}</a>'
     return f"""
-    <div class="info-card">
+    <article class="info-card acc-{acc}">
       <div class="info-card-head">
         <span class="badge {badge_class}">{esc(row['category'])}</span>
         <span class="info-title">{esc(row['title'])}</span>
       </div>
       <p class="info-summary">{esc(row['summary'])}</p>
       {tenjyo_range}
-      <div class="info-source">出典: {source_line}（{esc(row['collected_date'])}収集）</div>
-    </div>
+      <div class="info-source">出典 {source_line}<span class="src-dot">·</span>{esc(row['collected_date'])}収集</div>
+    </article>
     """
 
 
 def render_bias_card(row) -> str:
     treat_class = TREATMENT_BADGE_CLASS.get(row["treatment"], "badge-fumei")
     conf_class = CONFIDENCE_BADGE_CLASS.get(row["confidence"], "conf-mid")
-    target = f'<span class="target-setting">対象設定: {esc(row["target_setting"])}</span>' if row["target_setting"] else ""
-    sample = f'<div class="sample-size">サンプル: {esc(row["sample_size"])}</div>' if row["sample_size"] else ""
+    acc = TREATMENT_KEY.get(row["treatment"], "fumei")
+    target = f'<span class="target-setting">対象設定 {esc(row["target_setting"])}</span>' if row["target_setting"] else ""
+    sample = f'<div class="chip chip-sample">📊 サンプル {esc(row["sample_size"])}</div>' if row["sample_size"] else ""
     source_line = esc(row["source_name"])
     if row["source_url"]:
         source_line = f'<a href="{esc(row["source_url"])}" target="_blank" rel="noopener">{source_line}</a>'
     return f"""
-    <div class="info-card bias-card">
+    <article class="info-card bias-card acc-{acc}">
       <div class="info-card-head">
         <span class="badge {treat_class}">{esc(row['treatment'])}</span>
         <span class="badge badge-cat">{esc(row['category'])}</span>
-        <span class="conf-badge {conf_class}">信頼度:{esc(row['confidence'])}</span>
+        <span class="conf-badge {conf_class}">信頼度 {esc(row['confidence'])}</span>
         {target}
       </div>
       <p class="info-summary">{esc(row['summary'])}</p>
       {sample}
-      <div class="info-source">出典: [{esc(row['source_type'])}] {source_line}（{esc(row['collected_date'])}収集）</div>
-    </div>
+      <div class="info-source"><span class="src-type">{esc(row['source_type'])}</span>{source_line}<span class="src-dot">·</span>{esc(row['collected_date'])}収集</div>
+    </article>
     """
 
 
@@ -156,9 +173,9 @@ def render_machine_section(name: str, strategy_rows, bias_rows) -> str:
     return f"""
     <section class="machine-section" id="m-{anchor}">
       <h2 class="machine-name">{esc(name)}</h2>
-      <h3 class="section-label">攻略情報（公式・一般）</h3>
+      <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       {strategy_html}
-      <h3 class="section-label">優遇/冷遇・実践値情報（未検証・参考情報）</h3>
+      <h3 class="section-label"><span class="dot dot-warn"></span>優遇/冷遇・実践値 <span class="label-note">未検証・参考</span></h3>
       {bias_html}
     </section>
     """
@@ -196,161 +213,336 @@ def render_html(sections_data) -> str:
 <style>
   :root {{
     color-scheme: light dark;
+    --bg: #eef1f7;
+    --bg-2: #e7ebf4;
+    --surface: #ffffff;
+    --surface-2: #f7f8fb;
+    --border: #e7e9f0;
+    --ink: #1a1d29;
+    --muted: #666d7d;
+    --faint: #9aa1ad;
+    --link: #4f46e5;
+    --primary: #6366f1;
+    --primary-2: #8b5cf6;
+    --shadow: 0 1px 2px rgba(16,24,40,.05), 0 10px 28px -14px rgba(16,24,40,.20);
+    --tenjyo: #2563eb;
+    --zone:   #0f9d75;
+    --settei: #7c3aed;
+    --nerai:  #d97706;
+    --other:  #64748b;
+    --cat:    #475569;
+    --yugu:   #e11d48;
+    --reigu:  #2563eb;
+    --fumei:  #64748b;
   }}
   * {{ box-sizing: border-box; }}
   body {{
-    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Segoe UI", sans-serif;
     margin: 0;
     padding: 0 0 3rem 0;
-    background: #f4f5f7;
-    color: #1c1c1e;
-    line-height: 1.6;
+    background: linear-gradient(180deg, var(--bg-2), var(--bg) 240px);
+    background-attachment: fixed;
+    color: var(--ink);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }}
   header {{
-    background: #1c1c1e;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 55%, #9333ea 100%);
     color: #fff;
-    padding: 1rem 1rem 0.8rem 1rem;
+    padding: 1rem 1rem 0.7rem 1rem;
     position: sticky;
     top: 0;
     z-index: 10;
+    box-shadow: 0 6px 22px -10px rgba(79,70,229,.55);
   }}
   header h1 {{
-    font-size: 1.1rem;
-    margin: 0 0 0.6rem 0;
+    font-size: 1.08rem;
+    font-weight: 700;
+    letter-spacing: .01em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: .45rem;
+  }}
+  header h1 .logo {{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.55rem;
+    height: 1.55rem;
+    border-radius: 8px;
+    background: rgba(255,255,255,.18);
+    font-size: .95rem;
+  }}
+  header .subtitle {{
+    margin: .2rem 0 .7rem 0;
+    font-size: .72rem;
+    color: rgba(255,255,255,.82);
+    letter-spacing: .02em;
   }}
   .toc {{
     display: flex;
-    gap: 0.5rem;
+    gap: 0.45rem;
     overflow-x: auto;
-    padding-bottom: 0.6rem;
+    padding-bottom: 0.35rem;
     -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
   }}
+  .toc::-webkit-scrollbar {{ display: none; }}
   .toc-item {{
     flex: 0 0 auto;
-    background: #2c2c2e;
+    background: rgba(255,255,255,.14);
+    border: 1px solid rgba(255,255,255,.24);
     color: #fff;
-    padding: 0.4rem 0.8rem;
+    padding: 0.34rem 0.8rem;
     border-radius: 999px;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
+    font-weight: 500;
     text-decoration: none;
     white-space: nowrap;
+    transition: background .15s ease, transform .1s ease;
   }}
+  .toc-item:active {{ transform: scale(.96); }}
+  .toc-item:hover {{ background: rgba(255,255,255,.26); }}
   main {{
     max-width: 720px;
     margin: 0 auto;
-    padding: 0.8rem;
+    padding: 1rem 0.8rem;
   }}
   .machine-section {{
-    background: #fff;
-    border-radius: 12px;
-    padding: 1rem;
-    margin-bottom: 1.2rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-    scroll-margin-top: 5.5rem;
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 1.15rem 1.15rem 1.25rem;
+    margin-bottom: 1.1rem;
+    box-shadow: var(--shadow);
+    scroll-margin-top: 6.5rem;
+    overflow: hidden;
+  }}
+  .machine-section::before {{
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--primary-2));
   }}
   .machine-name {{
-    font-size: 1.25rem;
-    margin: 0 0 0.6rem 0;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: .55rem;
+    font-size: 1.22rem;
+    font-weight: 700;
+    letter-spacing: .01em;
+    margin: 0.25rem 0 1rem 0;
+  }}
+  .machine-name::before {{
+    content: "";
+    flex: 0 0 auto;
+    width: .28rem;
+    height: 1.15em;
+    border-radius: 3px;
+    background: linear-gradient(180deg, var(--primary), var(--primary-2));
   }}
   .section-label {{
-    font-size: 0.95rem;
-    color: #555;
-    margin: 1rem 0 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 0.86rem;
+    font-weight: 700;
+    color: var(--muted);
+    margin: 1.25rem 0 0.65rem 0;
+  }}
+  .section-label .dot {{
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    flex: 0 0 auto;
+  }}
+  .dot-info {{ background: var(--primary); }}
+  .dot-warn {{ background: var(--nerai); }}
+  .label-note {{
+    font-size: .68rem;
+    font-weight: 600;
+    color: var(--faint);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    padding: .06rem .45rem;
+    border-radius: 999px;
+    letter-spacing: .02em;
   }}
   .info-card {{
-    border: 1px solid #e5e5e7;
-    border-radius: 10px;
-    padding: 0.7rem 0.8rem;
-    margin-bottom: 0.6rem;
-    background: #fafafa;
+    position: relative;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent, #cbd5e1);
+    border-radius: 12px;
+    padding: 0.75rem 0.85rem;
+    margin-bottom: 0.55rem;
+    background: var(--surface-2);
+    transition: transform .1s ease, box-shadow .15s ease;
   }}
+  .info-card:hover {{
+    box-shadow: 0 6px 18px -12px rgba(16,24,40,.28);
+  }}
+  .acc-tenjyo {{ --accent: var(--tenjyo); }}
+  .acc-zone   {{ --accent: var(--zone); }}
+  .acc-settei {{ --accent: var(--settei); }}
+  .acc-nerai  {{ --accent: var(--nerai); }}
+  .acc-other  {{ --accent: var(--other); }}
+  .acc-yugu   {{ --accent: var(--yugu); }}
+  .acc-reigu  {{ --accent: var(--reigu); }}
+  .acc-fumei  {{ --accent: var(--fumei); }}
   .bias-card {{
-    background: #fff8f0;
-    border-color: #f0dcc0;
+    background: color-mix(in srgb, var(--nerai) 5%, var(--surface-2));
   }}
   .info-card-head {{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 0.4rem;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.35rem;
   }}
   .info-title {{
-    font-weight: 600;
+    font-weight: 650;
     font-size: 0.95rem;
+    letter-spacing: .01em;
   }}
   .badge {{
     display: inline-block;
-    font-size: 0.75rem;
-    padding: 0.15rem 0.55rem;
+    font-size: 0.72rem;
+    padding: 0.16rem 0.55rem;
     border-radius: 999px;
-    color: #fff;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: .02em;
+    color: var(--c, #475569);
+    background: color-mix(in srgb, var(--c, #475569) 13%, transparent);
+    border: 1px solid color-mix(in srgb, var(--c, #475569) 26%, transparent);
   }}
-  .badge-tenjyo {{ background: #2b6cb0; }}
-  .badge-zone   {{ background: #2f855a; }}
-  .badge-settei {{ background: #6b46c1; }}
-  .badge-nerai  {{ background: #b7791f; }}
-  .badge-other  {{ background: #718096; }}
-  .badge-cat    {{ background: #4a5568; }}
-  .badge-yugu   {{ background: #c53030; }}
-  .badge-reigu  {{ background: #2c5282; }}
-  .badge-fumei  {{ background: #718096; }}
+  .badge-tenjyo {{ --c: var(--tenjyo); }}
+  .badge-zone   {{ --c: var(--zone); }}
+  .badge-settei {{ --c: var(--settei); }}
+  .badge-nerai  {{ --c: var(--nerai); }}
+  .badge-other  {{ --c: var(--other); }}
+  .badge-cat    {{ --c: var(--cat); }}
+  .badge-yugu   {{ --c: var(--yugu); }}
+  .badge-reigu  {{ --c: var(--reigu); }}
+  .badge-fumei  {{ --c: var(--fumei); }}
   .conf-badge {{
-    font-size: 0.75rem;
-    padding: 0.15rem 0.5rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.14rem 0.5rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--muted);
   }}
-  .conf-high {{ background: #e6fffa; border-color: #38b2ac; color: #234e52; }}
-  .conf-mid  {{ background: #fffbea; border-color: #d69e2e; color: #744210; }}
-  .conf-low  {{ background: #fff5f5; border-color: #e53e3e; color: #742a2a; }}
+  .conf-high {{ background: color-mix(in srgb, #0f9d75 12%, transparent); border-color: color-mix(in srgb,#0f9d75 34%,transparent); color: #0b7a5b; }}
+  .conf-mid  {{ background: color-mix(in srgb, #d97706 12%, transparent); border-color: color-mix(in srgb,#d97706 34%,transparent); color: #b45309; }}
+  .conf-low  {{ background: color-mix(in srgb, #e11d48 12%, transparent); border-color: color-mix(in srgb,#e11d48 34%,transparent); color: #be123c; }}
   .target-setting {{
-    font-size: 0.8rem;
-    color: #444;
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: var(--muted);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: .1rem .5rem;
+    border-radius: 999px;
   }}
   .info-summary {{
-    margin: 0.3rem 0;
+    margin: 0.35rem 0;
     font-size: 0.9rem;
+    color: var(--ink);
   }}
-  .tenjyo-range, .sample-size {{
-    font-size: 0.82rem;
-    color: #333;
-    margin-bottom: 0.2rem;
+  .chip {{
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: .2rem .55rem;
+    border-radius: 8px;
+    margin: .15rem .3rem .15rem 0;
   }}
+  .chip-tenjyo {{ color: var(--tenjyo); background: color-mix(in srgb, var(--tenjyo) 11%, transparent); }}
+  .chip-sample {{ color: var(--muted); background: var(--surface); border: 1px solid var(--border); }}
   .info-source {{
-    font-size: 0.75rem;
-    color: #777;
-    margin-top: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .3rem;
+    font-size: 0.73rem;
+    color: var(--faint);
+    margin-top: 0.45rem;
     word-break: break-all;
   }}
-  .info-source a {{ color: #2b6cb0; }}
+  .info-source a {{ color: var(--link); text-decoration: none; }}
+  .info-source a:hover {{ text-decoration: underline; }}
+  .src-dot {{ color: var(--border); }}
+  .src-type {{
+    font-size: .66rem;
+    font-weight: 700;
+    color: var(--muted);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: .02rem .38rem;
+    border-radius: 5px;
+  }}
   .empty {{
-    color: #999;
+    color: var(--faint);
     font-size: 0.85rem;
+    padding: .4rem 0;
+  }}
+  .site-footer {{
+    max-width: 720px;
+    margin: 1.5rem auto 0;
+    padding: 0 1.2rem;
+    font-size: .72rem;
+    color: var(--faint);
+    text-align: center;
+    line-height: 1.7;
   }}
 
   @media (prefers-color-scheme: dark) {{
-    body {{ background: #000; color: #eee; }}
-    .machine-section {{ background: #1c1c1e; box-shadow: none; }}
-    .machine-name {{ border-bottom-color: #333; }}
-    .info-card {{ background: #2c2c2e; border-color: #3a3a3c; }}
-    .bias-card {{ background: #2e2620; border-color: #5a4a30; }}
-    .info-source a {{ color: #6cb2eb; }}
-    .section-label {{ color: #aaa; }}
+    :root {{
+      --bg: #0b0c11;
+      --bg-2: #12141c;
+      --surface: #161822;
+      --surface-2: #1c1f2b;
+      --border: #272b38;
+      --ink: #e8eaf0;
+      --muted: #9ba3b4;
+      --faint: #727a8b;
+      --link: #a5b4fc;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 14px 32px -16px rgba(0,0,0,.75);
+      --tenjyo: #60a5fa;
+      --zone:   #34d399;
+      --settei: #a78bfa;
+      --nerai:  #fbbf24;
+      --other:  #94a3b8;
+      --cat:    #94a3b8;
+      --yugu:   #fb7185;
+      --reigu:  #60a5fa;
+      --fumei:  #94a3b8;
+    }}
+    .conf-high {{ color: #34d399; }}
+    .conf-mid  {{ color: #fbbf24; }}
+    .conf-low  {{ color: #fb7185; }}
   }}
 </style>
 </head>
 <body>
 <header>
-  <h1>機種リファレンス（攻略情報・優遇冷遇まとめ）</h1>
+  <h1><span class="logo">🎰</span>機種リファレンス</h1>
+  <p class="subtitle">攻略情報・優遇/冷遇まとめ（無料公開情報ベース）</p>
   {toc}
 </header>
 <main>
 {body}
 </main>
+<footer class="site-footer">
+  掲載情報は無料公開情報をもとにした参考値です。優遇/冷遇・実践値は未検証情報を含みます。<br>
+  最終的な判断はご自身の責任でお願いします。
+</footer>
 <script>
   if ("serviceWorker" in navigator) {{
     window.addEventListener("load", function () {{
