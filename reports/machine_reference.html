@@ -431,6 +431,50 @@
     font-size: 0.85rem;
     padding: .4rem 0;
   }
+  /* ===== 天井早見ストリップ(機種名直下) ===== */
+  .tenjyo-strip {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: .5rem;
+    background: color-mix(in srgb, var(--tenjyo) 7%, var(--surface-2));
+    border: 1px solid color-mix(in srgb, var(--tenjyo) 22%, var(--border));
+    border-radius: 12px;
+    padding: .65rem .85rem;
+    margin: 0 0 1.1rem 0;
+  }
+  .tenjyo-strip-cap {
+    font-size: .72rem;
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: .02em;
+    flex: 1 1 100%;
+  }
+  .tenjyo-strip-num {
+    font-variant-numeric: tabular-nums;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--tenjyo);
+    line-height: 1;
+  }
+  .tenjyo-strip-num .unit {
+    font-size: .78rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin: 0 .1rem;
+  }
+  .tenjyo-strip.fallback {
+    background: var(--surface-2);
+    border-color: var(--border);
+  }
+  .fallback-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--muted);
+  }
   .site-footer {
     max-width: 720px;
     margin: 1.5rem auto 0;
@@ -478,6 +522,12 @@
 
     <section class="machine-section" id="m-Lパチスロ 革命機ヴァルヴレイヴ2">
       <h2 class="machine-name">Lパチスロ 革命機ヴァルヴレイヴ2</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">1000<span class="unit">〜</span>1500<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -618,6 +668,12 @@
     
     <section class="machine-section" id="m-スマスロ Re:ゼロから始める異世界生活 season2">
       <h2 class="machine-name">スマスロ Re:ゼロから始める異世界生活 season2</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">930<span class="unit">〜</span>1400<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -754,6 +810,12 @@
     
     <section class="machine-section" id="m-スマスロ からくりサーカス">
       <h2 class="machine-name">スマスロ からくりサーカス</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">1200<span class="unit">〜</span>2500<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -858,6 +920,12 @@
     
     <section class="machine-section" id="m-スマスロ ゴジラ対エヴァンゲリオン">
       <h2 class="machine-name">スマスロ ゴジラ対エヴァンゲリオン</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">700<span class="unit">〜</span>1000<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -962,6 +1030,12 @@
     
     <section class="machine-section" id="m-スマスロ マギアレコード">
       <h2 class="machine-name">スマスロ マギアレコード</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">600<span class="unit">〜</span>950<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -1066,6 +1140,12 @@
     
     <section class="machine-section" id="m-スマスロ モンスターハンターライズ">
       <h2 class="machine-name">スマスロ モンスターハンターライズ</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">999<span class="unit">〜</span>999<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -1180,6 +1260,12 @@
     
     <section class="machine-section" id="m-スマスロ ラブ嬢3">
       <h2 class="machine-name">スマスロ ラブ嬢3</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">100<span class="unit">〜</span>750<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -1284,6 +1370,11 @@
     
     <section class="machine-section" id="m-スマスロバイオハザードRE:3">
       <h2 class="machine-name">スマスロバイオハザードRE:3</h2>
+      
+    <div class="tenjyo-strip fallback">
+      <span class="fallback-pill">🎯 天井情報あり（詳細は下記カード参照）</span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -1376,6 +1467,12 @@
     
     <section class="machine-section" id="m-スマスロモンキーターンV">
       <h2 class="machine-name">スマスロモンキーターンV</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num"><span class="unit">〜</span>795<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -1490,6 +1587,12 @@
     
     <section class="machine-section" id="m-スマスロ化物語">
       <h2 class="machine-name">スマスロ化物語</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">600<span class="unit">〜</span>1000<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -1594,6 +1697,12 @@
     
     <section class="machine-section" id="m-スマスロ北斗の拳">
       <h2 class="machine-name">スマスロ北斗の拳</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">800<span class="unit">〜</span>1268<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -1698,6 +1807,12 @@
     
     <section class="machine-section" id="m-スマスロ北斗の拳 転生の章2">
       <h2 class="machine-name">スマスロ北斗の拳 転生の章2</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">1280<span class="unit">〜</span>1536<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -1790,6 +1905,12 @@
     
     <section class="machine-section" id="m-スマスロ戦国乙女5">
       <h2 class="machine-name">スマスロ戦国乙女5</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">280<span class="unit">〜</span>700<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -1896,6 +2017,12 @@
     
     <section class="machine-section" id="m-スマスロ攻殻機動隊">
       <h2 class="machine-name">スマスロ攻殻機動隊</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">699<span class="unit">〜</span>999<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -2032,6 +2159,12 @@
     
     <section class="machine-section" id="m-スマスロ新鬼武者3">
       <h2 class="machine-name">スマスロ新鬼武者3</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">540<span class="unit">〜</span>640<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -2178,6 +2311,12 @@
     
     <section class="machine-section" id="m-スマスロ東京喰種">
       <h2 class="machine-name">スマスロ東京喰種</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">255<span class="unit">〜</span>1200<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -2292,6 +2431,12 @@
     
     <section class="machine-section" id="m-スマスロ沖ドキ！DUO アンコール">
       <h2 class="machine-name">スマスロ沖ドキ！DUO アンコール</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">200<span class="unit">〜</span>800<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -2384,6 +2529,12 @@
     
     <section class="machine-section" id="m-スマスロ甲鉄城のカバネリ海門決戦">
       <h2 class="machine-name">スマスロ甲鉄城のカバネリ海門決戦</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">596<span class="unit">〜</span>996<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -2488,6 +2639,12 @@
     
     <section class="machine-section" id="m-スマスロ邪神ちゃんドロップキック">
       <h2 class="machine-name">スマスロ邪神ちゃんドロップキック</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">599<span class="unit">〜</span>799<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -2614,6 +2771,12 @@
     
     <section class="machine-section" id="m-スマスロ鉄拳6">
       <h2 class="machine-name">スマスロ鉄拳6</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">490<span class="unit">〜</span>900<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -2740,6 +2903,12 @@
     
     <section class="machine-section" id="m-スマスロ頭文字D 2nd">
       <h2 class="machine-name">スマスロ頭文字D 2nd</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">299<span class="unit">〜</span>599<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -2832,6 +3001,12 @@
     
     <section class="machine-section" id="m-スロット ソードアート・オンラインII">
       <h2 class="machine-name">スロット ソードアート・オンラインII</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">256<span class="unit">G〜</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -2956,6 +3131,12 @@
     
     <section class="machine-section" id="m-チバリヨ30">
       <h2 class="machine-name">チバリヨ30</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">520<span class="unit">〜</span>900<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -3048,6 +3229,12 @@
     
     <section class="machine-section" id="m-パチスロ かぐや様は告らせたい">
       <h2 class="machine-name">パチスロ かぐや様は告らせたい</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">800<span class="unit">〜</span>1100<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -3164,6 +3351,12 @@
     
     <section class="machine-section" id="m-戦国コレクション6">
       <h2 class="machine-name">戦国コレクション6</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">550<span class="unit">〜</span>999<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">
@@ -3268,6 +3461,12 @@
     
     <section class="machine-section" id="m-沖ドキ！GOLD">
       <h2 class="machine-name">沖ドキ！GOLD</h2>
+      
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num"><span class="unit">〜</span>999<span class="unit">G</span></span>
+    </div>
+    
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       
     <article class="info-card acc-tenjyo">

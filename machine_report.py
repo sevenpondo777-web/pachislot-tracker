@@ -166,13 +166,59 @@ def render_bias_card(row) -> str:
     """
 
 
+def pick_primary_tenjyo(strategy_rows):
+    """天井カードが複数ある場合に、早見ストリップに出す代表1件を選ぶ。
+    min/maxが両方揃っている中で最もtenjyo_maxが大きいもの(=短縮版でない通常天井)を優先する。
+    """
+    tenjyo_rows = [r for r in strategy_rows if r["category"] == "天井"]
+    if not tenjyo_rows:
+        return None
+    both = [r for r in tenjyo_rows if r["tenjyo_min"] is not None and r["tenjyo_max"] is not None]
+    if both:
+        return max(both, key=lambda r: r["tenjyo_max"])
+    any_max = [r for r in tenjyo_rows if r["tenjyo_max"] is not None]
+    if any_max:
+        return max(any_max, key=lambda r: r["tenjyo_max"])
+    any_min = [r for r in tenjyo_rows if r["tenjyo_min"] is not None]
+    if any_min:
+        return any_min[0]
+    return tenjyo_rows[0]
+
+
+def render_tenjyo_strip(strategy_rows) -> str:
+    row = pick_primary_tenjyo(strategy_rows)
+    if row is None:
+        return ""
+    tmin, tmax = row["tenjyo_min"], row["tenjyo_max"]
+    if tmin is not None and tmax is not None:
+        num = f'{esc(tmin)}<span class="unit">〜</span>{esc(tmax)}<span class="unit">G</span>'
+    elif tmax is not None:
+        num = f'<span class="unit">〜</span>{esc(tmax)}<span class="unit">G</span>'
+    elif tmin is not None:
+        num = f'{esc(tmin)}<span class="unit">G〜</span>'
+    else:
+        return """
+    <div class="tenjyo-strip fallback">
+      <span class="fallback-pill">🎯 天井情報あり（詳細は下記カード参照）</span>
+    </div>
+    """
+    return f"""
+    <div class="tenjyo-strip">
+      <span class="tenjyo-strip-cap">🎯 天井目安</span>
+      <span class="tenjyo-strip-num">{num}</span>
+    </div>
+    """
+
+
 def render_machine_section(name: str, strategy_rows, bias_rows) -> str:
     anchor = html.escape(name, quote=True)
+    tenjyo_strip = render_tenjyo_strip(strategy_rows)
     strategy_html = "".join(render_strategy_card(r) for r in strategy_rows) or '<p class="empty">登録なし</p>'
     bias_html = "".join(render_bias_card(r) for r in bias_rows) or '<p class="empty">登録なし（未確認）</p>'
     return f"""
     <section class="machine-section" id="m-{anchor}">
       <h2 class="machine-name">{esc(name)}</h2>
+      {tenjyo_strip}
       <h3 class="section-label"><span class="dot dot-info"></span>攻略情報 <span class="label-note">公式・一般</span></h3>
       {strategy_html}
       <h3 class="section-label"><span class="dot dot-warn"></span>優遇/冷遇・実践値 <span class="label-note">未検証・参考</span></h3>
@@ -660,6 +706,50 @@ def render_html(sections_data) -> str:
     color: var(--faint);
     font-size: 0.85rem;
     padding: .4rem 0;
+  }}
+  /* ===== 天井早見ストリップ(機種名直下) ===== */
+  .tenjyo-strip {{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: .5rem;
+    background: color-mix(in srgb, var(--tenjyo) 7%, var(--surface-2));
+    border: 1px solid color-mix(in srgb, var(--tenjyo) 22%, var(--border));
+    border-radius: 12px;
+    padding: .65rem .85rem;
+    margin: 0 0 1.1rem 0;
+  }}
+  .tenjyo-strip-cap {{
+    font-size: .72rem;
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: .02em;
+    flex: 1 1 100%;
+  }}
+  .tenjyo-strip-num {{
+    font-variant-numeric: tabular-nums;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--tenjyo);
+    line-height: 1;
+  }}
+  .tenjyo-strip-num .unit {{
+    font-size: .78rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin: 0 .1rem;
+  }}
+  .tenjyo-strip.fallback {{
+    background: var(--surface-2);
+    border-color: var(--border);
+  }}
+  .fallback-pill {{
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--muted);
   }}
   .site-footer {{
     max-width: 720px;
