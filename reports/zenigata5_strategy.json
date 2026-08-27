@@ -1,0 +1,70 @@
+[
+  {
+    "machine": "L主役は銭形5",
+    "category": "天井",
+    "title": "銭形BONUS天井とデカタイム移行",
+    "summary": "通常時の天井は最大1250G+α。ここまで消化すると銭形BONUS当選が確定し、約5割の確率で上位ATにあたる不二子デカタイムへ突入する。設定変更(リセット)があった台は天井が850Gまで短縮されるため、リセット崩れ狙いでは短縮天井を意識するとよい。",
+    "tenjyo_min": 850,
+    "tenjyo_max": 1250,
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/orinpia-slot/243420/"
+  },
+  {
+    "machine": "L主役は銭形5",
+    "category": "ゾーン",
+    "title": "150/350/550Gの区切りゾーン",
+    "summary": "通常時は150G・350G・550Gなど100G単位のキリ番付近で銭形BONUSやCZの当選率がわずかに上乗せされる区切りゾーンが存在する。単独で過信できるほどの上乗せ幅ではないが、他の狙い目条件と重ねて判断する材料になる。",
+    "source_name": "スロパチQuest",
+    "source_url": "https://www.slopachi-quest.com/article/syuyakuhazenigata5-tenjou/"
+  },
+  {
+    "machine": "L主役は銭形5",
+    "category": "狙い目",
+    "title": "リセット短縮天井を意識した狙い目ライン",
+    "summary": "リセット時は天井が850Gまで短縮されるため、開店から追える台では800G前後からハイエナ狙いの射程に入る。通常営業(非リセット)の台は最大天井1250Gが基準になるので、朝一からの実践か据え置き狙いかで狙う目安ゲーム数を変える必要がある。",
+    "tenjyo_min": 800,
+    "tenjyo_max": 1250,
+    "source_name": "スロベース",
+    "source_url": "https://slobase.jp/machines/zenigata5"
+  },
+  {
+    "machine": "L主役は銭形5",
+    "category": "狙い目",
+    "title": "やめどきの目安(引き戻しゾーン消化)",
+    "summary": "AT(デカタイム含む)終了後はすぐにやめず、32G前後の前兆(引き戻しゾーン)を消化してハズレを確認してからやめるのが基本。前兆中や規定ゲーム数手前での放置は再度の当選機会を捨てることになるため注意。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/orinpia-slot/243420/"
+  },
+  {
+    "machine": "L主役は銭形5",
+    "category": "設定示唆",
+    "title": "デカ目(直撃当選)確率の設定差",
+    "summary": "通常時のデカ目(小役成立からの銭形BONUS直撃)出現率に大きな設定差が用意されており、設定2で約1/21580、設定6で約1/5561とおよそ4倍の開きがある。設定判別要素の中でも比較的信頼度が高いとされ、出現回数を数える実践者が多い。",
+    "source_name": "note (けんけん＠スロットデータ分析)",
+    "source_url": "https://note.com/kenslodata/n/n14c453aae356"
+  },
+  {
+    "machine": "L主役は銭形5",
+    "category": "設定示唆",
+    "title": "ボーナス終了画面での設定示唆",
+    "summary": "銭形BONUS終了画面の絵柄や文言パターンに設定示唆が仕込まれており、レアな終了画面ほど高設定寄りの傾向とされる。単体では信頼度が低いため、他の判別要素(初当たりの軽さやデカ目出現)と合わせて総合判断するのが実践者の共通認識。",
+    "source_name": "なな徹",
+    "source_url": "https://nana-press.com/kaiseki/machine/1033/32239/"
+  },
+  {
+    "machine": "L主役は銭形5",
+    "category": "設定示唆",
+    "title": "初当たり確率・機械割の設定差",
+    "summary": "機械割は設定2で約97.9%、設定4で約103.2%、設定5で約107.1%、設定6で約112.1%とされ、設定1は存在しない2〜6の5段階構成。初当たり(銭形BONUS)確率も高設定ほど軽くなるが、設定6だけ他の設定と比べて一段抜けて優遇されているとの考察がある。",
+    "source_name": "1GEKI",
+    "source_url": "https://1geki.jp/slot/l_zenigata5/0/"
+  },
+  {
+    "machine": "L主役は銭形5",
+    "category": "その他",
+    "title": "機種概要とゲームフロー",
+    "summary": "通常時は規定ゲーム数・CZ・デカ目のいずれかから銭形BONUSを目指すゲーム性。銭形BONUS初当たり消化後は必ず上位ATの「デカタイム」へ突入する構成で、その中でも約5割の確率で不二子デカタイムに当選すると上乗せ量が伸びやすい。",
+    "source_name": "P-WORLD",
+    "source_url": "https://www.p-world.co.jp/machine/database/10339"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "machine": "L主役は銭形5",
+    "category": "内部モード示唆",
+    "treatment": "優遇",
+    "target_setting": "5-6",
+    "summary": "「ラストジャッジ」の成功期待度は設定5・6で大きく優遇されているとの実践者の考察があり、成功時のモード移行率も高設定ほど有利になりやすいとされる。",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "source_name": "note (全ての人生に唾を吐け)",
+    "source_url": "https://note.com/pachiprotool/n/n038ec3267879"
+  },
+  {
+    "machine": "L主役は銭形5",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "初当たり(銭形BONUS)確率は高設定ほど軽くなる一方、設定6だけ他の設定から一段飛び抜けて優遇される「別格仕様」との実践者考察がある。設定5と6の判別は初当たりの軽さの差が体感しやすいとされる。",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "1GEKI",
+    "source_url": "https://1geki.jp/slot/l_zenigata5/0/"
+  },
+  {
+    "machine": "L主役は銭形5",
+    "category": "演出頻度偏り",
+    "treatment": "優遇",
+    "target_setting": "5-6",
+    "summary": "上位AT「超デカタイム」への突入契機となるBIGジャッジの成功率、および超デカタイムのループ率は設定5・6で優遇されているとの実践者の考察がある。公式資料による裏付けはなく、あくまで実践傾向からの推測。",
+    "confidence": "低",
+    "source_type": "まとめサイト",
+    "source_name": "なな徹",
+    "source_url": "https://nana-press.com/kaiseki/machine/1033/32239/"
+  },
+  {
+    "machine": "L主役は銭形5",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "高設定(5-6目安)",
+    "summary": "個人の実践報告(約8,112G)では、高設定でも長時間沈む展開はあるものの、ある地点から急激に出玉状況が好転する場面が見られたとされる。初当たり平均は1/250.5、超デカタイム当選は7回との記録で、少ないサンプルながら高設定挙動の参考値として紹介されている。",
+    "confidence": "低",
+    "sample_size": "個人実践 約8,112G(超デカタイム当選7回)",
+    "source_type": "個人ブログ",
+    "source_name": "note (わろた｜設定狙い×ハイエナ)",
+    "source_url": "https://note.com/peka696/n/nb85f1aec59dd"
+  }
+]
