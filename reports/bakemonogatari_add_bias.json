@@ -1,0 +1,26 @@
+[
+  {
+    "machine": "スマスロ化物語",
+    "category": "演出頻度偏り",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "既存の300Gゾーンに加え、200G到達時の解呪ノ儀(CZ)当選率にも設定差があり、設定1・2と設定6で約2倍の差があるとの解析報告。300Gだけでなく200G時点でのCZ当選頻度も高設定寄りの挙動として参考になる。",
+    "sample_size": "解析ベース",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "一撃(化物語ゾーン解説)",
+    "source_url": "https://1geki.jp/slot/l_bakemonogatari/45/"
+  },
+  {
+    "machine": "スマスロ化物語",
+    "category": "内部モード示唆",
+    "treatment": "優遇",
+    "target_setting": "高設定",
+    "summary": "規定枚数到達時の擬似怪異揃いの形に違いがあり、低設定や冷遇中の台では真ん中リールのみの怪異揃いになりやすいのに対し、高設定の台では怪異揃いや怪異2個が複数リールに絡む豪華な形になりやすいとの個人考察。あくまで実践者の考察段階であり信頼度は低めだが、疑似怪異揃いの見た目も高設定挙動の目安の一つとして紹介する。",
+    "sample_size": "個人考察",
+    "confidence": "低",
+    "source_type": "個人ブログ",
+    "source_name": "上振れブログ(化物語 高設定挙動まとめ)",
+    "source_url": "https://sp-haishin.com/l-bakemonogatari-456/"
+  }
+]
