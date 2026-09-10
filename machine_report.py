@@ -13,7 +13,9 @@ machine_report.py
 
 import argparse
 import html
+import math
 import os
+import re
 import sqlite3
 import sys
 
@@ -54,6 +56,21 @@ TREATMENT_KEY = {
     "優遇": "yugu",
     "冷遇": "reigu",
     "不明": "fumei",
+}
+
+# バッジに添える絵文字アイコン（画像素材の代わりに視認性を上げるための最小限のもの）
+CATEGORY_ICON = {
+    "天井": "🎯",
+    "ゾーン": "📍",
+    "設定示唆": "🔎",
+    "狙い目": "🧭",
+    "その他": "🗂️",
+}
+
+TREATMENT_ICON = {
+    "優遇": "⬆️",
+    "冷遇": "⬇️",
+    "不明": "❔",
 }
 
 
@@ -118,21 +135,103 @@ def esc(value) -> str:
     return html.escape(str(value))
 
 
+def parse_setting_range(text) -> set[int] | None:
+    """target_setting の自由記述文字列(例: '5-6', '4以上', '高設定(5-6目安)',
+    '偶数設定(2・4・6)')から、該当する設定(1〜6)の集合を推定する。
+    パースできない場合は None を返す（その場合はテキストのみ表示）。
+    """
+    if not text:
+        return None
+    t = str(text)
+    m = re.search(r"([1-6])\s*[-〜～]\s*([1-6])", t)
+    if m:
+        a, b = sorted((int(m.group(1)), int(m.group(2))))
+        return set(range(a, b + 1))
+    m = re.search(r"([1-6])\s*以上", t)
+    if m:
+        return set(range(int(m.group(1)), 7))
+    m = re.search(r"([1-6])\s*以下", t)
+    if m:
+        return set(range(1, int(m.group(1)) + 1))
+    nums = {int(n) for n in re.findall(r"[1-6]", t)}
+    if nums:
+        return nums
+    if "高設定" in t:
+        return {4, 5, 6}
+    if "低設定" in t:
+        return {1, 2, 3}
+    return None
+
+
+def render_setting_gauge(target_setting, treatment) -> str:
+    """優遇/冷遇の対象設定を、1〜6の●○ドットで一目でわかるように可視化する。"""
+    if not target_setting:
+        return ""
+    settings = parse_setting_range(target_setting)
+    if not settings:
+        return f'<div class="setting-gauge"><span class="target-setting">対象設定 {esc(target_setting)}</span></div>'
+    color_key = TREATMENT_KEY.get(treatment, "fumei")
+    dots = "".join(
+        f'<i class="sg-dot{" lit" if n in settings else ""}" style="--sgc: var(--{color_key})">{n}</i>'
+        for n in range(1, 7)
+    )
+    return f"""
+    <div class="setting-gauge">
+      <span class="sg-dots">{dots}</span>
+      <span class="sg-text">対象設定 {esc(target_setting)}</span>
+    </div>
+    """
+
+
+def render_tenjyo_bar(tmin, tmax) -> str:
+    """天井G数のmin/maxを0起点の横棒バーとして可視化する。
+    表示スケールはこのバー自身の最大値から動的に決める(機種ごとに天井G数の
+    レンジが大きく異なるため、固定スケールだと小さい機種が見えなくなる)。
+    """
+    if tmin is None and tmax is None:
+        return ""
+    base = tmax if tmax is not None else tmin
+    scale = max(500, math.ceil(base * 1.15 / 100) * 100)
+    open_end = False
+    if tmin is not None and tmax is not None:
+        left_pct = tmin / scale * 100
+        width_pct = max(1.5, (tmax - tmin) / scale * 100)
+    elif tmax is not None:
+        left_pct = 0.0
+        width_pct = max(1.5, tmax / scale * 100)
+    else:
+        left_pct = tmin / scale * 100
+        width_pct = 100 - left_pct
+        open_end = True
+    fill_class = "tenjyo-bar-fill open-end" if open_end else "tenjyo-bar-fill"
+    label = f"{esc(tmin) if tmin is not None else ''}〜{esc(tmax) if tmax is not None else ''}G"
+    return f"""
+    <div class="tenjyo-bar" role="img" aria-label="天井目安 {label} (0〜{scale}Gスケール)">
+      <div class="tenjyo-bar-track">
+        <div class="{fill_class}" style="left:{left_pct:.1f}%; width:{width_pct:.1f}%;"></div>
+      </div>
+      <div class="tenjyo-bar-scale"><span>0G</span><span>{scale}G</span></div>
+    </div>
+    """
+
+
 def render_strategy_card(row) -> str:
     badge_class = CATEGORY_BADGE_CLASS.get(row["category"], "badge-other")
+    icon = CATEGORY_ICON.get(row["category"], "")
     acc = CATEGORY_KEY.get(row["category"], "other")
     tenjyo_range = ""
     if row["tenjyo_min"] is not None or row["tenjyo_max"] is not None:
         tmin = row["tenjyo_min"] if row["tenjyo_min"] is not None else "?"
         tmax = row["tenjyo_max"] if row["tenjyo_max"] is not None else "?"
-        tenjyo_range = f'<div class="chip chip-tenjyo">🎯 天井目安 {esc(tmin)}–{esc(tmax)}G</div>'
+        tenjyo_bar = render_tenjyo_bar(row["tenjyo_min"], row["tenjyo_max"])
+        tenjyo_range = f'<div class="chip chip-tenjyo">🎯 天井目安 {esc(tmin)}–{esc(tmax)}G</div>{tenjyo_bar}'
     source_line = esc(row["source_name"])
     if row["source_url"]:
         source_line = f'<a href="{esc(row["source_url"])}" target="_blank" rel="noopener">{source_line}</a>'
     return f"""
     <article class="info-card acc-{acc}">
       <div class="info-card-head">
-        <span class="badge {badge_class}">{esc(row['category'])}</span>
+        <span class="badge {badge_class}">{icon} {esc(row['category'])}</span>
         <span class="info-title">{esc(row['title'])}</span>
       </div>
       <p class="info-summary">{esc(row['summary'])}</p>
@@ -146,7 +245,9 @@ def render_bias_card(row) -> str:
     treat_class = TREATMENT_BADGE_CLASS.get(row["treatment"], "badge-fumei")
     conf_class = CONFIDENCE_BADGE_CLASS.get(row["confidence"], "conf-mid")
     acc = TREATMENT_KEY.get(row["treatment"], "fumei")
-    target = f'<span class="target-setting">対象設定 {esc(row["target_setting"])}</span>' if row["target_setting"] else ""
+    treat_icon = TREATMENT_ICON.get(row["treatment"], "")
+    cat_icon = CATEGORY_ICON.get(row["category"], "")
+    setting_gauge = render_setting_gauge(row["target_setting"], row["treatment"])
     sample = f'<div class="chip chip-sample">📊 サンプル {esc(row["sample_size"])}</div>' if row["sample_size"] else ""
     source_line = esc(row["source_name"])
     if row["source_url"]:
@@ -154,12 +255,12 @@ def render_bias_card(row) -> str:
     return f"""
     <article class="info-card bias-card acc-{acc}">
       <div class="info-card-head">
-        <span class="badge {treat_class}">{esc(row['treatment'])}</span>
-        <span class="badge badge-cat">{esc(row['category'])}</span>
+        <span class="badge {treat_class}">{treat_icon} {esc(row['treatment'])}</span>
+        <span class="badge badge-cat">{cat_icon} {esc(row['category'])}</span>
         <span class="conf-badge {conf_class}">信頼度 {esc(row['confidence'])}</span>
-        {target}
       </div>
       <p class="info-summary">{esc(row['summary'])}</p>
+      {setting_gauge}
       {sample}
       <div class="info-source"><span class="src-type">{esc(row['source_type'])}</span>{source_line}<span class="src-dot">·</span>{esc(row['collected_date'])}収集</div>
     </article>
@@ -202,10 +303,12 @@ def render_tenjyo_strip(strategy_rows) -> str:
       <span class="fallback-pill">🎯 天井情報あり（詳細は下記カード参照）</span>
     </div>
     """
+    bar = render_tenjyo_bar(tmin, tmax)
     return f"""
     <div class="tenjyo-strip">
       <span class="tenjyo-strip-cap">🎯 天井目安</span>
       <span class="tenjyo-strip-num">{num}</span>
+      <div class="tenjyo-strip-bar">{bar}</div>
     </div>
     """
 
@@ -663,6 +766,72 @@ def render_html(sections_data) -> str:
     padding: .1rem .5rem;
     border-radius: 999px;
   }}
+  /* ===== 優遇/冷遇の対象設定ドット(1〜6を●○で可視化) ===== */
+  .setting-gauge {{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: .4rem 0;
+  }}
+  .sg-dots {{
+    display: inline-flex;
+    gap: .22rem;
+    flex: 0 0 auto;
+  }}
+  .sg-dot {{
+    width: 1.35rem;
+    height: 1.35rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .68rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--faint);
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }}
+  .sg-dot.lit {{
+    color: #fff;
+    background: var(--sgc, var(--primary));
+    border-color: var(--sgc, var(--primary));
+  }}
+  .sg-text {{
+    font-size: .74rem;
+    font-weight: 600;
+    color: var(--muted);
+  }}
+  /* ===== 天井G数の横棒バー(min〜maxを0起点で可視化) ===== */
+  .tenjyo-bar {{
+    margin: .35rem 0 .1rem;
+  }}
+  .tenjyo-bar-track {{
+    position: relative;
+    height: 10px;
+    border-radius: 999px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }}
+  .tenjyo-bar-fill {{
+    position: absolute;
+    top: 0; bottom: 0;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--tenjyo), color-mix(in srgb, var(--tenjyo) 55%, var(--primary-2)));
+  }}
+  .tenjyo-bar-fill.open-end {{
+    background: linear-gradient(90deg, var(--tenjyo), color-mix(in srgb, var(--tenjyo) 25%, transparent));
+  }}
+  .tenjyo-bar-scale {{
+    display: flex;
+    justify-content: space-between;
+    font-size: .62rem;
+    color: var(--faint);
+    margin-top: .15rem;
+    font-variant-numeric: tabular-nums;
+  }}
   .info-summary {{
     margin: 0.35rem 0;
     font-size: 0.9rem;
@@ -738,6 +907,10 @@ def render_html(sections_data) -> str:
     font-weight: 600;
     color: var(--muted);
     margin: 0 .1rem;
+  }}
+  .tenjyo-strip-bar {{
+    flex: 1 1 100%;
+    margin-top: .15rem;
   }}
   .tenjyo-strip.fallback {{
     background: var(--surface-2);
