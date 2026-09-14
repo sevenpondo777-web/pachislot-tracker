@@ -1,0 +1,14 @@
+[
+  {
+    "machine": "スマスロ甲鉄城のカバネリ海門決戦",
+    "category": "内部モード示唆",
+    "treatment": "優遇",
+    "target_setting": "5-6",
+    "summary": "景之STを消化して終了した後、次回のSTを再び景之STにするループ抽選が行われており、この抽選の当選率が高設定ほど優遇されているとの解析報告がある。設定5では上位ループへの継続勝率が80%超、設定6では85%超とされ、景之STを連続して維持できているかどうかが既存のボーナス初当り確率・周期到達期待度とは別軸の高設定判別材料になる。",
+    "sample_size": "解析ベース",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "スロッターの道具箱(設定判別・設定差まとめ)",
+    "source_url": "https://slot-toolbox.com/kabaneri-unato-setting/"
+  }
+]
