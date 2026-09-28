@@ -1,0 +1,76 @@
+[
+  {
+    "machine": "パチスロ かぐや様は告らせたい",
+    "category": "設定示唆",
+    "title": "ボーナス終了画面の色と獲得枚数による設定示唆",
+    "summary": "ボーナス終了画面は色で設定を示唆し、赤は高設定寄り、紫は設定2以上、銀は設定4以上、金は設定6濃厚とされる。加えて獲得枚数の特定値(246枚・456枚・666枚など)でも設定示唆があるとされるため、終了時の画面と枚数は毎回確認したい。",
+    "source_name": "アルテマ(かぐや様 設定判別)",
+    "source_url": "https://altema.jp/pachimo/lkaguyasamasisa"
+  },
+  {
+    "machine": "パチスロ かぐや様は告らせたい",
+    "category": "設定示唆",
+    "title": "レギュラー中のキャラ紹介とミニ藤原の衣装変化",
+    "summary": "レギュラー中のキャラ紹介では白銀パパ登場が設定4以上濃厚、白銀圭が設定2以上濃厚、早坂愛は高設定示唆。ミニ藤原の衣装がラブ探偵から制服に変化すると設定2以上、体操服からラブ探偵で設定4以上、といった示唆パターンがある。",
+    "source_name": "アルテマ(かぐや様 設定判別)",
+    "source_url": "https://altema.jp/pachimo/lkaguyasamasisa"
+  },
+  {
+    "machine": "パチスロ かぐや様は告らせたい",
+    "category": "やめどき",
+    "title": "ボーナス後は130G+前兆確認でやめ",
+    "summary": "通常のやめどきはボーナス終了後130Gまで消化し、前兆の有無まで確認してから。130Gは最初のCZ抽選ゾーンなので、ここまで回さずにやめると初当り機会を捨てることになる。",
+    "source_name": "アルテマ(かぐや様)",
+    "source_url": "https://altema.jp/pachimo/lkaguyasama"
+  },
+  {
+    "machine": "スマスロ モンスターハンターライズ",
+    "category": "狙い目",
+    "title": "状況別の狙い目G数(朝一・AT後・上位AT後)",
+    "summary": "朝一リセット時は400G〜、AT1回当選後は400G〜、AT2回当選後は600G〜、上位AT後は150G〜が狙い目の目安として紹介されている。直前のAT履歴で拾い始めるG数が大きく変わる点に注意。",
+    "source_name": "アルテマ(モンハンライズ 天井)",
+    "source_url": "https://altema.jp/pachimo/lmhrisetenjyo"
+  },
+  {
+    "machine": "スマスロ モンスターハンターライズ",
+    "category": "やめどき",
+    "title": "AT後は1G回して即やめ／天国示唆時は初回クエストまで",
+    "summary": "AT終了後は1G回してレア役非成立を確認できれば即やめ。天国示唆が出ている場合や上位AT終了後は、天国モード(初回クエスト)まで回すのが推奨される。",
+    "source_name": "アルテマ(モンハンライズ 天井)",
+    "source_url": "https://altema.jp/pachimo/lmhrisetenjyo"
+  },
+  {
+    "machine": "スマスロ モンスターハンターライズ",
+    "category": "設定示唆",
+    "title": "演出・終了画面による設定示唆の種類",
+    "summary": "エンタライオンの咆哮は設定6濃厚、ウツシの特定ボイスは設定5以上濃厚。終了画面は全員集合が設定5以上濃厚、ヒノエ&ミノト&エンタライオンが設定6濃厚、ララ&ミランダ&隊長(インナー)は次回天国濃厚とされる。",
+    "source_name": "アルテマ(モンハンライズ)",
+    "source_url": "https://altema.jp/pachimo/lmhrise"
+  },
+  {
+    "machine": "スマスロバイオハザードRE:3",
+    "category": "天井",
+    "title": "AT間天井1000G+αとCZスルー回数の示唆色",
+    "summary": "AT間天井は1000G+αで、設定変更後は650G+αに短縮される。メニュー画面のCZスルー回数示唆は白がデフォルト、青が残り3回以内示唆、緑が残り3回以内濃厚、赤が次回スルー天井濃厚。",
+    "tenjyo_min": 650,
+    "tenjyo_max": 1000,
+    "source_name": "なな徹(バイオRE3 天井)",
+    "source_url": "https://nana-press.com/kaiseki/machine/1140/36677/"
+  },
+  {
+    "machine": "スマスロバイオハザードRE:3",
+    "category": "狙い目",
+    "title": "朝一280G〜・AT後550G〜・CZ5スルー以上",
+    "summary": "拾い始めの目安は朝一リセット時280G〜、AT後550G〜、CZスルー5回以上の台。リセット狙いは天井短縮とCZ早期突入が重なるため、より浅い150G前後から狙えるとされる。",
+    "source_name": "なな徹(バイオRE3 天井)",
+    "source_url": "https://nana-press.com/kaiseki/machine/1140/36677/"
+  },
+  {
+    "machine": "スマスロバイオハザードRE:3",
+    "category": "設定示唆",
+    "title": "フィギュアの種類とAT初当りG数(333/666OVER)",
+    "summary": "フィギュア出現はHunter γが奇数設定強示唆、Mikhail VictorとTyrell Patrickが偶数設定強示唆、ネメシス第1形態が高設定弱示唆。AT初当りのG数が333OVERなら設定3以上、666OVERなら設定6濃厚とされる。",
+    "source_name": "なな徹(バイオRE3 設定判別)",
+    "source_url": "https://nana-press.com/kaiseki/machine/1140/36676/"
+  }
+]

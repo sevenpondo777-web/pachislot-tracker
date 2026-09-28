@@ -1,0 +1,50 @@
+[
+  {
+    "machine": "パチスロ かぐや様は告らせたい",
+    "category": "内部モード示唆",
+    "treatment": "優遇",
+    "target_setting": "高設定",
+    "summary": "終了画面の赤・銀・金や、BIG比率・SBB比率・エクストラBB昇格率・特化ゾーン当選率・ロングフリーズ確率が高設定ほど優遇されるとされる。実戦ではBIG比率とSBB比率を並べて見ると設定差の手掛かりになる。",
+    "sample_size": "解析値ベースで実践サンプルなし",
+    "confidence": "中",
+    "source_type": "まとめ/解析サイト",
+    "source_name": "アルテマ(かぐや様 設定判別)",
+    "source_url": "https://altema.jp/pachimo/lkaguyasamasisa"
+  },
+  {
+    "machine": "スマスロ モンスターハンターライズ",
+    "category": "内部モード示唆",
+    "treatment": "優遇",
+    "target_setting": "リセット時/高設定",
+    "summary": "リセット後は天井が浅く(400G〜が狙い目)、初回クエスト(天国)へ移行しやすい優遇があると解説されている。上位AT後も天国モードまで続行する立ち回りが推奨され、モード移行に偏りがある前提の運用。",
+    "sample_size": "解析情報ベース",
+    "confidence": "中",
+    "source_type": "まとめ/解析サイト",
+    "source_name": "アルテマ(モンハンライズ 天井)",
+    "source_url": "https://altema.jp/pachimo/lmhrisetenjyo"
+  },
+  {
+    "machine": "スマスロバイオハザードRE:3",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "高設定",
+    "summary": "AT初当り確率は設定1が約1/399.0、設定6が約1/311.2と設定差がある。333OVERのAT初当りは設定3以上濃厚、666OVERは設定6濃厚とされ、初当りG数そのものが設定判別材料になる。",
+    "sample_size": "解析値",
+    "confidence": "中",
+    "source_type": "まとめ/解析サイト",
+    "source_name": "なな徹(バイオRE3 設定判別)",
+    "source_url": "https://nana-press.com/kaiseki/machine/1140/36676/"
+  },
+  {
+    "machine": "スマスロバイオハザードRE:3",
+    "category": "その他",
+    "treatment": "優遇",
+    "target_setting": "リセット時",
+    "summary": "設定変更後は天井が1000G+αから650G+αに短縮され、CZにも早期突入しやすくなる。朝一は浅いG数(150G〜)からでも拾える優遇があるとされる。",
+    "sample_size": "解析値",
+    "confidence": "中",
+    "source_type": "まとめ/解析サイト",
+    "source_name": "なな徹(バイオRE3 天井)",
+    "source_url": "https://nana-press.com/kaiseki/machine/1140/36677/"
+  }
+]
