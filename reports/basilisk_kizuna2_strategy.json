@@ -1,0 +1,68 @@
+[
+  {
+    "machine": "スマスロ バジリスク絆2 天膳",
+    "category": "天井",
+    "title": "BC間のゲーム数天井",
+    "summary": "通常時のBC間には333G(+α)前後の天井があり、到達でBC当選となる。解析まとめでは推定投資は1万円強とされる。",
+    "source_name": "ナナプレス",
+    "source_url": "https://nana-press.com/kaiseki/machine/666/18317/",
+    "tenjyo_min": 333,
+    "tenjyo_max": 333
+  },
+  {
+    "machine": "スマスロ バジリスク絆2 天膳",
+    "category": "天井",
+    "title": "BCスルー天井",
+    "summary": "BCを一定回数スルーするとBT(AT)に当選する仕様。通常はBC6スルー後の7回目で、最も有利なモード5のみ7スルー後の8回目とされる。",
+    "source_name": "ナナプレス",
+    "source_url": "https://nana-press.com/kaiseki/machine/666/18317/"
+  },
+  {
+    "machine": "スマスロ バジリスク絆2 天膳",
+    "category": "狙い目",
+    "title": "BC間のスルー回数別狙い目G数",
+    "summary": "BC間は0スルー225G〜、1スルー180G〜、2スルー160G〜からBC当選まで追うのが目安とされる。サイトにより数G〜数十G差があるため、交換率で調整したい。",
+    "source_name": "ハイエナくん",
+    "source_url": "https://haienakun.com/kizuna2/"
+  },
+  {
+    "machine": "スマスロ バジリスク絆2 天膳",
+    "category": "狙い目",
+    "title": "BT間ハマりと有利区間差枚",
+    "summary": "BT間のハマりが深い台は期待値が上がる傾向があり、特に400の倍数付近は宿怨ポイントの分岐で期待枚数が伸びやすいとの考察がある。有利区間内の差枚が1000枚近い台をBT当選まで打つ手法も有効とされる。",
+    "source_name": "スロット人(slotjin)",
+    "source_url": "https://slotjin.com/tenjoukitaichi/tenzen/"
+  },
+  {
+    "machine": "スマスロ バジリスク絆2 天膳",
+    "category": "やめどき",
+    "title": "BC/BT終了後は基本即やめ",
+    "summary": "BCまたはBT終了後は即やめが基本。BT終了後は有利区間が切り替わるため続行の旨みは薄い。ハイエナ時は当選後すぐ離席してよい。",
+    "source_name": "ナナプレス",
+    "source_url": "https://nana-press.com/kaiseki/machine/666/"
+  },
+  {
+    "machine": "スマスロ バジリスク絆2 天膳",
+    "category": "設定示唆",
+    "title": "BC確率・BT確率と機械割",
+    "summary": "BC確率は設定1〜6で約1/124.7〜1/105.0、BT確率は約1/418.1〜1/247.3。設定6の機械割は114.9%と公表解析で高めだが、荒波スペックで設定6でも勝率は約65%という分析がある。",
+    "source_name": "ナナプレス",
+    "source_url": "https://nana-press.com/kaiseki/machine/666/18315/"
+  },
+  {
+    "machine": "スマスロ バジリスク絆2 天膳",
+    "category": "設定示唆",
+    "title": "BC色比率・弱チェリー・確定画面",
+    "summary": "BC色は奇数設定で紫、偶数設定で赤が出やすい。弱チェリー確率にも設定差がある。弦之介BCの撃破人数666人は設定6確定、BC当選時の筐体上部赤LEDでAT非当選なら設定4以上濃厚とされる。",
+    "source_name": "ぽこすろっと",
+    "source_url": "https://www.nankaikoya.jp/basilisk-kizuna2-tenzen-settei/"
+  },
+  {
+    "machine": "スマスロ バジリスク絆2 天膳",
+    "category": "設定示唆",
+    "title": "モード・初期ストックの高設定優遇",
+    "summary": "高設定ほど良いモードテーブルへ振り分けられやすく、チャンス目でのモードアップやAT初期ストック付与も優遇されるため、単発終了が少なくなる。前作より設定6の挙動が荒く、判別難度は高めと評価される。",
+    "source_name": "ツバサ考察(パチセブン)",
+    "source_url": "https://pachiseven.jp/articles/detail/20299"
+  }
+]

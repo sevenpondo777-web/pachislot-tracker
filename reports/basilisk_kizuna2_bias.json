@@ -1,0 +1,41 @@
+[
+  {
+    "machine": "スマスロ バジリスク絆2 天膳",
+    "category": "低モード滞在時の当選",
+    "treatment": "優遇",
+    "target_setting": "高設定",
+    "summary": "高設定は低モードでも当たりやすく、BC平均スルーが2回前後に収まりやすい、ハマりにくいという挙動が高設定の特徴として語られている。",
+    "sample_size": "解析者の考察・体感ベース(大規模集計は未確認)",
+    "confidence": "低",
+    "source_type": "ブログ・考察",
+    "source_name": "ツバサ考察(パチセブン)",
+    "source_url": "https://pachiseven.jp/articles/detail/20299",
+    "notes": "公式非公開の推測を含む。"
+  },
+  {
+    "machine": "スマスロ バジリスク絆2 天膳",
+    "category": "謎当たり・高確当選",
+    "treatment": "優遇",
+    "target_setting": "高設定",
+    "summary": "超高確や高確での当選、いわゆる謎当たりが高設定で多く見られるとされる。単発では判別に使えず、複数要素の積み上げが前提。",
+    "sample_size": "解析者の考察ベース",
+    "confidence": "低",
+    "source_type": "ブログ・考察",
+    "source_name": "ツバサ考察(パチセブン)",
+    "source_url": "https://pachiseven.jp/articles/detail/20299",
+    "notes": "サンプル数の根拠は未提示。"
+  },
+  {
+    "machine": "スマスロ バジリスク絆2 天膳",
+    "category": "設定6の荒さ・勝率",
+    "treatment": "冷遇",
+    "target_setting": "設定6",
+    "summary": "前作と違い設定6が圧倒的な挙動を見せるとは限らず、設定6でも勝率65%・5000枚突破率約30%・1万枚突破率約6%という荒波スペックと分析されている。",
+    "sample_size": "シミュレーション/スランプグラフ集計に基づく解説",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "MOEスロパチ",
+    "source_url": "https://moe-slotpachi.com/pachinko-slot/basilisk-kizuna2-tenzen-blackedition-how-to-get6/",
+    "notes": "理論値寄りの数値で、実戦の個体差は大きい。"
+  }
+]
