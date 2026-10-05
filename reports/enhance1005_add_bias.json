@@ -7,7 +7,7 @@
     "summary": "2スルー以内に天国以上へ移行する割合の合計が、設定6は約89.6%、設定5は約77.4%、設定4は約74.7%と、設定6だけ頭一つ抜けて優遇されている。",
     "sample_size": "解析値(公開情報)",
     "confidence": "中",
-    "source_type": "まとめ/解析サイト",
+    "source_type": "まとめサイト",
     "source_name": "nana-press(沖ドキ！DUO アンコール 解析まとめ)",
     "source_url": "https://nana-press.com/kaiseki/machine/1071/",
     "notes": "設定6と他設定の差が大きい点が特徴。メーカー非公式の集計・解析記載で未検証のため信頼度は中。"
@@ -20,7 +20,7 @@
     "summary": "ボーナス初当りは高設定ほど優遇(設定1約1/240→設定6約1/181)。1/200を切る台は高設定挙動の目安だが、短時間のサンプルではブレるため過信しない。",
     "sample_size": "解析値(公開情報)",
     "confidence": "中",
-    "source_type": "まとめ/解析サイト",
+    "source_type": "まとめサイト",
     "source_name": "nana-press(沖ドキ！DUO アンコール 解析まとめ)",
     "source_url": "https://nana-press.com/kaiseki/machine/1071/",
     "notes": "初当り確率の設定差は解析値として比較的安定。ただし実戦での判別には数千G規模の試行が必要。"
@@ -33,7 +33,7 @@
     "summary": "低確・通常滞在時のチェリーからレジェンドバトルに当選する率が設定1の3.1%から設定6の9.0%まで上昇し、特に設定4以降で大きく優遇される。",
     "sample_size": "解析値(公開情報)",
     "confidence": "中",
-    "source_type": "まとめ/解析サイト",
+    "source_type": "まとめサイト",
     "source_name": "アルテマ(頭文字D 2nd 設定差まとめ)",
     "source_url": "https://altema.jp/pachimo/linidsettei",
     "notes": "メーカー非公式の解析値。チェリーを引いた回数に対するLB当選割合を見るため試行数が必要。"
@@ -46,7 +46,7 @@
     "summary": "ドリフトゾーン出現率が設定1約1/10624、設定4約1/6503、設定6約1/5345と、設定4以降で大きく優遇されている。",
     "sample_size": "解析値(公開情報)",
     "confidence": "中",
-    "source_type": "まとめ/解析サイト",
+    "source_type": "まとめサイト",
     "source_name": "アルテマ(頭文字D 2nd 設定差まとめ)",
     "source_url": "https://altema.jp/pachimo/linidsettei",
     "notes": "出現自体が稀なため、1日の実戦では判別材料として弱い。長期データ向け。"
@@ -59,7 +59,7 @@
     "summary": "スイカ契機のCZ当選率は設定1の20.3%から設定6の30.5%まで上昇し、AT中の殲滅作戦突入率も設定4以上で約37.5%以上に優遇される。",
     "sample_size": "解析値(公開情報)",
     "confidence": "中",
-    "source_type": "まとめ/解析サイト",
+    "source_type": "まとめサイト",
     "source_name": "スロパチクエスト(ゴジラvsエヴァ 設定差まとめ)",
     "source_url": "https://www.slopachi-quest.com/article/godzillavsevangelion-settei/",
     "notes": "メーカー非公式の解析値。スイカ成立回数が少ないと割合がブレやすい。"
@@ -72,7 +72,7 @@
     "summary": "設定変更後の初期内部状態で、設定6は高確約20.3%・超高確約0.8%と上位状態へ移行しやすく、朝イチの挙動で高設定を拾える可能性がある。",
     "sample_size": "解析値(公開情報)",
     "confidence": "低",
-    "source_type": "まとめ/解析サイト",
+    "source_type": "まとめサイト",
     "source_name": "スロパチクエスト(ゴジラvsエヴァ 設定差まとめ)",
     "source_url": "https://www.slopachi-quest.com/article/godzillavsevangelion-settei/",
     "notes": "朝イチ以外では状態の判別が難しく、実践的な検証例が乏しいため信頼度は低め。"
