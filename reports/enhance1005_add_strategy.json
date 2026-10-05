@@ -1,0 +1,74 @@
+[
+  {
+    "machine": "スマスロ沖ドキ！DUO アンコール",
+    "category": "設定示唆",
+    "title": "ボーナス初当り・チェリー確率の設定差",
+    "summary": "ボーナス初当りは設定1が約1/240、設定6が約1/181で、概ね1/200を切れば設定5以上を疑う目安。通常時チェリー出現率も設定1約1/46.8、設定6約1/40.3と差があり、試行数を稼いで見るほど判別精度が上がる。",
+    "source_name": "nana-press(沖ドキ！DUO アンコール 解析まとめ)",
+    "source_url": "https://nana-press.com/kaiseki/machine/1071/"
+  },
+  {
+    "machine": "スマスロ沖ドキ！DUO アンコール",
+    "category": "設定示唆",
+    "title": "ボーナステンパイ音とボーナス中楽曲の設定示唆",
+    "summary": "テンパイ音は機械音「ぴこーん」が奇数設定示唆、「てぃろりろ」が偶数設定示唆、ボイス「私、あなたのことが…ずっと」は設定5以上濃厚。ボーナス中に「私バージョンアップ！」が流れると1G連が濃厚で、設定2以上に期待でき高設定ほど出やすい。",
+    "source_name": "1geki(沖ドキDUOアンコール 設定差まとめ)",
+    "source_url": "https://1geki.jp/slot/l_okidoki_duo_encore/0/"
+  },
+  {
+    "machine": "スマスロ沖ドキ！DUO アンコール",
+    "category": "やめどき",
+    "title": "ボーナス後32Gとスルー継続時の続行",
+    "summary": "基本は天国以上を確認するためボーナス後32Gまで消化してやめる。天国へ上がらない状態は最大10回目のボーナスで天国以上に到達するため、単発が続いている台は途中でやめず追う価値がある。",
+    "source_name": "p-mart(沖ドキ！DUOアンコール 設定判別・やめどき)",
+    "source_url": "https://p-mart.net/okidoki-duo-encore/"
+  },
+  {
+    "machine": "スマスロ頭文字D 2nd",
+    "category": "設定示唆",
+    "title": "ドリフトゾーン確率・LB当選率の設定差",
+    "summary": "ドリフトゾーン出現率は設定1が約1/10624、設定6が約1/5345と約2倍の差があり、設定4以上で大きく優遇される。低確・通常滞在時のチェリーからレジェンドバトルへの当選率は設定1:3.1%、設定2:3.5%、設定3:3.9%、設定4:5.5%、設定5:7.0%、設定6:9.0%。",
+    "source_name": "アルテマ(頭文字D 2nd 設定差まとめ)",
+    "source_url": "https://altema.jp/pachimo/linidsettei"
+  },
+  {
+    "machine": "スマスロ頭文字D 2nd",
+    "category": "その他",
+    "title": "通常時ステージによるモード・前兆示唆",
+    "summary": "通常時ステージはモードや前兆を示唆する。秋名山は前兆ステージ、秋名湖(夜)は高確または本前兆の濃厚示唆で、ステージ移行を見て続行・即やめの判断材料にできる。",
+    "source_name": "p-gabu(スマスロ 頭文字D 2nd 打ち方・設定示唆)",
+    "source_url": "https://p-gabu.jp/guideworks/machinecontents/detail/6668"
+  },
+  {
+    "machine": "スマスロ頭文字D 2nd",
+    "category": "設定示唆",
+    "title": "チャンスチェリー・ドリフト目出現率の設定差",
+    "summary": "通常時のチャンスチェリー確率と、狙え高確中以外でのドリフト目出現率にも設定差があり、高設定ほど出現しやすい。ボーナス・AT確率と併せてカウントすると設定推測の補助になる。",
+    "source_name": "アルテマ(頭文字D 2nd 設定差まとめ)",
+    "source_url": "https://altema.jp/pachimo/linidsettei"
+  },
+  {
+    "machine": "スマスロ ゴジラ対エヴァンゲリオン",
+    "category": "設定示唆",
+    "title": "スイカ契機CZ当選率の具体値",
+    "summary": "通常時スイカ成立でのCZ当選率は設定1:20.3%、設定2:21.1%、設定4:25.0%、設定5:27.7%、設定6:30.5%。設定4以上で25%を超えるため、スイカを多く引いた日はCZ当選割合を確認するとよい。",
+    "source_name": "スロパチクエスト(ゴジラvsエヴァ 設定差まとめ)",
+    "source_url": "https://www.slopachi-quest.com/article/godzillavsevangelion-settei/"
+  },
+  {
+    "machine": "スマスロ ゴジラ対エヴァンゲリオン",
+    "category": "設定示唆",
+    "title": "AT中スイカ契機の殲滅作戦突入率",
+    "summary": "AT中のスイカからの特化ゾーン『殲滅作戦』当選率は設定1・2が約30.1%、設定4・5が約37.5%、設定6が約39.1%。設定6の殲滅作戦成功期待度は約65.3%と高い。",
+    "source_name": "スロパチクエスト(ゴジラvsエヴァ 設定差まとめ)",
+    "source_url": "https://www.slopachi-quest.com/article/godzillavsevangelion-settei/"
+  },
+  {
+    "machine": "スマスロ ゴジラ対エヴァンゲリオン",
+    "category": "設定示唆",
+    "title": "初期内部状態の移行率と機械割",
+    "summary": "設定変更後の初期内部状態は高設定ほど高確以上に移行しやすく、設定6は通常約78.9%・高確約20.3%・超高確約0.8%。設定6の機械割は約114.9%、AT確率は約1/407、ボーナス確率は約1/245。",
+    "source_name": "スロパチクエスト(ゴジラvsエヴァ 設定差まとめ)",
+    "source_url": "https://www.slopachi-quest.com/article/godzillavsevangelion-settei/"
+  }
+]
