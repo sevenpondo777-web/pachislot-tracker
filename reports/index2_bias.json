@@ -1,0 +1,58 @@
+[
+  {
+    "machine": "スマスロ とある魔術の禁書目録2",
+    "category": "AT当選率偏り",
+    "title": "AT初当たりの設定差",
+    "summary": "AT確率は設定1が約1/398.8、設定6が約1/338.4で機械割は97.9〜113.3%。設定4以上の目安は1/370を切るあたりとされる。設定差は小さく単独では判別しづらい。",
+    "source_name": "スロぱちクエスト",
+    "source_url": "https://www.slopachi-quest.com/article/toaru-majutsu-no-kinsho-mokuroku-2-settei/",
+    "treatment": "優遇",
+    "target_setting": "4以上",
+    "sample_size": "導入直後(稼働約2か月)で解析値ベース、大規模実戦集計は限定的",
+    "confidence": "低",
+    "source_type": "まとめサイト",
+    "notes": "スペック値は解析情報、4以上ラインは各サイトの予想。"
+  },
+  {
+    "machine": "スマスロ とある魔術の禁書目録2",
+    "category": "その他",
+    "title": "AT直撃の設定差",
+    "summary": "AT直撃は設定1が約1/8000、設定6が約1/4000とされ約2倍の差がある。ただし天井到達時や超レア役成立時の当選は全設定共通なのでサンプルから除外する必要がある。",
+    "source_name": "亮磁極回胴夫婦記",
+    "source_url": "https://ryojirisa.blog.jp/archives/38582035.html",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "sample_size": "解析値ベース、実戦サンプルは極少",
+    "confidence": "中",
+    "source_type": "個人ブログ",
+    "notes": "直撃は発生が稀で単発では判別に使いにくい。"
+  },
+  {
+    "machine": "スマスロ とある魔術の禁書目録2",
+    "category": "その他",
+    "title": "スイカ成立時の高確移行率",
+    "summary": "スイカ成立時の高確移行率は設定1で47.7%、設定6で55.5%と差がある。サンプルを多く取れる要素だが差はわずか。",
+    "source_name": "亮磁極回胴夫婦記",
+    "source_url": "https://ryojirisa.blog.jp/archives/38582035.html",
+    "treatment": "優遇",
+    "target_setting": "高設定寄り",
+    "sample_size": "解析値ベース、実戦検証は未了",
+    "confidence": "低",
+    "source_type": "個人ブログ",
+    "notes": "数百回以上の試行がないと判別材料になりにくい。"
+  },
+  {
+    "machine": "スマスロ とある魔術の禁書目録2",
+    "category": "その他",
+    "title": "設定6の実戦挙動の声",
+    "summary": "設定6の実戦報告ではCZもATも重く感じる、ATは駆け抜けが多く大事な場面で引けないと苦しいという声がある一方、CZは軽いとの感想もあり分かれている。",
+    "source_name": "上振れブログ",
+    "source_url": "https://sp-haishin.com/l-toaru-index2-456/",
+    "treatment": "冷遇",
+    "target_setting": "6",
+    "sample_size": "SNS等の少数報告",
+    "confidence": "低",
+    "source_type": "まとめサイト",
+    "notes": "個人の体感・少数サンプルで、設定6でも波が荒く出玉が安定しにくい可能性を示唆する程度。"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "machine": "スマスロ とある魔術の禁書目録2",
+    "category": "天井",
+    "title": "AT間実ゲーム数1200G天井",
+    "summary": "AT間の実ゲーム数(画面左上表示)が1200Gに達するとAT当選となる。通常時はこの実G天井とCZ間の液晶G天井の2系統を意識する必要がある。",
+    "source_name": "ナナプレス",
+    "source_url": "https://nana-press.com/kaiseki/machine/1154/",
+    "tenjyo_max": 1200
+  },
+  {
+    "machine": "スマスロ とある魔術の禁書目録2",
+    "category": "天井",
+    "title": "CZ間の液晶ゲーム数天井",
+    "summary": "液晶右下に出るゲーム数はCZ間で最大800G+α程度が上限とされる。CZ失敗後は左上のAT間実Gを見て続行を再判断するのが基本の流れ。",
+    "source_name": "スロッターの道具箱",
+    "source_url": "https://slot-toolbox.com/toaru-index2-tenjo/",
+    "tenjyo_max": 800
+  },
+  {
+    "machine": "スマスロ とある魔術の禁書目録2",
+    "category": "天井",
+    "title": "設定変更後の天井短縮",
+    "summary": "設定変更(リセット)後は実ゲーム数天井が777G、液晶ゲーム数天井が200G+αまで短縮される朝イチ専用モードに入る。リセット台は浅いハマりからでも狙いやすい。",
+    "source_name": "ヒッショボン",
+    "source_url": "https://p.hisshobon.jp/vpage/2796/1",
+    "tenjyo_max": 777
+  },
+  {
+    "machine": "スマスロ とある魔術の禁書目録2",
+    "category": "狙い目",
+    "title": "通常時の狙い目ゲーム数目安",
+    "summary": "等価交換なら実450G・液晶440G前後から期待値がプラスに寄るとする解析がある。一方サイトにより500G〜や700G〜と差が大きく、交換率や閉店時間で変わるため自店条件で再計算するのが安全。導入直後の目安値。",
+    "source_name": "スロッターの道具箱",
+    "source_url": "https://slot-toolbox.com/toaru-index2-tenjo/"
+  },
+  {
+    "machine": "スマスロ とある魔術の禁書目録2",
+    "category": "狙い目",
+    "title": "リセット後・AT後の拾い方",
+    "summary": "設定変更後はCZ間60G〜、AT間350G〜から、AT終了後はCZ間210G〜、AT間700G〜から狙う表を載せる解析サイトがある。数値は要検証で、複数サイトで揃うラインを優先したい。",
+    "source_name": "chonborista",
+    "source_url": "https://chonborista.com/slot/fuji-slot/260325/"
+  },
+  {
+    "machine": "スマスロ とある魔術の禁書目録2",
+    "category": "その他",
+    "title": "AT終了画面でのヤメ判断",
+    "summary": "AT終了画面の示唆で次回前兆までの残りゲーム数を推測できる。アイテム系は500G以内、スクール系は300G以内、グループ系は150G以内が濃厚とされ、示唆がなければ即ヤメも選べる。",
+    "source_name": "スロッターの道具箱",
+    "source_url": "https://slot-toolbox.com/toaru-index2-tenjo/"
+  },
+  {
+    "machine": "スマスロ とある魔術の禁書目録2",
+    "category": "その他",
+    "title": "ロシアステージ・CZ後の判断",
+    "summary": "ロシアステージのみで強い続行材料がなければ基本ヤメ、直接前兆に入ったなら結果まで打つ判断が推奨される。CZ失敗後は強示唆がなければやめるのが一般的。",
+    "source_name": "ラクパチ",
+    "source_url": "https://www.rakupachi.com/blog/toaru-index2-ceiling"
+  },
+  {
+    "machine": "スマスロ とある魔術の禁書目録2",
+    "category": "設定示唆",
+    "title": "藤丸コインと獲得枚数表示",
+    "summary": "藤丸コインは銅=設定2以上、銀=3以上、金=4以上、デンジャー柄=5以上、虹=6濃厚。AT中の獲得枚数で220・666・777系は設定6濃厚、456・1456系は設定4以上濃厚とされる。",
+    "source_name": "ナナプレス",
+    "source_url": "https://nana-press.com/kaiseki/machine/1154/38014/"
+  },
+  {
+    "machine": "スマスロ とある魔術の禁書目録2",
+    "category": "設定示唆",
+    "title": "AT終了画面の設定示唆",
+    "summary": "当麻&インデックスは奇数設定、美琴&黒子は偶数設定を示唆し、当麻ハーレムは設定6濃厚とされる。出現率の詳細は媒体により未確認のものもある。",
+    "source_name": "1GEKI",
+    "source_url": "https://1geki.jp/slot/l_toaru_index2/0/"
+  }
+]
