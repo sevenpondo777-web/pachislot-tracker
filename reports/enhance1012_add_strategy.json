@@ -1,0 +1,50 @@
+[
+  {
+    "machine": "スマスロ バジリスク絆2 天膳",
+    "category": "狙い目",
+    "title": "BC・BT終了後のやめどき手順",
+    "summary": "BC終了後は朧の終了画面を確認して1Gだけ回してやめるのが基本。BT終了後はサブ液晶に触れてセリフを見てから1G回してやめる。宿怨チャレンジに当選していた場合はBT後に駿府城ステージを経由するので、仕様が不明なら1Gで切り上げるのが無難。",
+    "source_name": "ちょんぼりすた パチスロ解析",
+    "source_url": "https://chonborista.com/slot/universal-slot/kizunatenzen/203783/"
+  },
+  {
+    "machine": "スマスロ バジリスク絆2 天膳",
+    "category": "設定示唆",
+    "title": "BC入賞時の上部LEDと終了画面の示唆",
+    "summary": "BC入賞時の上部LEDが赤で、かつBTに当選しなかった場合は設定4以上濃厚とされる。朧BC終了画面は前作流用の示唆で、流星群は高設定寄り、満月以上は様子見推奨という扱い。今作での振り分けは未確定部分があり、複数サイトで照合したい。",
+    "source_name": "1geki.jp",
+    "source_url": "https://1geki.jp/slot/l_b_kizuna2_tnzn/0/"
+  },
+  {
+    "machine": "スマスロ マギアレコード",
+    "category": "設定示唆",
+    "title": "ボーナス・AT終了画面の設定示唆",
+    "summary": "ボーナス終了画面とAT終了画面に設定示唆がある。AT終了画面でまどか&いろはが出れば設定6濃厚、マギウス背景は奇数寄り、みかづき荘メンバーは偶数寄り。ボーナス終了画面は組み合わせごとに奇数/偶数や設定2以上・4以上を示す。",
+    "source_name": "1geki.jp",
+    "source_url": "https://1geki.jp/slot/l_magireco/0/"
+  },
+  {
+    "machine": "スマスロ マギアレコード",
+    "category": "設定示唆",
+    "title": "ボーナス初当り合算確率と判別時の注意",
+    "summary": "ボーナス初当り合算は設定1が約1/240.6、設定6が約1/184.3。「さな」関連の示唆が多く出る台はCZに当選しやすくなるため、低設定でも当たりが軽くなり、判別のサンプルからは外して考えるのが推奨されている。",
+    "source_name": "1geki.jp",
+    "source_url": "https://1geki.jp/slot/l_magireco/0/"
+  },
+  {
+    "machine": "スマスロ ラブ嬢3",
+    "category": "設定示唆",
+    "title": "AT終了画面のPUSH示唆とゾロ目枚数表示",
+    "summary": "AT終了画面でPUSHボタンを押すと示唆画面に切り替わり、奇数/偶数寄りや設定2以上〜設定6を示す画面がある。ただし内容は編集部の推測を含む。AT中にゾロ目の獲得枚数が表示されれば設定2以上、666枚なら設定6確定とされる。",
+    "source_name": "アルテマ(パチモ)",
+    "source_url": "https://altema.jp/pachimo/llovejou"
+  },
+  {
+    "machine": "スマスロ ラブ嬢3",
+    "category": "設定示唆",
+    "title": "AT初当り確率と機械割の設定差",
+    "summary": "AT初当りは設定1が約1/285.2、設定6が約1/210.4。機械割は設定1の約97.5%から設定6の約112.1%まで上がり、高設定ほど素直に引きやすい。ラブゾーン(CZ)確率にも設定差がある。",
+    "source_name": "パチセブン",
+    "source_url": "https://pachiseven.jp/machines_v2/6842"
+  }
+]

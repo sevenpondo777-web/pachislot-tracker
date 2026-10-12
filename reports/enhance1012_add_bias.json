@@ -1,0 +1,41 @@
+[
+  {
+    "machine": "スマスロ バジリスク絆2 天膳",
+    "category": "その他",
+    "treatment": "優遇",
+    "target_setting": "設定4以上",
+    "summary": "BC入賞時の上部LEDが赤点灯でBT非当選という条件は設定4以上濃厚とされ、中間設定以上の判別材料になる。",
+    "sample_size": "解析・攻略サイト記載(検証数不明)",
+    "confidence": "低",
+    "source_type": "まとめサイト",
+    "source_name": "1geki.jp",
+    "source_url": "https://1geki.jp/slot/l_b_kizuna2_tnzn/0/",
+    "notes": "公式非公開情報の転記で未検証。"
+  },
+  {
+    "machine": "スマスロ マギアレコード",
+    "category": "演出頻度偏り",
+    "treatment": "優遇",
+    "target_setting": "高設定",
+    "summary": "終了画面に設定示唆があり、AT終了でまどか&いろはが出れば設定6濃厚。マギウス背景は奇数、みかづき荘は偶数に寄るため、出現の偏りが高設定判断の材料になる。",
+    "sample_size": "解析ベース",
+    "confidence": "低",
+    "source_type": "まとめサイト",
+    "source_name": "1geki.jp",
+    "source_url": "https://1geki.jp/slot/l_magireco/0/",
+    "notes": "示唆の強弱表記はサイト間で差がある。"
+  },
+  {
+    "machine": "スマスロ ラブ嬢3",
+    "category": "その他",
+    "treatment": "優遇",
+    "target_setting": "設定2以上〜設定6",
+    "summary": "AT中のゾロ目獲得枚数表示は設定2以上を示し、666枚なら設定6確定とされる。出現自体が少ないため単発の確認用。",
+    "sample_size": "解析ベース",
+    "confidence": "低",
+    "source_type": "まとめサイト",
+    "source_name": "アルテマ(パチモ)",
+    "source_url": "https://altema.jp/pachimo/llovejou",
+    "notes": "画面示唆の一部は編集部の推測と明記されている。"
+  }
+]
