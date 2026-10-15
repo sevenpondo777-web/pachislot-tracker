@@ -1,0 +1,10 @@
+[
+  {"machine":"スマスロ獣王","category":"天井","title":"通常時の天井は999G、設定変更後は599Gに短縮","summary":"通常時は999Gでサバンナチャンス(AT)かボーナスに当選する天井。設定変更(リセット)後は599Gまで短縮され、しかもこの短縮はサバ連(AT2連以上)するまで、単発で終わっても維持されるとする解説が複数ある。","tenjyo_min":599,"tenjyo_max":999,"source_name":"スロベース","source_url":"https://slobase.jp/machines/juuou"},
+  {"machine":"スマスロ獣王","category":"狙い目","title":"朝一リセット台の拾い方","summary":"設定変更後は天井が599Gなので朝一が狙い目。目安は等価で250G前後から、現金投資の5.6枚なら320G前後から。サイトにより250Gと300Gで数字に差があるため、自店の貸出条件で計算し直すのが無難。599Gを超えても当たらない台は据え置き濃厚とみなされる。","source_name":"スロベース(リセット・朝一ガイド)","source_url":"https://slobase.jp/articles/juuou-reset"},
+  {"machine":"スマスロ獣王","category":"やめどき","title":"サバンナチャンス終了後は潜伏29Gを消化","summary":"サバンナチャンス終了後は必ず29Gの潜伏状態に移行するため、終了直後のヤメは取りこぼしになる。少なくとも29G回してから離席するのが基本。","source_name":"スロベース(やめどき)","source_url":"https://slobase.jp/articles/juuou-yamedoki"},
+  {"machine":"スマスロ獣王","category":"やめどき","title":"サバ連後は100G付近まで確認","summary":"サバ連(AT連続)後は100G到達時に高確へ移行する抽選があると解説されており、100G+α付近までは様子を見てからやめる考え方が一般的。","source_name":"スロベース(やめどき)","source_url":"https://slobase.jp/articles/juuou-yamedoki"},
+  {"machine":"スマスロ獣王","category":"狙い目","title":"天井短縮が継続中の台を履歴で見抜く","summary":"リセット後に単発で終わっても短縮は消えないため、前日や当日の履歴でサバ連が無い台は短縮が続いている可能性がある。履歴からサバ連の有無を読んで着席ラインを判断する考え方がブログで紹介されている。着席ライン(635G等)は期待値計算ではなく目安。","source_name":"note(ミリオ)","source_url":"https://note.com/oiyuno/n/n99a4d2286f1c"},
+  {"machine":"スマスロ獣王","category":"設定示唆","title":"設定判別は初当たりと規定G数のSC高確移行率が軸","summary":"サバンナチャンス初当たりは設定1が約1/326、設定6が約1/280で、設定4以上は概ね1/300を切る。加えて規定G数(百の位が偶数のゲーム数)到達時のSC高確移行率や、謎高確の移行率にも設定差があるとされ、設定1と6で2倍以上の差とする見方もある。","source_name":"ナナプレス","source_url":"https://nana-press.com/kaiseki/machine/1232/39329/"},
+  {"machine":"スマスロ獣王","category":"設定示唆","title":"設定Lの見分け方","summary":"本機には設定Lが存在し、機械割は非公表。設定L確認時は下パネルが常時点滅するとされ、その場合は遊技を控えるよう案内されている。","source_name":"スロベース","source_url":"https://slobase.jp/machines/juuou"},
+  {"machine":"スマスロ獣王","category":"スペック","title":"機械割と純増","summary":"機械割は設定1が約97.8%、設定2が約98.7%、設定4が約105.6%、設定5が約108.6%、設定6が約114.3%。AT中の純増は約8.0枚/Gで、ナビは10・20・30回とEXのパターンがある。","source_name":"ペンギンのスロット研究室","source_url":"https://suicapenguin777.hatenablog.com/entry/2026/10/10/215729"}
+]
