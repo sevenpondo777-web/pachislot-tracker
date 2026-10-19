@@ -10,17 +10,6 @@
     "source_url": "https://esperhouse.work/seiha110/"
   },
   {
-    "machine": "スマスロモンキーターンV",
-    "category": "内部モード示唆",
-    "treatment": "不明",
-    "summary": "2億4000万G規模の実践データを基にした差枚別期待値・やめ時判断データが複数の解析者により公開されている。",
-    "sample_size": "累計2億4000万G(複数解析者の合算)",
-    "confidence": "中",
-    "source_type": "個人ブログ",
-    "source_name": "note (スロット必勝Lab_鳥餡)",
-    "source_url": "https://note.com/slot_hissho_lab/n/n4ba082c9c271"
-  },
-  {
     "machine": "スマスロ攻殻機動隊",
     "category": "内部モード示唆",
     "treatment": "冷遇",
@@ -84,16 +73,5 @@
     "source_type": "まとめサイト",
     "source_name": "1geki.jp",
     "source_url": "https://1geki.jp/slot/l_bhr2/"
-  },
-  {
-    "machine": "スマスロ頭文字D 2nd",
-    "category": "AT当選率偏り",
-    "treatment": "優遇",
-    "summary": "レジェンドバトル終了時の差枚がマイナスの場合、直撃フラグの抽選値が優遇される傾向があるとの報告。内部モードが高いほどレジェンドバトル当選率・AT当選率も優遇されるとの考察。",
-    "confidence": "低",
-    "source_type": "個人ブログ",
-    "source_name": "note (差枚からの優遇冷遇まとめ)",
-    "source_url": "https://note.com/slot_hissho_lab/n/n86d34081368c",
-    "notes": "詳細な差枚別データの一部は有料記事の可能性があるため、無料範囲で確認できた要点のみ参考情報として記録。"
   }
 ]

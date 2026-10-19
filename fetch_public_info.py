@@ -68,6 +68,13 @@ BLOCKED_DOMAINS = {
     "diamond-slot.jp",
 }
 
+# note.com のように1ドメインに無料/有料の著者が混在するサイト向け。
+# URLに以下の文字列を含む場合は有料著者とみなして保存を拒否する。
+BLOCKED_URL_SUBSTRINGS = (
+    "note.com/slot_hissho_lab",
+    "note.com/cute_bee617",
+)
+
 VALID_CATEGORIES = ("天井", "ゾーン", "設定示唆", "狙い目", "その他")
 
 VALID_BIAS_CATEGORIES = ("演出頻度偏り", "AT当選率偏り", "内部モード示唆", "その他")
@@ -92,7 +99,10 @@ def is_blocked_url(url: str) -> bool:
         host = urlparse(url).netloc.lower()
     except ValueError:
         return False
-    return host in BLOCKED_DOMAINS
+    if host in BLOCKED_DOMAINS:
+        return True
+    low = url.lower()
+    return any(frag in low for frag in BLOCKED_URL_SUBSTRINGS)
 
 
 def get_or_create_machine(conn: sqlite3.Connection, machine_name: str) -> int:
