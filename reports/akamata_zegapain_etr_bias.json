@@ -1,0 +1,4 @@
+[
+ {"machine":"Lアカマター","category":"AT当選率偏り","treatment":"優遇","target_setting":"高設定","summary":"設定1のボーナス合算は1/111.7で機械割97.2%、高設定は機械割が最大112.5%まで上がる公表値がある。高設定ほどボーナスが軽くなる傾向だが、設定2・4・5・6の確率は解析途上で、実戦値の蓄積待ち。","confidence":"低","source_type":"まとめサイト","source_name":"ちょんぼりすた パチスロ解析","source_url":"https://chonborista.com/slot/oizumi-slot/270789/"},
+ {"machine":"スマスロ ゼーガペインETR","category":"AT当選率偏り","treatment":"優遇","target_setting":"5-6","summary":"CZは設定1の1/159.4から設定6の1/136.0、ボーナスは1/323.9から1/248.8へ軽くなる。設定差は階段状でボーナスの方が差が大きく、初当り回数の多さが高設定の根拠になりやすい。導入前の情報のため、実戦で数値が検証されるまでは参考程度。","confidence":"中","source_type":"まとめサイト","source_name":"ちょんぼりすた パチスロ解析","source_url":"https://chonborista.com/slot/yamasa-slot/268290/"}
+]
