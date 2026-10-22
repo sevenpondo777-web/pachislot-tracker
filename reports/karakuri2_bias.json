@@ -1,0 +1,35 @@
+[
+ {
+  "machine": "スマスロ からくりサーカス2",
+  "category": "AT当選率偏り",
+  "treatment": "優遇",
+  "target_setting": "高設定",
+  "summary": "AT初当りは設定1の1/519から設定6の1/410へ軽くなり、機械割は97.7%〜114.9%と大きく伸びる。1/460を切るかが高設定の一つの目安とされる。公表スペック由来で、実戦値の蓄積は途上。",
+  "confidence": "中",
+  "source_type": "まとめサイト",
+  "source_name": "ナナプレス",
+  "source_url": "https://nana-press.com/kaiseki/machine/1144/37426/"
+ },
+ {
+  "machine": "スマスロ からくりサーカス2",
+  "category": "CZ当選率偏り",
+  "treatment": "優遇",
+  "target_setting": "6",
+  "summary": "CZ確率は設定1の1/342から設定6の1/318。ただし設定1〜4はほぼ差がなく、設定5以上でようやく意味が出るとの指摘があるため、CZ確率単体での高設定判断は低信頼。",
+  "confidence": "低",
+  "source_type": "まとめサイト",
+  "source_name": "ナナプレス",
+  "source_url": "https://nana-press.com/kaiseki/machine/1144/37426/"
+ },
+ {
+  "machine": "スマスロ からくりサーカス2",
+  "category": "設定示唆",
+  "treatment": "優遇",
+  "target_setting": "4以上/6",
+  "summary": "AT終了画面とエンディング中の筐体ランプ(紫は設定4以上、虹は設定6とされる)に設定示唆がある。サイトにより示唆内容の整理が異なり、更新の新しい解析での再確認が必要。",
+  "confidence": "中",
+  "source_type": "まとめサイト",
+  "source_name": "スロベース",
+  "source_url": "https://slobase.jp/machines/karakuri-circus2"
+ }
+]

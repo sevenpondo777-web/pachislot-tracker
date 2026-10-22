@@ -1,0 +1,68 @@
+[
+ {
+  "machine": "スマスロ からくりサーカス2",
+  "category": "天井",
+  "title": "CZ間は液晶1100G・最深1200Gで救済、実ゲーム数890Gが到達点",
+  "summary": "CZ間の天井は液晶ゲーム数で1100G付近(最深1200G)に達すると「機械仕掛けの女神」に当選する仕様。実ゲーム数に直すと約890Gで天井到達とされる。",
+  "source_name": "スロベース",
+  "source_url": "https://slobase.jp/machines/karakuri-circus2",
+  "tenjyo_min": 1100,
+  "tenjyo_max": 1200
+ },
+ {
+  "machine": "スマスロ からくりサーカス2",
+  "category": "天井",
+  "title": "設定変更後のCZ間天井は液晶500Gに短縮",
+  "summary": "設定変更(リセット)後は天井が液晶500Gへ短縮されるため、朝イチのリセット台は通常より浅いゲーム数から狙える。据え置き判別は上位のゲーム数狙いと分けて考えるのが無難。",
+  "source_name": "1GEKI",
+  "source_url": "https://1geki.jp/slot/l_karakuri2/3/"
+ },
+ {
+  "machine": "スマスロ からくりサーカス2",
+  "category": "天井",
+  "title": "AT間天井は2500G、CZ4連続スルー後の5回目CZは当選",
+  "summary": "AT間は2500Gが天井。別系統としてCZを4回連続でスルーした後の5回目のCZでAT当選となる救済もあるため、CZスルー回数の確認が重要。",
+  "source_name": "ナナプレス",
+  "source_url": "https://nana-press.com/kaiseki/machine/1144/"
+ },
+ {
+  "machine": "スマスロ からくりサーカス2",
+  "category": "狙い目",
+  "title": "CZ間・AT間のハイエナ目安ゲーム数",
+  "summary": "CZ間は実ゲーム数で等価440G〜/5.6枚交換540G〜とする試算があるが、約560G〜と見積もる記事もあり前提でぶれる。液晶ゲーム数なら800G〜が実戦上の目安という見方が多い。AT間は等価1500G〜/5.6枚1800G〜が期待値1000円超の目安。",
+  "source_name": "ハイエナくん",
+  "source_url": "https://haienakun.com/karakuri-circus2/"
+ },
+ {
+  "machine": "スマスロ からくりサーカス2",
+  "category": "やめどき",
+  "title": "運命の一劇失敗後は実ゲーム数128Gまで確認",
+  "summary": "「運命の一劇」失敗後は実ゲーム数で128Gを消化して様子を見てから離れる運用が複数の解析で紹介されている。AT終了後は100Gゾーンも確認する考え方。",
+  "source_name": "スロベース",
+  "source_url": "https://slobase.jp/articles/karakuri-circus2-yamedoki"
+ },
+ {
+  "machine": "スマスロ からくりサーカス2",
+  "category": "やめどき",
+  "title": "前兆中は規定ゲーム数を見届けてから判断",
+  "summary": "前兆ステージの赤失敗など前兆中の挙動があっても、規定ゲーム数まで消化してから判断するのが基本。途中でやめると引き戻し・当選を取りこぼす恐れがある。",
+  "source_name": "アミューズ",
+  "source_url": "https://www.amuse-p.com/blog/karakuricircus2/"
+ },
+ {
+  "machine": "スマスロ からくりサーカス2",
+  "category": "設定示唆",
+  "title": "AT終了画面の示唆(歯車・鳴海&勝・笑顔のエレオノール)",
+  "summary": "AT終了画面は設定示唆で、歯車は設定2以上、鳴海&勝は設定4以上、笑顔のエレオノールは設定6濃厚とされる。サイトにより整理が一部異なる。",
+  "source_name": "ラクパチ",
+  "source_url": "https://www.rakupachi.com/machines/karakuri-circus2/settei"
+ },
+ {
+  "machine": "スマスロ からくりサーカス2",
+  "category": "設定示唆",
+  "title": "AT初当りが最重要の設定差、CZは低設定帯で差が薄い",
+  "summary": "機械割は設定1の97.7%から設定6の114.9%。AT初当りは設定1が1/519、設定6が1/410で最も差が大きい。CZは1/342〜1/318だが設定1〜4はほぼ横並びで、CZの軽さだけで高設定と決めない。",
+  "source_name": "ナナプレス",
+  "source_url": "https://nana-press.com/kaiseki/machine/1144/37426/"
+ }
+]
