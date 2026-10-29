@@ -1,0 +1,41 @@
+[
+  {
+    "machine": "L押忍！番長4",
+    "category": "AT当選率偏り",
+    "treatment": "優遇",
+    "target_setting": "高設定",
+    "summary": "初当たり確率は設定1の約1/259.5から設定6の約1/221.1まで段階的に良化する。AT直撃は設定1で約1/6,411、設定6で約1/2,150と高設定ほど優遇され、直撃を引けたら高設定期待度が上がる。",
+    "sample_size": "公表されている設定別の確率値(実戦集計ではなく解析値)",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "アルテマ",
+    "source_url": "https://altema.jp/pachimo/lbancho4",
+    "notes": "数値は解析サイトの掲載値で、2024年頃の情報が中心。"
+  },
+  {
+    "machine": "L押忍！番長4",
+    "category": "演出頻度偏り",
+    "treatment": "優遇",
+    "target_setting": "4以上",
+    "summary": "終了画面は設定示唆の主力要素で、茶摘み(設定4以上)・レースクイーン(設定5以上)・温泉(設定6)が高設定側に偏る。富士山の出現累計も設定が上がるほど出やすい。",
+    "sample_size": "出現割合の公表値。実戦サンプルは設定ごとに10〜15台程度と少ない",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "source_name": "アルテマ",
+    "source_url": "https://altema.jp/pachimo/lbancho4gamen",
+    "notes": "示唆画面自体は仕様として確定。ハンバーグの偶数設定示唆などは信頼度が低い。"
+  },
+  {
+    "machine": "L押忍！番長4",
+    "category": "その他",
+    "treatment": "優遇",
+    "target_setting": "6",
+    "summary": "機械割は設定1の97.8%に対し設定6は113.1%と設定差が大きい。一方で小役の設定差は一覧上「高設定待ち」の項目が多く、判別は終了画面とAT初当たり頼りになる。",
+    "sample_size": "機械割は公表値、小役差は未判明",
+    "confidence": "低",
+    "source_type": "まとめサイト",
+    "source_name": "パチセブン",
+    "source_url": "https://pachiseven.jp/machines/6926/cutout/4",
+    "notes": "未検証の非公式情報。小役差は判明していないため判別材料としては限定的。"
+  }
+]

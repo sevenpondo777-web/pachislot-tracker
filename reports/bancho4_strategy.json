@@ -1,0 +1,60 @@
+[
+  {
+    "machine": "L押忍！番長4",
+    "category": "天井",
+    "title": "ゲーム数天井(699G+α)",
+    "summary": "通常時は699G+αを消化するとボーナスに当選する仕様。天井到達はAT獲得のチャンスだが、ボーナス後のAT当選までが保証されるわけではない。",
+    "tenjyo_min": 699,
+    "tenjyo_max": 699,
+    "source_name": "アルテマ",
+    "source_url": "https://altema.jp/pachimo/lbancho4"
+  },
+  {
+    "machine": "L押忍！番長4",
+    "category": "天井",
+    "title": "特訓天井とスルー天井",
+    "summary": "特訓については特訓間で最大249G+αの天井があり、内部モードごとに到達Gが変わる(天国系は49G)。さらにATをスルーし続けた場合の救済もあり、9回連続スルー後の10回目のボーナスでAT濃厚とする解説が多い。",
+    "source_name": "チョンボリスタ",
+    "source_url": "https://chonborista.com/slot/daito-slot/bancho4/212568"
+  },
+  {
+    "machine": "L押忍！番長4",
+    "category": "狙い目",
+    "title": "設定変更時はスルー回数が短縮",
+    "summary": "設定変更(リセット)が入った台はスルー天井までの回数が6回に短縮されるとする記事がある。朝イチでも設定変更を伴わない台は短縮されない点に注意。",
+    "source_name": "チョンボリスタ",
+    "source_url": "https://chonborista.com/slot/daito-slot/bancho4/212568"
+  },
+  {
+    "machine": "L押忍！番長4",
+    "category": "狙い目",
+    "title": "朝イチ天井狙いの損益分岐",
+    "summary": "設定1を想定した試算では、等価交換なら約200G、5.6枚交換なら約250Gから天井狙いが期待値プラスになるとされる。独自シミュレーターの前提値なので目安として扱う。",
+    "source_name": "チョンボリスタ",
+    "source_url": "https://chonborista.com/slot/daito-slot/bancho4/212568"
+  },
+  {
+    "machine": "L押忍！番長4",
+    "category": "狙い目",
+    "title": "ボーナス後ステージと押忍モードの見極め",
+    "summary": "設定変更時とボーナス終了後は押忍モードに滞在し初当たり期待度が高い。ボーナス後に夕方・夜ステージで始まる場合は示唆ありなので即ヤメは避け、天国系の49Gまでは回すのが定石。",
+    "source_name": "アルテマ",
+    "source_url": "https://altema.jp/pachimo/lbancho4tenjo"
+  },
+  {
+    "machine": "L押忍！番長4",
+    "category": "設定示唆",
+    "title": "終了画面による設定示唆",
+    "summary": "温泉は設定6濃厚、レースクイーンは設定5以上、茶摘みは設定4以上が濃厚。富士山は設定2以上を示し、出現回数が増えるほど示唆が上がる(3回で設定4以上、5回で設定6濃厚)。ハンバーグは偶数設定示唆とされるが信頼性は低いとの声もある。",
+    "source_name": "アルテマ",
+    "source_url": "https://altema.jp/pachimo/lbancho4gamen"
+  },
+  {
+    "machine": "L押忍！番長4",
+    "category": "その他",
+    "title": "AT後は引き戻しモード",
+    "summary": "AT終了後は必ずAT引き戻しモードへ移行し、そこで特訓に成功すれば引き戻し確定。AT終了直後のヤメは損になりやすい。",
+    "source_name": "チョンボリスタ",
+    "source_url": "https://chonborista.com/slot/daito-slot/bancho4/214979/"
+  }
+]
