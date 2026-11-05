@@ -1,0 +1,58 @@
+[
+  {
+    "machine": "スマスロ 炎炎ノ消防隊",
+    "category": "AT当選率偏り",
+    "title": "初当たり確率と機械割の設定差",
+    "summary": "初当たり確率は設定1が約1/197、設定5が約1/173、設定6が約1/169で、機械割は設定1が97.7%、設定6が114.9%。設定間の開きは大きめで高設定の優遇度は高い。",
+    "source_name": "スロぱちクエスト",
+    "source_url": "https://www.slopachi-quest.com/article/lenennosyouboutai-settei/",
+    "treatment": "優遇",
+    "target_setting": "5以上",
+    "sample_size": "公表スペック・解析値ベース、実戦集計は未確認",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "notes": "数値は解析情報でありメーカー非公式。"
+  },
+  {
+    "machine": "スマスロ 炎炎ノ消防隊",
+    "category": "その他",
+    "title": "炎炎ループ・十字目変換に設定差",
+    "summary": "初当たり以外にも、炎炎激闘の当選率、炎炎ループ、十字目変換契機のボーナス当選率に設定が高いほど有利な差があるとされる。単発判別には向かず合算で見るのが基本。",
+    "source_name": "ナナプレス",
+    "source_url": "https://nana-press.com/kaiseki/machine/738/21299/",
+    "treatment": "優遇",
+    "target_setting": "高設定",
+    "sample_size": "解析値ベース、個別の実戦サンプルなし",
+    "confidence": "低",
+    "source_type": "まとめサイト",
+    "notes": "具体的な振り分け値は未確認。"
+  },
+  {
+    "machine": "スマスロ 炎炎ノ消防隊",
+    "category": "その他",
+    "title": "設定4以上を示す終了画面・演出",
+    "summary": "終了画面の金枠は設定6濃厚、赤枠は設定5以上、全員集合は設定4以上とされ、アドラバーストの紅丸やアイリスも高設定寄りの示唆。高設定を拾う補助として使われる。",
+    "source_name": "スロぱちクエスト",
+    "source_url": "https://www.slopachi-quest.com/article/lenennosyouboutai-settei/",
+    "treatment": "優遇",
+    "target_setting": "4以上",
+    "sample_size": "解析情報、実戦検証は限定的",
+    "confidence": "中",
+    "source_type": "まとめサイト",
+    "notes": "示唆の出現率はサイトにより差がある。"
+  },
+  {
+    "machine": "スマスロ 炎炎ノ消防隊",
+    "category": "その他",
+    "title": "リセット時の天井短縮は設定変更台の恩恵",
+    "summary": "設定変更後はボーナス間天井が650G+αに短縮され、朝一は深いハマりが起きにくい仕様。冷遇ではなく据え置き台との差として狙いどころになるが、モード差の設定依存は微差で判別には使えないとされる。",
+    "source_name": "ナナプレス",
+    "source_url": "https://nana-press.com/kaiseki/machine/738/21302/",
+    "treatment": "優遇",
+    "target_setting": "設定変更台",
+    "sample_size": "解析情報ベース",
+    "confidence": "低",
+    "source_type": "まとめサイト",
+    "notes": "設定そのものの優遇ではなくリセット挙動。"
+  }
+]

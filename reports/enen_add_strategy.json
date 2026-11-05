@@ -1,0 +1,77 @@
+[
+  {
+    "machine": "スマスロ 炎炎ノ消防隊",
+    "category": "天井",
+    "title": "ボーナス間850G+α天井",
+    "summary": "通常時はボーナス間で最大850G+αに到達するとボーナスに当選する。解析サイトの数値でありメーカー公表ではない。",
+    "source_name": "スロぱちクエスト",
+    "source_url": "https://www.slopachi-quest.com/article/lenennosyouboutai-tenjou/",
+    "tenjyo_max": 850
+  },
+  {
+    "machine": "スマスロ 炎炎ノ消防隊",
+    "category": "天井",
+    "title": "炎炎激闘間2500G天井",
+    "summary": "炎炎激闘間で2500Gを消化すると天井条件を満たすが、ゲーム数消化だけでは発動せず、その後のボーナス当選が必要とされる。",
+    "source_name": "スロぱちクエスト",
+    "source_url": "https://www.slopachi-quest.com/article/lenennosyouboutai-tenjou/",
+    "tenjyo_max": 2500
+  },
+  {
+    "machine": "スマスロ 炎炎ノ消防隊",
+    "category": "天井",
+    "title": "設定変更後は650G+αに短縮",
+    "summary": "朝一リセット後はボーナス間天井が650G+αまで短縮される。朝一のモードにより550G+αや450G+αになる区分もあると紹介されている。",
+    "source_name": "ナナプレス",
+    "source_url": "https://nana-press.com/kaiseki/machine/738/21302/",
+    "tenjyo_max": 650
+  },
+  {
+    "machine": "スマスロ 炎炎ノ消防隊",
+    "category": "狙い目",
+    "title": "リセット時の狙い目目安",
+    "summary": "リセット台の天井狙いは、設定1想定で等価なら350G前後、5.6枚交換なら400G前後から期待値がプラスに寄るとする試算がある。前提条件で変わるため参考値。",
+    "source_name": "スロぱちクエスト",
+    "source_url": "https://www.slopachi-quest.com/article/lenennosyouboutai-tenjou/"
+  },
+  {
+    "machine": "スマスロ 炎炎ノ消防隊",
+    "category": "狙い目",
+    "title": "朝一リセット判別と据え置き判断",
+    "summary": "88G付近で前兆が出ればリセットの可能性が高く、出なければ据え置きか朝一C系とみる整理がある。650G+α超のハマりは据え置き濃厚とされる。",
+    "source_name": "ナナプレス",
+    "source_url": "https://nana-press.com/kaiseki/machine/738/21302/"
+  },
+  {
+    "machine": "スマスロ 炎炎ノ消防隊",
+    "category": "狙い目",
+    "title": "通常時の狙い目は600G前後〜",
+    "summary": "非リセット台を狙う場合、等価でおおむね600G前後から検討する目安が複数サイトで見られる。荒い台なので資金管理が重要。",
+    "source_name": "一撃",
+    "source_url": "https://1geki.jp/slot/l_ennenn/3/"
+  },
+  {
+    "machine": "スマスロ 炎炎ノ消防隊",
+    "category": "設定示唆",
+    "title": "REG中キャラ紹介の金背景",
+    "summary": "REG中のキャラ紹介5人目に金背景が出れば高設定示唆。紅丸は設定4以上、ショウは設定5以上を示唆するとされる。",
+    "source_name": "ナナプレス",
+    "source_url": "https://nana-press.com/kaiseki/machine/738/21299/"
+  },
+  {
+    "machine": "スマスロ 炎炎ノ消防隊",
+    "category": "設定示唆",
+    "title": "ボーナス終了画面の示唆",
+    "summary": "金枠は設定6濃厚、赤枠は設定5以上、全員集合は設定4以上とされる。REG後の方が示唆が出やすいとの情報もある。",
+    "source_name": "スロぱちクエスト",
+    "source_url": "https://www.slopachi-quest.com/article/lenennosyouboutai-settei/"
+  },
+  {
+    "machine": "スマスロ 炎炎ノ消防隊",
+    "category": "その他",
+    "title": "やめどきは即ヤメせず様子見",
+    "summary": "初当たり後は伝導者の影ステージで30G以上滞在するため、ビッグ後は約60G、レギュラー後は約30G程度は回して様子を見る目安が紹介されている。炎炎激闘後はストック無しを確認して約50Gでヤメる解説もある。",
+    "source_name": "一撃",
+    "source_url": "https://1geki.jp/slot/l_ennenn/3/"
+  }
+]
