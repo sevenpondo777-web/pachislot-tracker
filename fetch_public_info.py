@@ -73,6 +73,7 @@ BLOCKED_DOMAINS = {
 BLOCKED_URL_SUBSTRINGS = (
     "note.com/slot_hissho_lab",
     "note.com/cute_bee617",
+    "note.com/zigokumimi",  # わたる ジゴク耳: 記事途中から有料(2026-11-20確認)
 )
 
 VALID_CATEGORIES = ("天井", "ゾーン", "設定示唆", "狙い目", "その他")
